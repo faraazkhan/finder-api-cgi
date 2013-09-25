@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PrivateOptionsAPIRequest>
+	<ProductsForSmallGroupRequest>
+		<NumberOfEmployees>22</NumberOfEmployees>
+		<Location>
+			<ZipCode>84086</ZipCode>
+			<County>
+				<CountyName>RICH</CountyName>
+				<StateCode>UT</StateCode>
+			</County>
+		</Location>
+		<InsuranceEffectiveDate>2012-09-01</InsuranceEffectiveDate>
+		<IsFilterAnalysisRequiredIndicator>true</IsFilterAnalysisRequiredIndicator>
+		<PaginationInformation>
+			<PageNumber>1</PageNumber>
+			<PageSize>95</PageSize>
+		</PaginationInformation>
+		<SortOrder>
+			<SortField>OOP LIMIT - IN NETWORK</SortField>
+			<SortDirection>ASC</SortDirection>
+		</SortOrder>
+		<Filter></Filter>
+	</ProductsForSmallGroupRequest>
+</PrivateOptionsAPIRequest>

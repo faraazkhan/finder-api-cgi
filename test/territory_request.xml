@@ -1,0 +1,23 @@
+<PublicOptionsAPIRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/Users/astowell/Documents/ews/finder_api/finder_api_v0.2.xsd">
+    <RequesterInfoData>
+        <OrganizationName>Test</OrganizationName>
+        <ContactEmail>test@ctacorp.com</ContactEmail>
+    </RequesterInfoData>
+    <StateOrTerritory>
+        <TerritoryAbbreviation>VI</TerritoryAbbreviation>
+    </StateOrTerritory>
+    <FamilyAndChildrenAudienceRequest>
+        <Situation>familyneedinsurance</Situation>
+        <AgeRange>18 or Under</AgeRange>
+    </FamilyAndChildrenAudienceRequest>
+    <MedicalConditionOrHealthProblemIndicator>true</MedicalConditionOrHealthProblemIndicator>
+    <DisabilityIndicator>true</DisabilityIndicator>
+    <BreastOrCervicalCancerIndicator>true</BreastOrCervicalCancerIndicator>
+    <DependentUnder21Indicator>true</DependentUnder21Indicator>
+    <NursingHomeOrLongTermCareIndicator>true</NursingHomeOrLongTermCareIndicator>
+    <SpecialHealthcareNeedIndicator>true</SpecialHealthcareNeedIndicator>
+    <PregnancyIndicator>true</PregnancyIndicator>
+    <VeteranStatusIndicator>true</VeteranStatusIndicator>
+    <AmericanIndianOrAlaskanNativeIndicator>true</AmericanIndianOrAlaskanNativeIndicator>
+    <IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator>true</IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator>
+</PublicOptionsAPIRequest>

@@ -1,0 +1,6 @@
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<PrivateOptionsAPIRequest>
+  <CountiesForPostalCodeRequest>
+      <ZipCode>20110</ZipCode>
+  </CountiesForPostalCodeRequest>
+</PrivateOptionsAPIRequest>

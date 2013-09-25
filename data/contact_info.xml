@@ -1,0 +1,769 @@
+<?xml version="1.0"?>
+<!-- TODO fix 15555555555 numbers -->
+<States>
+  <State abbr="AK">
+    <CHIPContactInformation>
+      <!-- <BrandName>Denali KidCare</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Alaska Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>15555555555</PhoneNumber>
+      <URL>http://www.hss.state.ak.us/dpa/programs/medicaid/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="AL">
+    <CHIPContactInformation>
+      <!-- <BrandName>ALL Kids</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.adph.org/allkids/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Alabama Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>13342425000</PhoneNumber>
+      <URL>http://www.medicaid.alabama.gov/apply/index_apply.aspx?tab=3</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="AR">
+    <CHIPContactInformation>
+      <!-- <BrandName>ARKids B</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.arkidsfirst.com/home.htm</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Arkansas Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18004828988</PhoneNumber>
+      <URL>https://www.medicaid.state.ar.us/InternetSolution/Consumer/Consumer.aspx</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="AZ">
+    <CHIPContactInformation>
+      <!-- <BrandName>KidsCare</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Arizona Health Care Cost Containment System: Medicaid in Arizona</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18005230231</PhoneNumber>
+      <URL>http://www.azahcccs.gov/applicants/default.aspx</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="CA">
+    <CHIPContactInformation>
+      <!-- <BrandName>Healthy Families</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.healthyfamilies.ca.gov/About/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Medi-Cal: Medicaid in California</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>19166361980</PhoneNumber>
+      <URL>http://www.dhcs.ca.gov/services/medi-cal/Pages/MCIndividual.aspx</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="CO">
+    <CHIPContactInformation>
+      <!-- <BrandName>Child Health Plan Plus (CHP +)</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.colorado.gov/hcpf</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Colorado Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18002213943</PhoneNumber>
+      <URL>http://www.colorado.gov/hcpf</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="CT">
+    <CHIPContactInformation>
+      <!-- <BrandName>Husky Plan</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Medicaid for Low Income Adults (MLIA): Medicaid in Connecticut</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18008421508</PhoneNumber>
+      <URL>http://www.huskyhealth.com/hh/cwp/view.asp?a=3573&amp;q=421548&amp;hhNav=|</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="DC">
+    <CHIPContactInformation>
+      <!-- <BrandName>DC Healthy Families</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>District of Columbia Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>12027275355</PhoneNumber>
+      <URL>http://ssc.rrc.dc.gov/ssc/cwp/view,a,1218,q,455276.asp</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="DE">
+    <CHIPContactInformation>
+      <!-- <BrandName>Delaware Healthy Children Program (DHCP)</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.dhss.delaware.gov/dss/dhcpqualify.html</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Delaware Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18003722022</PhoneNumber>
+      <URL>https://assist.dhss.delaware.gov/PGM/ASP/SC001.asp</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="FL">
+    <CHIPContactInformation>
+      <!-- <BrandName>Florida KidCare Program</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.floridakidcare.org/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Florida Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18664674970</PhoneNumber>
+      <URL>http://www.dcf.state.fl.us/programs/access/medicaid.shtml</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="GA">
+    <CHIPContactInformation>
+      <!-- <BrandName>PeachCare for Kids</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.peachcare.org/Default.aspx</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Georgia Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>14046564496</PhoneNumber>
+      <URL>http://dch.georgia.gov/00/channel_title/0,2094,31446711_31945377,00.html</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="HI">
+    <CHIPContactInformation>
+      <!-- <BrandName>Hawaii Title XXI Program</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>QUEST: Medicaid in Hawaii</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>15555555555</PhoneNumber>
+      <URL>http://www.med-quest.us/eligibility/Eligibility_DoIQualify.html</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="IA">
+    <CHIPContactInformation>
+      <!-- <BrandName>Healthy and Well Kids in Iowa (hawk-i)</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.hawk-i.org/en_US/index.html</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Iowa Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18009722017</PhoneNumber>
+      <URL>http://www.ime.state.ia.us/Members/WhoReceivesMedicaid.html</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="ID">
+    <CHIPContactInformation>
+      <!-- <BrandName>Idaho Children's Health Insurance Plan</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Idaho Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18774561233</PhoneNumber>
+      <URL>http://www.medicaid.idaho.gov</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="IL">
+    <CHIPContactInformation>
+      <!-- <BrandName>KidCare</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.allkids.com/hfs8269.html</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Illinois Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18002260768</PhoneNumber>
+      <URL>http://www.health.illinois.gov/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="IN">
+    <CHIPContactInformation>
+      <!-- <BrandName>Hoosier Healthwise</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Indiana Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18004030864</PhoneNumber>
+      <URL>http://member.indianamedicaid.com/am-i-eligible.aspx</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="KS">
+    <CHIPContactInformation>
+      <!-- <BrandName>HealthWare</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Kansas Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18007669012</PhoneNumber>
+      <URL>http://www.khpa.ks.gov/medical_assistance/apply_for_assistance.html</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="KY">
+    <CHIPContactInformation>
+      <!-- <BrandName>Kentucky CHIP (KCHIP)</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://kidshealth.ky.gov/en/kchip/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Kentucky Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18006352570</PhoneNumber>
+      <URL>http://chfs.ky.gov/dms/eligibility.htm</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="LA">
+    <CHIPContactInformation>
+      <!-- <BrandName>LaCHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://bhsfweb.dhh.louisiana.gov/LaCHIP/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Lousiana Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18883426207</PhoneNumber>
+      <URL>http://www.dhh.louisiana.gov/offices/page.asp?id=92&amp;detail=4128</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="MA">
+    <CHIPContactInformation>
+      <!-- <BrandName>MassHealth</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Mass Health: Medicaid in Massachusetts</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18008412900</PhoneNumber>
+      <URL>http://www.mass.gov/?pageID=eohhs2subtopic&amp;L=4&amp;L0=Home&amp;L1=Consumer&amp;L2=Insurance+%28including+MassHealth%29&amp;L3=MassHealth+Coverage+Types&amp;sid=Eeohhs2</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="MD">
+    <CHIPContactInformation>
+      <!-- <BrandName>Maryland Children's Health Program (MCHP)</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Maryland Medical Assistance Program: Medicaid in Maryland</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18774633464</PhoneNumber>
+      <URL>http://www.dhmh.state.md.us/mma/Eligibility/med_medical%20asst%20overview_Doc%202/medasstov.html</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="ME">
+    <CHIPContactInformation>
+      <!-- <BrandName>Maine Care</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>MaineCare: Medicaid in Maine</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18009776740</PhoneNumber>
+      <URL>http://www.maine.gov/dhhs/oms/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="MI">
+    <CHIPContactInformation>
+      <!-- <BrandName>MIChild</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>https://healthcare4mi.com/michild-web/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Michigan Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>15173733740</PhoneNumber>
+      <URL>http://www.mfia.state.mi.us/mars/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="MN">
+    <CHIPContactInformation>
+      <!-- <BrandName>Minnesota Care</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Minnesota Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18006573739</PhoneNumber>
+      <URL>http://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&amp;RevisionSelectionMethod=LatestReleased&amp;dDocName=dhs16_144033</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="MO">
+    <CHIPContactInformation>
+      <!-- <BrandName>HealthNet for Kids</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.dss.mo.gov/fsd/mchild.htm</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>MO Health Net: Medicaid in Missouri</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18882755908</PhoneNumber>
+      <URL>http://www.dss.mo.gov/mhd/index.htm</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="MS">
+    <CHIPContactInformation>
+      <!-- <BrandName>Mississippi CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Mississippi Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18004212408</PhoneNumber>
+      <URL>http://www.medicaid.ms.gov/ApplyForMedicaid.aspx</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="MT">
+    <CHIPContactInformation>
+      <!-- <BrandName>MO CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://hmk.mt.gov/abouthmk.shtml</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Montana Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18003628312</PhoneNumber>
+      <URL>http://www.dphhs.mt.gov/programsservices/clientquestions.shtml#qualifyformedicaid</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="NC">
+    <CHIPContactInformation>
+      <!-- <BrandName>Health Choice for Children</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.ncdhhs.gov/dma/healthchoice/who.htm</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>North Carolina Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18006627030</PhoneNumber>
+      <URL>http://www.ncdhhs.gov/dma/medicaid/who.htm</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="ND">
+    <CHIPContactInformation>
+      <!-- <BrandName>North Dakota CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.nd.gov/dhs/services/medicalserv/chip/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>North Dakota Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18007552604</PhoneNumber>
+      <URL>http://www.nd.gov/dhs/services/medicalserv/medicaid/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="NE">
+    <CHIPContactInformation>
+      <!-- <BrandName>Kids Connection</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Nebraska Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18772553092</PhoneNumber>
+      <URL>http://www.dhhs.ne.gov/med/medindex.htm</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="NH">
+    <CHIPContactInformation>
+      <!-- <BrandName>Healthy Kids</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.nhhealthykids.com/programs_reqs.php</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>New Hampshire Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>16032718166</PhoneNumber>
+      <URL>http://www.dhhs.state.nh.us/DHHS/MEDICAIDPROGRAM/ELIGIBILITY/default.htm</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="NJ">
+    <CHIPContactInformation>
+      <!-- <BrandName>Family Care</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.njfamilycare.org/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>NJ Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18003561561</PhoneNumber>
+      <URL>http://www.state.nj.us/humanservices/dmahs/clients/medicaid/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="NM">
+    <CHIPContactInformation>
+      <!-- <BrandName>New MexiKids/MexiTeens</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.insurenewmexico.state.nm.us/NewMexiKidsandTeens.htm</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>New Mexico Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18889972583</PhoneNumber>
+      <URL>http://www.hsd.state.nm.us/mad/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="NV">
+    <CHIPContactInformation>
+      <!-- <BrandName>Check Up</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://nevadacheckup.nv.gov/FAQ.htm</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Nevada Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18776383472</PhoneNumber>
+      <URL>https://dwss.nv.gov/index.php?option=com_content&amp;task=view&amp;id=96&amp;Itemid=247</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="NY">
+    <CHIPContactInformation>
+      <!-- <BrandName>Child Health Plus</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.health.state.ny.us/nysdoh/chplus/who_is_eligible.htm</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>New York Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>15184869057</PhoneNumber>
+      <URL>http://www.health.state.ny.us/health_care/medicaid/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="OH">
+    <CHIPContactInformation>
+      <!-- <BrandName>Healthy Start</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Ohio Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18003248680</PhoneNumber>
+      <URL>http://jfs.ohio.gov/ohp/consumer.stm</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="OK">
+    <CHIPContactInformation>
+      <!-- <BrandName>Sooner Care</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Sooner Care: Medicaid in Oklahoma</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18005220310</PhoneNumber>
+      <URL>http://www.okhca.org/individuals.aspx?id=52&amp;menu=40&amp;parts=11601_7453</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="OR">
+    <CHIPContactInformation>
+      <!-- <BrandName>Oregon Healthy Kids</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Oregon Health Plan: Medicaid in Oregon</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18002730557</PhoneNumber>
+      <URL>http://www.oregon.gov/DHS/healthplan/app_benefits/main.shtml</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="PA">
+    <CHIPContactInformation>
+      <!-- <BrandName>Pennsylvania CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.chipcoverspakids.com/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Pennsylvania Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18665423015</PhoneNumber>
+      <URL>http://www.dpw.state.pa.us</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="RI">
+    <CHIPContactInformation>
+      <!-- <BrandName>Rite Care</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Rhode Island Medical Assistance: Medicaid in Rhode Island</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>14014625300</PhoneNumber>
+      <URL>http://dhs.embolden.com/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="SC">
+    <CHIPContactInformation>
+      <!-- <BrandName>Healthy Connections Kids</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>South Carolina Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18885490820</PhoneNumber>
+      <URL>http://www.scdhhs.gov</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="SD">
+    <CHIPContactInformation>
+      <!-- <BrandName>South Dakota CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>South Dakota Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18667055391</PhoneNumber>
+      <URL>http://dss.sd.gov/sdmedx/includes/portal/verifyeligibility/index.aspx</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="TN">
+    <CHIPContactInformation>
+      <!-- <BrandName>Cover Kids</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.coverkids.com/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Tenn Care: Medicaid in Tennessee</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18663114287</PhoneNumber>
+      <URL>http://www.tn.gov/tenncare/members.html</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="TX">
+    <CHIPContactInformation>
+      <!-- <BrandName>Texas CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.chipmedicaid.org/english/index.htm</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Texas Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18002528263</PhoneNumber>
+      <URL>https://www.yourtexasbenefits.com/wps/portal</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="UT">
+    <CHIPContactInformation>
+      <!-- <BrandName>Utah CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://health.utah.gov/chip/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Utah Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18015386155</PhoneNumber>
+      <URL>http://health.utah.gov/umb/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="VA">
+    <CHIPContactInformation>
+      <!-- <BrandName>Family Access to Medical Insurance Security (FAMIS)</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.famis.org/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Virginia Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18047867933</PhoneNumber>
+      <URL>http://dmasva.dmas.virginia.gov/Content_pgs/rcp-home.aspx</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="VT">
+    <CHIPContactInformation>
+      <!-- <BrandName>Dr Dynasaur</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Vermont Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18002508427</PhoneNumber>
+      <URL>http://www.greenmountaincare.org/</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="WA">
+    <CHIPContactInformation>
+      <!-- <BrandName>Apple Health for Kids</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://hrsa.dshs.wa.gov/applehealth/index.shtml</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Washington Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18005623022</PhoneNumber>
+      <URL>http://hrsa.dshs.wa.gov/HRSAClient.htm</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="WI">
+    <CHIPContactInformation>
+      <!-- <BrandName>BadgerCare Plus</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL/>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Wisconsin Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18003623002</PhoneNumber>
+      <URL>https://access.wisconsin.gov</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="WV">
+    <CHIPContactInformation>
+      <!-- <BrandName>West Virginia CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.wvchip.org/</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>West Virginia Medicaid</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18006428589</PhoneNumber>
+      <URL>https://www.wvinroads.org/inroads/PGM/ASP/SC001.asp</URL>
+    </MedicaidContactInformation>
+  </State>
+  <State abbr="WY">
+    <CHIPContactInformation>
+      <!-- <BrandName>Kid Care CHIP</BrandName> -->
+      <!-- <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description> -->
+      <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+      <PhoneNumber>18775437669</PhoneNumber>
+      <URL>http://www.health.wyo.gov/CHIP</URL>
+    </CHIPContactInformation>
+    <MedicaidContactInformation>
+      <!-- <BrandName>Equality Care: Medicaid in Wyoming</BrandName> -->
+      <!-- <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description> -->
+      <PhoneNumber>18002511269</PhoneNumber>
+      <URL>http://www.health.wyo.gov/EqualityCare</URL>
+    </MedicaidContactInformation>
+  </State>
+</States>

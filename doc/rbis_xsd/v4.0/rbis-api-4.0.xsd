@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://rbis.cms.org/api" xmlns:rbis="http://rbis.cms.org/api-types" targetNamespace="http://rbis.cms.org/api" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://rbis.cms.org/api-types" schemaLocation="rbis-api-types-4.0.xsd"/>
+	<xs:element name="ZipCodeValidationRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ZipCode" type="rbis:ZipCodeType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ZipCodeValidationResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ResponseHeader" type="rbis:ResponseHeaderType"/>	
+				<xs:element name="Counties">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="County" type="rbis:CountyType" minOccurs="0" maxOccurs="unbounded" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>				
+				<xs:element ref="ZipCodeValidationRequest" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="IndividualPlanQuoteRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Enrollees" type="rbis:EnrolleesType"/>
+				<xs:element name="Location" type="rbis:LocationType"/>
+				<xs:element name="InsuranceEffectiveDate" type="xs:date"/>
+				<xs:element name="IsFilterAnalysisRequiredIndicator" type="xs:boolean" default="false" minOccurs="0"/>
+				<xs:element name="PaginationInformation" type="rbis:PaginationInformationType" minOccurs="0"/>
+				<xs:element name="SortOrder" type="rbis:PlanSortOrderType" minOccurs="0"/>				
+				<xs:element name="Filter" type="rbis:PlanFilterType" minOccurs="0"/>
+				<xs:element name="ComparePlans" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PlanIds" type="rbis:PlanIDType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IndividualPlanQuoteResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ResponseHeader" type="rbis:ResponseHeaderType"/>
+				<xs:element name="TotalEligiblePlansQuanity" type="xs:int"/>
+				<xs:element name="PaginationInformation" type="rbis:PaginationInformationType"/>
+				<xs:element name="Plans">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Plan" type="rbis:PlanType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FilterAnalysis" type="rbis:PlanFilterAnalysisType" minOccurs="0"/>
+				<xs:element name="ComparePlans" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Plan" type="rbis:PlanType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="IndividualPlanQuoteRequest" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="IndividualPlanBenefitRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Enrollees" type="rbis:EnrolleesType"/>
+				<xs:element name="Location" type="rbis:LocationType"/>
+				<xs:element name="InsuranceEffectiveDate" type="xs:date"/>
+				<xs:element name="PlanIDs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PlanID" type="rbis:PlanIDType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="IndividualPlanBenefitResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ResponseHeader" type="rbis:ResponseHeaderType"/>
+				<xs:element name="PlanBenefits">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PlanBenefit" type="rbis:PlanBenefitsType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="IndividualPlanBenefitRequest" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<!--  Small Group Services -->
+	<xs:element name="SmallGroupProductQuoteRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="NumberOfEmployees" type="xs:int"/>
+				<xs:element name="Location" type="rbis:LocationType"/>
+				<xs:element name="InsuranceEffectiveDate" type="xs:date"/>
+				<xs:element name="IsFilterAnalysisRequiredIndicator" type="xs:boolean" default="false" minOccurs="0"/>
+				<xs:element name="PaginationInformation" type="rbis:PaginationInformationType" minOccurs="0"/>
+				<xs:element name="SortOrder" type="rbis:ProductSortOrderType" minOccurs="0"/>				
+				<xs:element name="Filter" type="rbis:ProductFilterType" minOccurs="0"/>
+				<xs:element name="CompareProducts" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ProductIds" type="rbis:ProductIDType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="SmallGroupProductQuoteResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ResponseHeader" type="rbis:ResponseHeaderType"/>
+				<xs:element name="TotalEligibleProductsQuanity" type="xs:int"/>
+				<xs:element name="PaginationInformation" type="rbis:PaginationInformationType"/>
+				<xs:element name="Products">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Product" type="rbis:ProductType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FilterAnalysis" type="rbis:ProductFilterAnalysisType" minOccurs="0"/>
+				<xs:element name="CompareProducts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Product" type="rbis:ProductType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="SmallGroupProductQuoteRequest" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:element name="SmallGroupProductBenefitRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ProductIDs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ProductID" type="rbis:ProductIDType" minOccurs="1" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="SmallGroupProductBenefitResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ResponseHeader" type="rbis:ResponseHeaderType"/>
+				<xs:element name="ProductBenefits">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ProductBenefit" type="rbis:ProductBenefitsType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="SmallGroupProductBenefitRequest" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>

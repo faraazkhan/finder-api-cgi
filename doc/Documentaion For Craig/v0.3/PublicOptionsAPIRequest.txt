@@ -1,0 +1,719 @@
+REQUEST
+
+<?xml version="1.0" encoding="UTF-8"?>
+<PublicOptionsAPIRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/Users/astowell/Documents/ews/finder_api/finder_api_v0.2.xsd">
+	<RequesterInfoData>
+		<OrganizationName>Test</OrganizationName>
+		<ContactEmail>test@ctacorp.com</ContactEmail>
+	</RequesterInfoData>
+	<StateOrTerritory>
+	    <StateAbbreviation>CA</StateAbbreviation>
+	</StateOrTerritory>
+    <FamilyAndChildrenAudienceRequest>
+        <Situation>familyneedinsurance</Situation>
+        <AgeRange>18 or Under</AgeRange>
+    </FamilyAndChildrenAudienceRequest>
+    <MedicalConditionOrHealthProblemIndicator>true</MedicalConditionOrHealthProblemIndicator>
+    <DisabilityIndicator>true</DisabilityIndicator>
+    <BreastOrCervicalCancerIndicator>true</BreastOrCervicalCancerIndicator>
+    <DependentUnder21Indicator>true</DependentUnder21Indicator>
+    <NursingHomeOrLongTermCareIndicator>true</NursingHomeOrLongTermCareIndicator>
+    <SpecialHealthcareNeedIndicator>true</SpecialHealthcareNeedIndicator>
+    <PregnancyIndicator>true</PregnancyIndicator>
+    <VeteranStatusIndicator>true</VeteranStatusIndicator>
+    <AmericanIndianOrAlaskanNativeIndicator>true</AmericanIndianOrAlaskanNativeIndicator>
+    <IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator>true</IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator>
+</PublicOptionsAPIRequest>
+
+
+RESPONSE
+
+<?xml version="1.0"?>
+<PublicOptionsAPIResponse>
+  <PublicOptions>
+    <PublicOption>
+      <PublicOptionData>
+        <PublicOptionName>Coverage for Young Adults Under Age 26</PublicOptionName>
+        <PublicOptionDescription>If your parent?s insurance offers dependent coverage, you may be eligible to be covered on their policy until age 26.</PublicOptionDescription>
+        <PublicOptionURL>http://cciio.cms.gov/programs/marketreforms/youngadults/index.html</PublicOptionURL>
+        <PublicOptionContent>[P] Until now, most young adults "aged off" their parent's health insurance when they turned 19 or graduated from college. Under the Affordable Care Act starting as early as September 2010, if you're covered under your parent's policy, you may be able to remain covered up to age 26. You don't need to live with your parents to be eligible for this coverage. You can also remain covered if you're married. However, before 2014, if you're eligible for health benefits from your own job, your parent's existing job-based policy may not have to cover you. [/P]
+[P] Even if you already "aged off" of your parent's policy, you have a chance to rejoin. Starting as early as September 2010, job-based health plans and insurance policies must give young adults who qualify an opportunity to enroll that continues for at least 30 days. Job-based health plans and insurance policies must provide written notice about this special enrollment opportunity. [/P]
+</PublicOptionContent>
+      </PublicOptionData>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionData>
+        <PublicOptionName>Health Insurance Through Work</PublicOptionName>
+        <PublicOptionDescription>You may be eligible for coverage through work - your job or your spouse?s.</PublicOptionDescription>
+        <PublicOptionURL>http://www.dol.gov/ebsa/consumer_info_health.html</PublicOptionURL>
+        <PublicOptionContent>&lt;p&gt; You and your family may be eligible for health insurance coverage through work at your own job or that of your spouse. &lt;/p&gt;&#xD;
+&lt;ul&gt;&#xD;
+	&lt;li&gt;If your employer offers coverage, you or your family members generally can't be turned away or charged more because of a health condition. This protection is called "nondiscrimination."&lt;/li&gt;&#xD;
+	&lt;li&gt;Employers may refuse or restrict coverage for other reasons (such as part-time employment), as long as these are unrelated to your health status and applied consistently.&lt;/li&gt;&#xD;
+	&lt;li&gt;If you get job-based coverage, you have &lt;a href="http://www.healthcare.gov/foryou/disabilities/insurance/job/index.html" title="Link to more information on Certain Protections"&gt;certain protections&lt;/a&gt;.&lt;/li&gt;&#xD;
+&lt;/ul&gt;</PublicOptionContent>
+      </PublicOptionData>
+    </PublicOption>
+    <PublicOption>
+      <IndividualAndFamilyPlanData>
+        <IndividualMarketURL>http://www.commerce.state.ak.us/insurance/</IndividualMarketURL>
+      </IndividualAndFamilyPlanData>
+    </PublicOption>
+    <PublicOption>
+      <HighriskData>
+        <StateHighRiskPlan>
+        <PlanName>California Major Risk Medical Insurance Program</PlanName>
+        <CustomerServicePhoneNumber>18002896574</CustomerServicePhoneNumber>
+        <StateResidencyRestriction>
+          <ResidencyLengthDescription>12 months</ResidencyLengthDescription>
+        </StateResidencyRestriction>
+        <RestrictiveRiderIndicator>false</RestrictiveRiderIndicator>
+        <ExcessivePremiumIndicator>true</ExcessivePremiumIndicator>
+        <HCTCEligibleIndicator>false</HCTCEligibleIndicator>
+        <HIPAAEligibleIndicator>true</HIPAAEligibleIndicator>
+        <MedicareEligibleIndicator>false</MedicareEligibleIndicator>
+        <DependantCoverageIndicator>true</DependantCoverageIndicator>
+        <RejectionLettersCount>1</RejectionLettersCount>
+        <PlanOpenDescription>See if the plan has a waiting list.</PlanOpenDescription>
+        <MainURL>http://www.mrmib.ca.gov/</MainURL>
+        <EligibilityURL>http://www.mrmib.ca.gov/MRMIB/MRMIPBRO.pdf</EligibilityURL>
+      </StateHighRiskPlan>
+      </HighriskData>
+    </PublicOption>
+    <PublicOption>
+      <MedicaidData>
+        <ContactInformation>
+          <BrandName>Medi-Cal: Medicaid in California</BrandName>
+          <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description>
+          <PhoneNumber>19166361980</PhoneNumber>
+          <URL>http://www.dhcs.ca.gov/services/medi-cal/Pages/MCIndividual.aspx</URL>
+        </ContactInformation>
+        <Programs>
+          <Program Name="Medicaid">
+              <BenefitGroups>
+                <BenefitGroup Name="Categorically Eligible" IDREF="CACategoricallyEligible"/>
+              </BenefitGroups>
+              <DemoPrograms>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <DemoRowId>6</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Full State Plan Benefits with Medicaid rule changes</BenefitName>
+                    </DemoBenefit>
+                    <DemoBenefit IDREF="CACategoricallyEligible">
+                      <BenefitName>Categorically Needy services apply</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+              </DemoPrograms>
+            </Program>
+          <Program Name="Medicaid">
+              <BenefitGroups>
+                <BenefitGroup Name="Categorically Eligible" IDREF="CACategoricallyEligible"/>
+              </BenefitGroups>
+              <DemoPrograms>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <DemoRowId>6</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Full State Plan Benefits with Medicaid rule changes</BenefitName>
+                    </DemoBenefit>
+                    <DemoBenefit IDREF="CACategoricallyEligible">
+                      <BenefitName>Categorically Needy services apply</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+              </DemoPrograms>
+            </Program>
+          <Program Name="Medicaid">
+              <BenefitGroups>
+                <BenefitGroup Name="Categorically Eligible" IDREF="CACategoricallyEligible"/>
+              </BenefitGroups>
+              <DemoPrograms>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <DemoRowId>6</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Full State Plan Benefits with Medicaid rule changes</BenefitName>
+                    </DemoBenefit>
+                    <DemoBenefit IDREF="CACategoricallyEligible">
+                      <BenefitName>Categorically Needy services apply</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+              </DemoPrograms>
+            </Program>
+          <Program Name="Medicaid">
+              <BenefitGroups>
+                <BenefitGroup Name="Categorically Eligible" IDREF="CACategoricallyEligible"/>
+                <BenefitGroup Name="Home and Community Based Program" IDREF="CAHCBSWaiversChild"/>
+              </BenefitGroups>
+              <DemoPrograms>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <DemoRowId>6</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Full State Plan Benefits with Medicaid rule changes</BenefitName>
+                    </DemoBenefit>
+                    <DemoBenefit IDREF="CACategoricallyEligible">
+                      <BenefitName>Categorically Needy services apply</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+              </DemoPrograms>
+            </Program>
+          <Program Name="Medicaid">
+              <BenefitGroups>
+                <BenefitGroup Name="Categorically Eligible" IDREF="CACategoricallyEligible"/>
+                <BenefitGroup Name="Home and Community Based Program" IDREF="CAHCBSWaiversChild"/>
+              </BenefitGroups>
+              <DemoPrograms>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <DemoRowId>6</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Full State Plan Benefits with Medicaid rule changes</BenefitName>
+                    </DemoBenefit>
+                    <DemoBenefit IDREF="CACategoricallyEligible">
+                      <BenefitName>Categorically Needy services apply</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+              </DemoPrograms>
+            </Program>
+          <Program Name="Medicaid">
+              <BenefitGroups>
+                <BenefitGroup Name="Categorically Eligible" IDREF="CACategoricallyEligible"/>
+                <BenefitGroup Name="Home and Community Based Program" IDREF="CAHCBSWaiversChild"/>
+              </BenefitGroups>
+              <DemoPrograms>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <DemoRowId>6</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Full State Plan Benefits with Medicaid rule changes</BenefitName>
+                    </DemoBenefit>
+                    <DemoBenefit IDREF="CACategoricallyEligible">
+                      <BenefitName>Categorically Needy services apply</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+              </DemoPrograms>
+            </Program>
+          <Program Name="Medicaid">
+              <BenefitGroups>
+                <BenefitGroup Name="Categorically Eligible" IDREF="CACategoricallyEligible"/>
+              </BenefitGroups>
+              <DemoPrograms>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <DemoRowId>5</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Full State Plan Benefits with Medicaid rule changes</BenefitName>
+                    </DemoBenefit>
+                    <DemoBenefit IDREF="CACategoricallyEligible">
+                      <BenefitName>Categorically Needy services apply</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <Exclusions>Medicaid CHIP eligibles, Duals, available in 10 counties only</Exclusions>
+                  <DemoRowId>3</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Other Comprehensive Benefits Packages</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+                <DemoProgram>
+                  <BrandName>Family Planning, Access, Care and Treatment Program</BrandName>
+                  <DemonstrationPurpose>The "Family Planning, Access, Care and Treatment Program Demonstration" allows the State to offer coverage for family planning and family planning related services to adult women and men who are not eligible for Medicaid, and whose family income is below 200% of the Federal poverty level.</DemonstrationPurpose>
+                  <Exclusions>NA</Exclusions>
+                  <DemoRowId>1</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Family Planning &amp; Related Benefits</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+              </DemoPrograms>
+            </Program>
+          <Program Name="Medicaid">
+              <BenefitGroups>
+                <BenefitGroup Name="Tuberculosis Specific Info" IDREF="CATB"/>
+              </BenefitGroups>
+              <DemoPrograms>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <DemoRowId>5</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Full State Plan Benefits with Medicaid rule changes</BenefitName>
+                    </DemoBenefit>
+                    <DemoBenefit IDREF="CACategoricallyEligible">
+                      <BenefitName>Categorically Needy services apply</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+                <DemoProgram>
+                  <BrandName>California's Bridge to Reform</BrandName>
+                  <DemonstrationPurpose>"California's Bridge to Reform" is a demonstration program approved by the Federal government.  It allows California to provide health care coverage through county-based Low Income Health Programs, to adults who do not qualify for Medi-Cal under the usual rules.  Currently, Low Income Health Programs are offered in Alameda, Contra Costa, Kern, Los Angeles, Orange, San Diego, San Francisco, San Mateo, Santa Clara, and Ventura Counties, and the City of San Francisco.  The list of covered benefits varies by county, and participants may receive care from public providers in their county of residence.  The demonstration also provides for alternative and enhanced funding for hospital care and public health initiatives.  Finally, some persons qualifying for Medi-Cal may be required to join a health plan in order to receive coverage.</DemonstrationPurpose>
+                  <Exclusions>Medicaid CHIP eligibles, Duals, available in 10 counties only</Exclusions>
+                  <DemoRowId>3</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Other Comprehensive Benefits Packages</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+                <DemoProgram>
+                  <BrandName>Family Planning, Access, Care and Treatment Program</BrandName>
+                  <DemonstrationPurpose>The "Family Planning, Access, Care and Treatment Program Demonstration" allows the State to offer coverage for family planning and family planning related services to adult women and men who are not eligible for Medicaid, and whose family income is below 200% of the Federal poverty level.</DemonstrationPurpose>
+                  <Exclusions>NA</Exclusions>
+                  <DemoRowId>1</DemoRowId>
+                  <DemoBenefits>
+                    <DemoBenefit>
+                      <BenefitName>Family Planning &amp; Related Benefits</BenefitName>
+                    </DemoBenefit>
+                  </DemoBenefits>
+                </DemoProgram>
+              </DemoPrograms>
+            </Program>
+        </Programs>
+      </MedicaidData>
+    </PublicOption>
+    <PublicOption>
+      <ChipData>
+        <ContactInformation>
+          <BrandName>Healthy Families</BrandName>
+          <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description>
+          <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+          <PhoneNumber>18775437669</PhoneNumber>
+          <URL>http://www.healthyfamilies.ca.gov/About/</URL>
+        </ContactInformation>
+        <Programs>
+          <Program Name="CHIP">
+              <BenefitGroups>
+                <BenefitGroup Name="CHIP Eligible" IDREF="CACHIPEligible"/>
+              </BenefitGroups>
+              <CostSharing>
+                <CostSharingRow>
+                  <EffectiveDate>2009-02-01</EffectiveDate>
+                  <FPL>100-150</FPL>
+                  <EnrollmentFee>$4-7/mth/child with $8-14 cap/mth/family.  Families that prepay three months of premiums will be ent</EnrollmentFee>
+                  <Copay>Rx Generic-$5; RX Brand-$5; Inpatient; PCP/Off Vis - $5; Specialist; Dental-$5 non-preventive services, preventive free; Other-  **No copays for unborns** $250 max on copays per family</Copay>
+                  <Deductibles>Not applicable.</Deductibles>
+                  <LimitAnnualCap>$250 per family</LimitAnnualCap>
+                  <LimitTrackingMethod>Families keep receipts of expenses and once the $250 cap has been reached they must have the necessary documentation to notify the plan to stop cost-sharing.</LimitTrackingMethod>
+                </CostSharingRow>
+                <CostSharingRow>
+                  <EffectiveDate>2009-02-01</EffectiveDate>
+                  <FPL>150-200</FPL>
+                  <EnrollmentFee>$9-12/mth/child with $27-36 cap/mth/family.  Families that prepay three months of premiums will be e</EnrollmentFee>
+                  <Copay>Rx Generic-$5; RX Brand-$5; Inpatient; PCP/Off Vis-$5; Specialist; Dental-$5 non-preventive services, preventive free; Other **No copays for unborns** and $250 max on copays per family</Copay>
+                  <Deductibles>Not applicable.</Deductibles>
+                  <LimitAnnualCap>$250 per family</LimitAnnualCap>
+                  <LimitTrackingMethod>Families keep receipts of expenses and once the $250 cap has been reached they must have the necessary documentation to notify the plan to stop cost-sharing.</LimitTrackingMethod>
+                </CostSharingRow>
+                <CostSharingRow>
+                  <EffectiveDate>2009-02-01</EffectiveDate>
+                  <FPL>200-250</FPL>
+                  <EnrollmentFee>$14-17/mth/child with $42-51 cap/mth/family. Families that prepay three months of premiums will be e</EnrollmentFee>
+                  <Copay>Rx Generic-$5; RX Brand-$5; Inpatient; PCP/Off Vis-$5; Specialist; Dental-$5 non-preventive services, preventive free; Other- **No copays for unborns** and $250 max on copays per family</Copay>
+                  <Deductibles>Not applicable.</Deductibles>
+                  <LimitAnnualCap>$250 per family</LimitAnnualCap>
+                  <LimitTrackingMethod>Families keep receipts of expenses and once the $250 cap has been reached they must have the necessary documentation to notify the plan to stop cost-sharing.</LimitTrackingMethod>
+                </CostSharingRow>
+                <CostSharingRow>
+                  <EffectiveDate>2003-01-01</EffectiveDate>
+                  <FPL>250-300</FPL>
+                  <EnrollmentFee>$14/mth/child participating in County Chip (C-CHIP) with $42 cap/mth/family in C-CHIP.  Note:  Alame</EnrollmentFee>
+                  <Copay>Rx Generic-$5; RX Brand-$5; Inpatient ; PCP/Off Vis - $5; Specialist; Dental-$5 non-preventive services, preventive free; Other **No copays for unborns** and $250 max on copays per family</Copay>
+                  <Deductibles>Not applicable.</Deductibles>
+                  <LimitAnnualCap>$250 per family</LimitAnnualCap>
+                  <LimitTrackingMethod>Families keep receipts of expenses and once the $250 cap has been reached they must have the necessary documentation to notify the plan to stop cost-sharing.</LimitTrackingMethod>
+                </CostSharingRow>
+              </CostSharing>
+            </Program>
+        </Programs>
+      </ChipData>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionData>
+        <PublicOptionName>Veterans Affairs</PublicOptionName>
+        <PublicOptionDescription>The Department of Veterans Affairs (VA) provides comprehensive healthcare and long-term care for veterans.</PublicOptionDescription>
+        <PublicOptionURL>http://www4.va.gov/healtheligibility/</PublicOptionURL>
+        <PublicOptionContent>
+&lt;p&gt;The Department of Veterans Affairs (VA) provides comprehensive health care and long-term care for veterans.&lt;/p&gt;
+
+&lt;p&gt;VA health benefits are open to all Veterans. Family members may also be eligible to receive benefits. There is no monthly premium for VA care, but there may be a co-pay.&lt;/p&gt;
+</PublicOptionContent>
+      </PublicOptionData>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionData>
+        <PublicOptionName>Breast and Cervical Cancer Prevention and Treatment Programs (BCCPT) through Medicaid</PublicOptionName>
+        <PublicOptionDescription>These programs are available to eligible women diagnosed with breast and/or cervical cancer. Higher incomes may qualify.</PublicOptionDescription>
+        <PublicOptionURL>https://www.cms.gov/MedicaidSpecialCovCond/02_BreastandCervicalCancer_PreventionandTreatment.asp</PublicOptionURL>
+        <PublicOptionContent>[P] BCCPT Medicaid is available to eligible women who are diagnosed with either breast and/or cervical cancer through the state screening program. You may be eligible even if you have a higher income.  States have flexibility to define what it means to be diagnosed or screened under the program. [/P]</PublicOptionContent>
+      </PublicOptionData>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionData>
+        <PublicOptionName>Indian Health Service</PublicOptionName>
+        <PublicOptionDescription>The Indian Health Service provides healthcare to members and descendants of American Indian and Alaska Native Tribes.</PublicOptionDescription>
+        <PublicOptionURL>http://www.ihs.gov/index.cfm?module=AreaOffices</PublicOptionURL>
+        <PublicOptionContent>[P] The Indian Health Service provides health care to members and descendants of American Indian and Alaska Native Tribes. [/P]
+</PublicOptionContent>
+      </PublicOptionData>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionData>
+        <PublicOptionName>Finding Care You Can Afford</PublicOptionName>
+        <PublicOptionDescription>There may be local facilities that provide free or reduced-cost care, whether you?re insured or not. What you pay depends on your income.</PublicOptionDescription>
+        <PublicOptionURL>http://www.hrsa.gov/gethealthcare/index.html</PublicOptionURL>
+        <PublicOptionContent>[P] If you need health care, finding a provider you can afford can be a problem.  
+Fortunately, there are places you can go for a wide variety of health needs that will provide free or reduced-cost care. 
+They include some hospitals, and health centers and clinics.
+ [/P]
+
+[P] 
+These places provide prenatal care, baby shots, prescription drugs, general primary care, and specialized care for more serious conditions including mental health, substance abuse, and HIV/AIDS. 
+Anyone may use a community health care center, whether you have health insurance or not. 
+How much you pay will depend on your income. [/P]
+</PublicOptionContent>
+      </PublicOptionData>
+    </PublicOption>
+    <CHIPAndMedicaidBenefitGroups>
+      <BenefitGroup Name="Categorically Eligible" ID="CACategoricallyEligible">
+          <Description>There are many types of people or families that may be able to get Medicaid. Some of these &#x201C;categories of eligibility&#x201D; are low income families with children, low income people who have disabilities, and foster children. The Medicaid services offered in your state for people who are &#x201C;categorically eligible&#x201D; are available below.</Description>
+          <Benefits>
+            <Benefit>
+              <Name>Audiology Services</Name>
+              <Description>Services, supplies, and equipment to diagnose, screen, prevent, or correct hearing problems.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Chiropractic Services</Name>
+              <Description>Services from someone who has been trained to diagnose, prevent, and treat diseases, especially of the spine, with methods that focus on the nervous system and spine.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Clinic Services</Name>
+              <Description>Services for prevention or treatment of health conditions or illnesses in a centralized facility.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Dental Services</Name>
+              <Description>Services provided by a dentist or dental assistant to diagnose, prevent, and treat  conditions of the mouth, teeth, and face.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Dentures</Name>
+              <Description>A full or partial set of artificial teeth.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Early and Periodic Screening, Diagnostic, and Treatment Services (EPSDT)</Name>
+              <Description>Regularly scheduled tests for people under 21 to evaluate physical and mental conditions and to detect vision, hearing, and dental problems. Also includes treatment of problems identified through screening regardless of whether that treatment is part of the state's Medicaid program.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Emergency Hospital Services</Name>
+              <Description>Services provided in a hospital emergency department when you get very sick or badly hurt and need help right away.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Enhanced Transition Services</Name>
+              <Description>This State operates a Money Follows the Person (MFP) Program, which provides enhanced transition services for 365 days to people who have lived for 90 or more consecutive days (excluding rehab) in a MFP qualifying institution (nursing home; ICF-MR; hospital or Institution for Mental Disease [for individuals 65 and over or 21 and under years of age]) and who would like to live in the community and use home and community-based services.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Eyeglasses</Name>
+              <Description>Lenses or frames used to aid vision.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Family Planning Services</Name>
+              <Description>Medical services for diagnosis, treatment, counseling, drugs, supplies, or devices prescribed or provided by a doctor or nurse to people of child-bearing age, to help them determine how many children to have and how to space their births.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Federally Qualified Health Center Services</Name>
+              <Description>Primary and preventive care services you receive, regardless of your ability to pay, at a health center that is certified as a federally qualified health center.  Services may include visits to doctors, physician assistants, nurse practitioners, and others.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Home Health Services</Name>
+              <Description>Skilled and non-skilled services that you receive in your home. These may include part-time nursing care, therapy (such as, physical therapy, occupational therapy, speech and audiology), help with activities of daily living, and homemaker services, such as cleaning and meal preparation.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Hospice Care Services</Name>
+              <Description>A special way of caring for people who are terminally ill-- that is, who have an illness that cannot be cured or fully treated. Hospice care involves a team of people, such as doctors, nurses, and others, who take care of the medical, physical, social, emotional, and spiritual needs of the patient. Hospice also provides support to the patient&#x2019;s family or caregiver.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Inpatient Hospital Services</Name>
+              <Description>Any services that a person might receive at a hospital while staying overnight. These may include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Inpatient Psychiatric Services (for people under 21 years of age)</Name>
+              <Description>Any services that a person under 21 might receive at a hospital or psychiatric residential treatment facility while staying overnight for treatment of mental illness. These may include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Inpatient Services in an Institution for Mental Disease (for people 65 years of age or older)</Name>
+              <Description>Any services that a person 65 or older might receive at a hospital while staying overnight for treatment of mental illness. These may include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Intermediate Care Facility Services for the Mentally Retarded</Name>
+              <Description>Services at a facility that provides 24-hour rehabilitative and health care and services for people with developmental disabilities.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Lab and X-ray Services</Name>
+              <Description>Services such as blood and urine tests and x-ray images ordered by a medical professional to screen for or diagnose a medical condition.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Medical/Surgical Dental Services</Name>
+              <Description>Diagnosis, prevention, and treatment, including surgery, of conditions of the mouth, teeth, and face provided by a physician or doctor of dental medicine or dental surgery.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Nurse Anesthetist Services</Name>
+              <Description>Services provided by a nurse who has been specially trained to give anesthesia.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Nurse Practitioner Services</Name>
+              <Description>Services provided by a registered nurse who has advanced training. In some states, these services can be provided without a doctor supervising the care.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Nurse-Midwife Services</Name>
+              <Description>Services provided by a registered nurse who has training to deliver infants, provide prenatal and postpartum care, newborn care, and some routine care of women, such as gynecological exams.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Nursing Facility Services (for people 21 years of age or older)</Name>
+              <Description>Skilled nursing, rehabilitation, and other services provided in a facility to help people with illness, injuries, or other disabilities recover or improve, and to provide long-term care to those who need support with daily activities such as bathing, dressing, and eating.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Nursing Facility Services (for people under 21 years of age)</Name>
+              <Description>Skilled nursing, rehabilitation, and other services provided in a facility to help people under 21 with illness, injuries, or other disabilities recover or improve, and to provide long-term care to those who need support with daily activities such as bathing, dressing, and eating.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Occupational Therapy</Name>
+              <Description>Services to enhance a person's participation in or performance of common activities like eating, dressing, moving about, working, and going to school.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Optometry Services</Name>
+              <Description>Services from someone who has been trained to diagnose and prescribe treatment for diseases of the eye and vision problems. Treatments can include eyeglasses, lenses, exercises, or referrals for specialized treatment.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Outpatient Hospital Services</Name>
+              <Description>Services a person receives at a hospital or a place related to the hospital that do not require the person to stay overnight.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Personal Care Services</Name>
+              <Description>Services that help the elderly, people with disabilities, and other people with chronic or temporary conditions to remain in their homes by helping them with daily activities such as bathing, dressing, meal preparation, and grocery shopping. States can allow personal care services to be delivered by agencies or independent providers or directed by patients or their families.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Physical Therapy</Name>
+              <Description>Services to restore physical function to a person with a disability from illness, trauma, or birth defects.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Physician Services</Name>
+              <Description>Health care services, such as office visits, provided by a licensed doctor.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Podiatry Services</Name>
+              <Description>Services from someone who specializes in diagnosis and treatment of the foot.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Prescribed Drugs</Name>
+              <Description>Drugs that a person can get only if a doctor (or another authorized health care provider) gives permission through a prescription.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Preventive Services</Name>
+              <Description>Health care services to prevent, detect, or provide early treatment of a disease. These services often include doctor's visits, immunizations, and lab tests.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Program of All-Inclusive Care for the Elderly (PACE)</Name>
+              <Description>A program to help people 55 or older live at home rather than in a nursing home if they are frail enough to meet their state's standards for nursing home care. A team of doctors, nurses, and other health professionals assess the person's needs, develop care plans, and deliver all services. People receive most PACE services in an adult day health care center.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Prosthetic Devices</Name>
+              <Description>Devices to replace, correct, or support missing or impaired parts of the body.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Psychologist Services</Name>
+              <Description>Services from someone who has been trained to diagnose and treat a variety of problems through therapy and counseling. These can include mental health problems, distress, emotional disturbances, and others.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Rehabilitation Services</Name>
+              <Description>Skilled care provided by a trained medical person, such as a physical therapist or a speech therapist, to restore health following an injury, accident, or illness and to treat emotional or mental health issues.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Rural Health Clinic Services</Name>
+              <Description>Health care services a person receives at a place certified by the government as a rural health clinic. Services may include visits to doctors, physician assistants, nurse practitioners, and others. These clinics are located in rural areas or in areas without enough doctors, as decided by the government.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Services Related to Tuberculosis</Name>
+              <Description>Services for qualified people who are infected with tuberculosis.  The services may include clinic visits, medications, directly observed therapy visits X-rays, and lab tests. They do not include food and bed.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Speech and Language Therapy</Name>
+              <Description>Services to diagnose and treat speech and language problems.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Speech, Hearing and Language Therapy</Name>
+              <Description>Services to diagnose and treat speech, hearing, and language problems.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Targeted Case Management</Name>
+              <Description>Coordination activities provided to help people be independent and learn how to access needed services.  This includes linking individuals with health care providers, social services, educational services, or other services.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Targeted Case Management for Developmental Disabilities</Name>
+              <Description>Coordination activities to help people with developmental disabilities get access to needed services.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Targeted Case Management for Mental Health</Name>
+              <Description>Coordination activities to help people with mental health needs get access to needed services.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Targeted Case Management for Physical Disabilities</Name>
+              <Description>Coordination activities to help people with physical disabilities get access to needed services.</Description>
+            </Benefit>
+          </Benefits>
+        </BenefitGroup>
+      <BenefitGroup Name="CHIP Eligible" ID="CACHIPEligible">
+          <Benefits>
+            <Benefit>
+              <Name>Dental Services</Name>
+              <Description>Services provided by a dentist or dental assistant to diagnose, prevent, and treat  conditions of the mouth, teeth, and face.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Disposable Medical Supplies</Name>
+              <Description>Health care-related supplies that a person uses at home and cannot be re-used.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Durable Medical Equipment and Other Medically-Related or Remedial Devices</Name>
+              <Description>Purchased or rented medical equipment that is used in a patient's home and can be re-used.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Enabling Services</Name>
+              <Description>Translation, health education, transportation, and other services provided by a health care facility.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Hospice Care</Name>
+              <Description>A special way of caring for people who are terminally ill--that is, who have an illness that cannot be cured or fully treated. Hospice care involves a team of people, such as doctors, nurses, and others, who take care of the medical, physical, social, emotional, and spiritual needs of the patient . Hospice also provides support to the patient&#x2019;s family or caregiver.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Inpatient and Residential Substance Abuse Treatment Services</Name>
+              <Description>Medical and other services you receive while staying overnight in a facility to treat dependency on addictive substances. These may include services from a doctor or nurse, lab work, therapy, and food and bed.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Inpatient Mental Health Services</Name>
+              <Description>Medical and other services you receive while staying overnight in a facility to treat mental illness. These may include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Inpatient Services</Name>
+              <Description>Any services you receive while staying overnight in a hospital. These may include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Laboratory and Radiological Services</Name>
+              <Description>Services such as blood and urine tests and x-ray images ordered by a medical professional to screen for or diagnose a medical condition.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Medical Transportation</Name>
+              <Description>Transportation, including ambulance services when needed, to get you to the nearest hospital or other treatment facility for emergency treatment or non-emergency services.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Outpatient Mental Health Services</Name>
+              <Description>Mental health services that a person receives in a clinic, emergency department, or other health care facility without staying overnight.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Outpatient Services</Name>
+              <Description>Services a person receives at a hospital or a place related to the hospital that do not require the person to stay overnight.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Outpatient Substance Abuse Treatment Services</Name>
+              <Description>Medical and other services a person receives to treat dependency on addictive substances in a facility that does not require an overnight stay.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Physical Therapy, Occupational Therapy, and Services for Individuals with Speech, Hearing, and Language Disorders</Name>
+              <Description>Physical Therapy: Services to restore physical function.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Physician Services</Name>
+              <Description>Health care services, such as office visits, provided by a licensed doctor.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Prenatal Care and Pre-Pregnancy Family Services and Supplies</Name>
+              <Description>Medical services to insure the health of a pregnant woman and fetus, or services that are necessary as a result of a woman being pregnant. May also refer to medical and other needed services for diagnosis, treatment, counseling, drugs, supplies, or devices prescribed or provided by a doctor or nurse. These services are provided to people of child-bearing age, to help them determine how many children they will have and how far apart in age their children will be spaced.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Prescription Drugs</Name>
+              <Description>Drugs that a person can get only if a doctor (or other authorized health care provider) gives permission with a prescription.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Selected Family Planning Services</Name>
+              <Description>Services to help people of child-bearing age decide how many children to have and how to space their births.</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Services Designed by the State and Approved by the Secretary </Name>
+            </Benefit>
+            <Benefit>
+              <Name>Surgical Services</Name>
+              <Description>Services provided by trained physicians who are licensed to perform an operation to treat disease or injury, reduce or remove a symptom of a problem, and improve well-being.  </Description>
+            </Benefit>
+          </Benefits>
+        </BenefitGroup>
+      <BenefitGroup Name="Home and Community Based Program" ID="CAHCBSWaiversChild">
+          <Description>The Home and Community-Based Services (HCBS) program helps Medicaid beneficiaries who have long term care needs and choose to live in the community.</Description>
+          <Benefits>
+            <Benefit>
+              <Name>Developmentally Disabled/ Continuous Nursing Care (DD/CNC)</Name>
+              <Description>CA.0795.R00.00</Description>
+            </Benefit>
+            <Benefit>
+              <Name>In-Home Operations Waiver</Name>
+              <Description>CA.0457.R01.00</Description>
+            </Benefit>
+            <Benefit>
+              <Name>Pediatric Palliative Care Waiver</Name>
+              <Description>CA.0486.R00.01</Description>
+            </Benefit>
+          </Benefits>
+        </BenefitGroup>
+      <BenefitGroup Name="Tuberculosis Specific Info" ID="CATB">
+          <Benefits>
+            <Benefit>
+              <Name>In addition to any services listed, your state offers special services to people with limited income and tuberculosis (TB).</Name>
+            </Benefit>
+          </Benefits>
+        </BenefitGroup>
+    </CHIPAndMedicaidBenefitGroups>
+    <CHIPAndMedicaidDisclaimers>
+      <Disclaimer ID="CH_DEPS_MCD_WVR" MedicaidOnly="true">
+      <DisclaimerText>If you are a parent with limited income and young dependent children, your state has a Medicaid program to provide health insurance coverage.</DisclaimerText>
+    </Disclaimer>
+      <Disclaimer ID="CH_HCBS" MedicaidOnly="true">
+      <DisclaimerText>Your state has a Medicaid program that offers services to help children with certain special health care needs.  In addition to the services usually covered by Medicaid, the program offers services to help qualified children live in a home or community setting instead of a long-term care facility if their family prefers. The program may have a waiting list.</DisclaimerText>
+    </Disclaimer>
+      <Disclaimer ID="CH_NOAFFORD_MCD_CHP" MedicaidOnly="false">
+      <DisclaimerText>Your state Medicaid program provides health insurance coverage to children in families with limited income.</DisclaimerText>
+    </Disclaimer>
+      <Disclaimer ID="CH_PREG_MCD_CHP_WVR" MedicaidOnly="false">
+      <DisclaimerText>Your state Medicaid program provides health insurance coverage if you are an adult or a child and are pregnant.</DisclaimerText>
+    </Disclaimer>
+      <Disclaimer ID="CNCR_MCD_WVR" MedicaidOnly="true">
+      <DisclaimerText>If you have breast or cervical cancer, your state has a Medicaid program to provide health insurance coverage. You may have to go on a waiting list. This site cannot guarantee eligibility for any program.</DisclaimerText>
+    </Disclaimer>
+      <Disclaimer ID="MEDCOND_MCD" MedicaidOnly="true">
+      <DisclaimerText>If you have limited income and a health condition, including TB (tuberculosis), your state has a special Medicaid program to cover clinic visits, medications, outpatient therapy, X-rays, and laboratory tests.</DisclaimerText>
+    </Disclaimer>
+    </CHIPAndMedicaidDisclaimers>
+  </PublicOptions>
+</PublicOptionsAPIResponse>

@@ -1,0 +1,14 @@
+﻿<LookUp_HRPPlan_Types>
+  <LookUp Cat_ID="15">
+    <HRP_Pln_Type>
+      <Plan_Type_Id>95</Plan_Type_Id>
+      <HRP_PlnType_Name>Federal</HRP_PlnType_Name>
+      <HRP_Pln_Description>Federal High Risk Pool Plan</HRP_Pln_Description>
+    </HRP_Pln_Type>
+    <HRP_Pln_Type>
+      <Plan_Type_Id>96</Plan_Type_Id>
+      <HRP_PlnType_Name>State</HRP_PlnType_Name>
+      <HRP_Pln_Description>State High Risk Pool Plan</HRP_Pln_Description>
+    </HRP_Pln_Type>
+  </LookUp>
+</LookUp_HRPPlan_Types>

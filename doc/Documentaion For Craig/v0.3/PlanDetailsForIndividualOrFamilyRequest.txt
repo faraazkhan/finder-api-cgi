@@ -1,0 +1,456 @@
+REQUEST
+
+<?xml version='1.0' encoding='UTF-8'?>
+<PrivateOptionsAPIRequest>
+	<PlanDetailsForIndividualOrFamilyRequest>
+		<Enrollees>
+			<Primary>
+				<DateOfBirth>1978-01-01</DateOfBirth>
+				<Gender>Male</Gender>
+				<TobaccoUser>Non-Smoker</TobaccoUser>
+			</Primary>
+		</Enrollees>
+		<Location>
+			<ZipCode>20110</ZipCode>
+			<County>
+				<CountyName>MANASSAS CITY</CountyName>
+				<StateCode>VA</StateCode>
+			</County>
+		</Location>
+		<InsuranceEffectiveDate>2012-05-01</InsuranceEffectiveDate>
+		<PlanIDs>
+			<PlanID>50727VA0260009</PlanID>
+		</PlanIDs>
+	</PlanDetailsForIndividualOrFamilyRequest>
+</PrivateOptionsAPIRequest>
+
+
+RESPONSE
+
+<?xml version="1.0"?>
+<PrivateOptionsAPIResponse>
+  <PlanDetailsForIndividualOrFamilyResponse>
+    
+    <PlanBenefits>
+        <PlanBenefit>
+            <PlanID>50727VA0260009</PlanID>
+            <PlanNameText>HumanaOne Autograph Total Plus RX / HSA - $1,500 Single / $3,000 Family</PlanNameText>
+            <ProductID>50727VA026</ProductID>
+            <ProductNameText>HumanaOne PHP Evolutionary</ProductNameText>
+            <ProductApplicantsDeniedPercentage>36</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>10</ProductApplicantsUpRatedPercentage>
+            <IssuerID>50727</IssuerID>
+            <IssuerNameText>Humana Insurance Company</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18777204854</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18777204854</IssuerLocalNumber>
+            <IssuerTTYNumber>18003252028</IssuerTTYNumber>
+            <ProviderType>PPO</ProviderType>
+            <BaseRateAmount>211.07</BaseRateAmount>
+            <HSAEligibleIndicator>true</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>false</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>0</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>0</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>0</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>30</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+            <IssuerURL>
+                <URLCode>Valid</URLCode>
+                <URLAddress>http://www.humanaone.com</URLAddress>
+                <AlternateText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </IssuerURL>
+            <ProviderURL>
+                <URLCode>Valid</URLCode>
+                <URLAddress>http://www.humana-one.com/health-insurance-tools-resources/find-a-doctor.aspx?kc=1005015996&amp;cm_mmc_o=Zwzkft2zyw.TBMCjCZAFzEz%20Zwzkft%20%20VkzElCjCVyBMbpwy%20WwfcByL%202BkAFECjC2twgL%20uBy%20QBAy%20KBgfBy</URLAddress>
+                <AlternateText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ProviderURL>
+            <ProductBenefitURL>
+                <URLCode>Valid</URLCode>
+                <URLAddress>http://apps.humana.com/marketing/documents.asp?file=1008631</URLAddress>
+                <AlternateText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ProductBenefitURL>
+            <ProductFormularyURL>
+                <URLCode>Valid</URLCode>
+                <URLAddress>http://apps.humana.com/marketing/documents.asp?file=1404325</URLAddress>
+                <AlternateText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ProductFormularyURL>
+            <PlanBrochureURL>
+                <URLCode>Valid</URLCode>
+                <URLAddress>http://apps.humana.com/marketing/documents.asp?file=1008657</URLAddress>
+                <AlternateText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </PlanBrochureURL>
+            <OtherPractitionerVisit>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </OtherPractitionerVisit>
+            <PrimaryCareVisit>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </PrimaryCareVisit>
+            <SpecialistVisit>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </SpecialistVisit>
+            <PreventiveCare>
+                <InNetwork>
+                    <Benefit>No Charge</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </PreventiveCare>
+            <DiagnosticTest>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </DiagnosticTest>
+            <Imaging>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </Imaging>
+            <OutpatientFacilityFee>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </OutpatientFacilityFee>
+            <OutpatientPhysicianFee>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </OutpatientPhysicianFee>
+            <EmergencyRoom>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </EmergencyRoom>
+            <EmergencyTransportation>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </EmergencyTransportation>
+            <UrgentCare>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </UrgentCare>
+            <HospitalFacilityFee>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </HospitalFacilityFee>
+            <HospitalPhysicianFee>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </HospitalPhysicianFee>
+            <MentalOutpatient>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </MentalOutpatient>
+            <MentalInpatient>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </MentalInpatient>
+            <SubstanceDisorderOutpatient>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </SubstanceDisorderOutpatient>
+            <SubstanceDisorderInpatient>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </SubstanceDisorderInpatient>
+            <PrenatalPostnatalCare>
+                <InNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </PrenatalPostnatalCare>
+            <DeliveryInpatient>
+                <InNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </DeliveryInpatient>
+            <HomeHealthcare>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </HomeHealthcare>
+            <InpatientRehabilitation>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </InpatientRehabilitation>
+            <OutpatientRehabilitation>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </OutpatientRehabilitation>
+            <NursingCare>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </NursingCare>
+            <DurableMedicalEquipment>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </DurableMedicalEquipment>
+            <Hospice>
+                <InNetwork>
+                    <Benefit>No Charge after deductible</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>X% Coinsurance after deductible</Benefit>
+                    <Percent>30</Percent>
+                </OutOfNetwork>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </Hospice>
+            <RoutineEyeCareChildren>
+                <InNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </RoutineEyeCareChildren>
+            <EyeGlassesChildren>
+                <InNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </EyeGlassesChildren>
+            <DentalCheckUpChildren>
+                <InNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </InNetwork>
+                <OutOfNetwork>
+                    <Benefit>Not Covered</Benefit>
+                </OutOfNetwork>
+                <Exception>None</Exception>
+            </DentalCheckUpChildren>
+            <GenericDrugs>
+                <Coverage>
+                    <Benefit>No Charge after deductible</Benefit>
+                </Coverage>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </GenericDrugs>
+            <PreferredBrandDrugs>
+                <Coverage>
+                    <Benefit>No Charge after deductible</Benefit>
+                </Coverage>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </PreferredBrandDrugs>
+            <NonPreferredBrandDrugs>
+                <Coverage>
+                    <Benefit>No Charge after deductible</Benefit>
+                </Coverage>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </NonPreferredBrandDrugs>
+            <SpecialtyDrugs>
+                <Coverage>
+                    <Benefit>No Charge after deductible</Benefit>
+                </Coverage>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </SpecialtyDrugs>
+            <Habilitation>
+                <Coverage>
+                    <Benefit>No Charge after deductible</Benefit>
+                </Coverage>
+                <Exception>Limitations or Exceptions may apply</Exception>
+            </Habilitation>
+            <Acupuncture>Not Covered</Acupuncture>
+            <BariatricSurgery>Covered with Limitations</BariatricSurgery>
+            <NonEmergencyTravelOutside>Covered with Limitations</NonEmergencyTravelOutside>
+            <Chiropractic>Covered with Limitations</Chiropractic>
+            <CosmeticSurgery>Not Covered</CosmeticSurgery>
+            <DentalAdult>Not Covered</DentalAdult>
+            <HearingAid>Not Covered</HearingAid>
+            <InfertilityTreatment>Not Covered</InfertilityTreatment>
+            <LongTermCare>Not Covered</LongTermCare>
+            <PrivateNursing>Not Covered</PrivateNursing>
+            <EyeExamAdult>Not Covered</EyeExamAdult>
+            <RoutineFootCare>Not Covered</RoutineFootCare>
+            <WeightLossProgram>Not Covered</WeightLossProgram>
+            <RoutineHearingTests>Not Covered</RoutineHearingTests>
+        </PlanBenefit>
+    </PlanBenefits>
+    
+</PlanDetailsForIndividualOrFamilyResponse>
+</PrivateOptionsAPIResponse>

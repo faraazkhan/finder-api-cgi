@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://rbis.cms.org/api-types" targetNamespace="http://rbis.cms.org/api-types" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="CountyType">
+		<xs:sequence>
+			<xs:element name="CountyName" type="CountyNameType"/>
+			<xs:element name="StateCode" type="StateCodeType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocationType">
+		<xs:sequence>
+			<xs:element name="ZipCode" type="ZipCodeType"/>
+			<xs:element name="County" type="CountyType" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ZipCodeType">
+		<xs:annotation>
+			<xs:documentation>allow 5 digit format </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9]{5})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CountyNameType">
+		<xs:annotation>
+			<xs:documentation>allow max 60 characters </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="60"/>
+			<xs:pattern value="([a-zA-z \-,'.])+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NameTextType">
+		<xs:annotation>
+			<xs:documentation>allow max 512 characters </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="512"/>			
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="EnrolleesType">
+		<xs:sequence>
+			<xs:element name="Primary" type="EnrolleeType" minOccurs="1"/>
+			<xs:choice minOccurs="0">
+				<xs:element name="Spouse" type="EnrolleeType"/>
+				<xs:element name="DomesticPartner" type="EnrolleeType"/>
+			</xs:choice>
+			<xs:element name="Child1" type="EnrolleeType" minOccurs="0" />
+			<xs:element name="Child2" type="EnrolleeType" minOccurs="0" />
+			<xs:element name="Child3" type="EnrolleeType" minOccurs="0" />
+			<xs:element name="Child4" type="EnrolleeType" minOccurs="0" />
+			<xs:element name="Child5" type="EnrolleeType" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EnrolleeType">
+		<xs:sequence>
+			<xs:element name="DateOfBirth" type="xs:date"/>
+			<xs:element name="Gender" type="GenderType"/>	
+			<xs:element name="TobaccoUser" type="TobaccoUserType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="GenderType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Male"/>
+			<xs:enumeration value="Female"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TobaccoUserType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Smoker"/>
+			<xs:enumeration value="Non-Smoker"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PlanIDType">
+		<xs:annotation>
+			<xs:documentation>allow 14 characters </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">			
+			<xs:pattern value="([a-zA-z0-9]{14})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ProductIDType">
+		<xs:annotation>
+			<xs:documentation>allow 10 characters </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">			
+			<xs:pattern value="([a-zA-z0-9]{10})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IssuerIDType">
+		<xs:annotation>
+			<xs:documentation>allow 5 digits </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9]{5})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PaginationInformationType">
+		<xs:sequence>
+			<xs:element name="PageNumber" type="PageNumberType" default="1"/>
+			<xs:element name="PageSize" type="PageSizeType" default="10"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="PageSizeType">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="500"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PageNumberType">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PlanSortOrderType">
+		<xs:sequence>
+			<xs:element name="SortField" type="PlanSortFieldsType" default="OOP LIMIT - INDIVIDUAL - IN NETWORK" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="SortDirection" type="SortDirectionType" default="ASC" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="PlanSortFieldsType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OOP LIMIT - INDIVIDUAL - IN NETWORK"/>
+			<xs:enumeration value="BASE RATE"/>
+			<xs:enumeration value="ANNUAL DEDUCTIBLE - INDIVIDUAL - IN NETWORK"/>
+			<xs:enumeration value="ANNUAL MAX BENEFITS - FAMILY - IN NETWORK"/>
+			<xs:enumeration value="ENROLLMENT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="ProductSortOrderType">
+		<xs:sequence>
+			<xs:element name="SortField" type="ProductSortFieldsType" default="OOP LIMIT - IN NETWORK" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="SortDirection" type="SortDirectionType" default="ASC" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="ProductSortFieldsType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OOP LIMIT - IN NETWORK"/>
+			<xs:enumeration value="ENROLLMENT"/>
+			<xs:enumeration value="AVERAGE COST PER ENROLLMENT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:simpleType name="SortDirectionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ASC"/>
+			<xs:enumeration value="DESC"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="PlanFilterType">
+		<xs:sequence>
+			<xs:element name="ProviderTypes" type="ProviderType" minOccurs="0" maxOccurs="5"/>
+			<xs:element name="Issuers" type="IssuerIDType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="AnnualDeductibleFilterRange" type="AnnualDeductibleFilterRangeType" minOccurs="0" maxOccurs="6"/>
+			<xs:element name="AnnualOutOfPocketFilterRange" type="AnnualOutOfPocketFilterRangeType" minOccurs="0" maxOccurs="4"/>
+			<xs:element name="AnnualMaxBenefitsFilterRange" type="AnnualMaxBenefitsFilterRangeType" minOccurs="0" maxOccurs="8"/>
+			<xs:element name="BaseRateFilterRange" type="BaseRateFilterRangeType" minOccurs="0" maxOccurs="10"/>
+			<xs:element name="HSAEligibleIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="DomesticPartnerIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="SameSexIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="SubstanceAbuseInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProductFilterType">
+		<xs:sequence>
+			<xs:element name="ProviderTypes" type="ProviderType" minOccurs="0" maxOccurs="5"/>
+			<xs:element name="Issuers" type="IssuerIDType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="HSAEligibleIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="DomesticPartnerIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="SameSexIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="AnnualDeductibleFilterRangeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="$0-$500"/>
+			<xs:enumeration value="$500-$1000"/>
+			<xs:enumeration value="$1000-$2500"/>
+			<xs:enumeration value="$2500-$5000"/>
+			<xs:enumeration value="$5000-$10000"/>
+			<xs:enumeration value="$10000-and-above"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnnualDeductibleFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Filter" type="AnnualDeductibleFilterRangeType"/>
+			<xs:element name="Quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="AnnualOutOfPocketFilterRangeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="$0-$1000"/>
+			<xs:enumeration value="$1000-$2500"/>
+			<xs:enumeration value="$2500-$5000"/>
+			<xs:enumeration value="$5000-$10000"/>
+			<xs:enumeration value="$10000-and-above"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnnualOutOfPocketFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Filter" type="AnnualOutOfPocketFilterRangeType"/>
+			<xs:element name="Quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="AnnualMaxBenefitsFilterRangeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="$0-$10000"/>
+			<xs:enumeration value="$10000-$50000"/>
+			<xs:enumeration value="$50000-$100000"/>
+			<xs:enumeration value="$100000-$200000"/>
+			<xs:enumeration value="$200000-$400000"/>
+			<xs:enumeration value="$400000-$600000"/>
+			<xs:enumeration value="$600000-$800000"/>
+			<xs:enumeration value="$800000-$1000000"/>
+			<xs:enumeration value="$1000000-and-above"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnnualMaxBenefitsFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Filter" type="AnnualMaxBenefitsFilterRangeType"/>
+			<xs:element name="Quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="BaseRateFilterRangeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="$0-$100"/>
+			<xs:enumeration value="$100-$200"/>
+			<xs:enumeration value="$200-$300"/>
+			<xs:enumeration value="$300-$400"/>
+			<xs:enumeration value="$400-$500"/>
+			<xs:enumeration value="$500-$600"/>
+			<xs:enumeration value="$600-$700"/>
+			<xs:enumeration value="$700-$800"/>
+			<xs:enumeration value="$800-$900"/>
+			<xs:enumeration value="$900-$1000"/>
+			<xs:enumeration value="$1000-and-above"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="BaseRateFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Filter" type="BaseRateFilterRangeType"/>
+			<xs:element name="Quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="PercentType">
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PlanType">
+		<xs:sequence>
+			<xs:element name="PlanID" type="PlanIDType"/>
+			<xs:element name="PlanNameText" type="NameTextType"/>
+			<xs:element name="ProductID" type="ProductIDType"/>
+			<xs:element name="ProductNameText" type="NameTextType"/>			 
+			<xs:element name="ProductApplicantsDeniedPercentage" type="PercentType"/>
+			<xs:element name="ProductApplicantsUpRatedPercentage" type="PercentType"/>
+			<xs:element name="IssuerID" type="IssuerIDType"/>
+			<xs:element name="IssuerNameText" type="NameTextType"/>
+			<xs:element name="IssuerStateCode" type="StateCodeType"/>				
+			<xs:element name="IssuerTollFreeNumber" type="PhoneNumberType"  nillable="true" />
+			<xs:element name="IssuerLocalNumber" type="PhoneNumberType"  nillable="true" />
+			<xs:element name="IssuerTTYNumber" type="PhoneNumberType"  nillable="true" />
+			<xs:element name="ProviderType" type="ProviderType"/>
+			<xs:element name="BaseRateAmount" type="xs:decimal"/>			
+			<xs:element name="HSAEligibleIndicator" type="xs:boolean"/>
+			<xs:element name="SameSexPartnerIndicator" type="xs:boolean"/>
+			<xs:element name="DomesticPartnerIndicator" type="xs:boolean"/>			
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="xs:boolean"/>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="xs:boolean"/>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="xs:boolean"/>
+			<xs:element name="SubstanceAbuseInNetworkCoverageIndicator" type="xs:boolean"/>
+			<xs:element name="InNetworkCostSharing" type="PlanCostSharingType"/>
+			<xs:element name="OutNetworkCostSharing" type="PlanCostSharingType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="PhoneNumberType">
+		<xs:annotation>
+			<xs:documentation>allow 11 digits </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9]{11})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="PlanBenefitsType">
+		<xs:complexContent>
+			<xs:extension base="PlanType">
+				<xs:sequence>
+					<xs:element name="IssuerURL" type="UrlType" nillable="true"/>
+					<xs:element name="ProviderURL" type="UrlType" nillable="true"/>
+					<xs:element name="ProductBenefitURL" type="UrlType" nillable="true"/>
+					<xs:element name="ProductFormularyURL" type="UrlType" nillable="true"/>
+					<xs:element name="PlanBrochureURL" type="UrlType" nillable="true"/>					
+					<!-- IN/OUT Network Coverage -->
+					<xs:element name="OtherPractitionerVisit" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="PrimaryCareVisit" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="SpecialistVisit" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="PreventiveCare" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="DiagnosticTest" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="Imaging" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="OutpatientFacilityFee" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="OutpatientPhysicianFee" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="EmergencyRoom" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="EmergencyTransportation" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="UrgentCare" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="HospitalFacilityFee" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="HospitalPhysicianFee" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="MentalOutpatient" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="MentalInpatient" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="SubstanceDisorderOutpatient" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="SubstanceDisorderInpatient" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="PrenatalPostnatalCare" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="DeliveryInpatient" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="HomeHealthcare" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="InpatientRehabilitation" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="OutpatientRehabilitation" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="NursingCare" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="DurableMedicalEquipment" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="Hospice" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="RoutineEyeCareChildren" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="EyeGlassesChildren" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="DentalCheckUpChildren" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="GenericDrugsRetail" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="GenericDrugsMailOrder" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="PreferredBrandDrugsRetail" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="PreferredBrandDrugsMailOrder" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="NonPreferredBrandDrugsRetail" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="NonPreferredBrandDrugsMailOrder" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="SpecialtyDrugsRetail" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="SpecialtyDrugsMailOrder" type="BenefitInOutExceptionType" nillable="true"/>
+					<xs:element name="HabilitationServices" type="BenefitInOutExceptionType" nillable="true"/>
+					<!-- No Network coverage-->
+					<xs:element name="Acupuncture" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="BariatricSurgery" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="NonEmergencyTravelOutside" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="Chiropractic" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="CosmeticSurgery" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="DentalAdult" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="HearingAid" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="InfertilityTreatment" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="LongTermCare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="PrivateNursing" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="EyeExamAdult" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="RoutineFootCare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="WeightLossProgram" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="RoutineHearingTests" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="SpecialistReferralRequiredIndicator" type="xs:boolean" nillable="true" />
+					<xs:element name="SpecialistReferralRequiredServicesText" type="xs:string" nillable="true"/>
+					<xs:element name="PregnancyNotificationRequiredIndicator" type="xs:boolean" nillable="true" />
+					<xs:element name="MaternityCoverage" type="MedicalCoverageDetailType" nillable="true"/>
+					<xs:element name="DiabetesWellnessProgramOfferedIndicator" type="xs:boolean" nillable="true" />
+					<xs:element name="DiabetesCoverage" type="MedicalCoverageDetailType" nillable="true"/>
+					<!-- SBC URLs -->
+					<xs:element name="SBC" type="SBCType"/>
+					</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>	
+	
+	
+	<xs:complexType name="ProductType">
+		<xs:sequence>
+			<xs:element name="ProductID" type="ProductIDType"/>
+			<xs:element name="ProductNameText" type="NameTextType"/>
+			<xs:element name="ProductApplicantsDeniedPercentage" type="PercentType"/>
+			<xs:element name="ProductApplicantsUpRatedPercentage" type="PercentType"/>
+			<xs:element name="IssuerID" type="IssuerIDType"/>
+			<xs:element name="IssuerNameText" type="NameTextType"/>
+			<xs:element name="IssuerStateCode" type="StateCodeType"/>				
+			<xs:element name="IssuerTollFreeNumber" type="PhoneNumberType"  nillable="true" />
+			<xs:element name="IssuerLocalNumber" type="PhoneNumberType"  nillable="true" />
+			<xs:element name="IssuerTTYNumber" type="PhoneNumberType"  nillable="true" />
+			<xs:element name="ProviderType" type="ProviderType"/>
+			<xs:element name="AverageCostPerEnrollee" type="xs:decimal" nillable="true"/>
+			<xs:element name="HSAEligibleIndicator" type="xs:boolean"/>
+			<xs:element name="SameSexPartnerIndicator" type="xs:boolean"/>
+			<xs:element name="DomesticPartnerIndicator" type="xs:boolean"/>			
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="xs:boolean"/>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="xs:boolean"/>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="xs:boolean"/>
+			<xs:element name="SubstanceAbuseInNetworkCoverageIndicator" type="xs:boolean"/>
+			<xs:element name="InNetworkCostSharing" type="ProductCostSharingType"/>
+			<xs:element name="OutNetworkCostSharing" type="ProductCostSharingType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProductBenefitsType">
+		<xs:complexContent>
+			<xs:extension base="ProductType">
+				<xs:sequence>
+					<xs:element name="IssuerURL" type="UrlType" nillable="true"/>
+					<xs:element name="ProviderURL" type="UrlType" nillable="true"/>
+					<xs:element name="ProductBenefitURL" type="UrlType" nillable="true"/>
+					<xs:element name="ProductFormularyURL" type="UrlType" nillable="true"/>					
+					<!-- IN/OUT Network Coverage -->
+					<xs:element name="PrimaryCareVisit" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="SpecialistVisit" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="OtherPractitionerVisit" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="PreventiveCare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="DiagnosticTest" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="Imaging" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="GenericDrugs" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="PreferredBrandDrugs" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="NonPreferredBrandDrugs" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="SpecialtyDrugs" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="OutpatientFacilityFee" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="OutpatientPhysicianFee" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="EmergencyRoom" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="EmergencyTransportation" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="UrgentCare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="HospitalFacilityFee" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="HospitalPhysicianFee" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="MentalOutpatient" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="MentalInpatient" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="SubstanceDisorderOutpatient" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="SubstanceDisorderInpatient" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="PrenatalPostnatalCare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="DeliveryInpatient" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="HomeHealthcare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="OutpatientRehabilitation" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="Habilitation" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="NursingCare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="DurableMedicalEquipment" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="Hospice" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="RoutineEyeCareChildren" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="EyeGlassesChildren" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="DentalCheckUpChildren" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="Acupuncture" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="BariatricSurgery" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="NonEmergencyTravelOutside" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="Chiropractic" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="CosmeticSurgery" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="DentalAdult" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="HearingAid" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="InfertilityTreatment" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="LongTermCare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="PrivateNursing" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="EyeExamAdult" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="RoutineFootCare" type="BenefitCoverageType" nillable="true"/>
+					<xs:element name="WeightLossProgram" type="BenefitCoverageType" nillable="true"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:simpleType name="ExceptionChoiceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="None"/>
+			<xs:enumeration value="Limitations or Exceptions may apply"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CoverageChoiceType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Not Covered"/>
+			<xs:enumeration value="No Charge"/>
+			<xs:enumeration value="No Charge after deductible"/>
+			<xs:enumeration value="$X Copay"/>
+			<xs:enumeration value="X% Coinsurance after deductible"/>
+			<xs:enumeration value="X% Coinsurance before deductible"/>
+			<xs:enumeration value="X% Coinsurance"/>
+			<xs:enumeration value="$X Copay before deductible"/>
+			<xs:enumeration value="$X Copay after deductible"/>
+			<xs:enumeration value="No Maximum"/>
+		</xs:restriction>		
+	</xs:simpleType>
+	<xs:complexType name="BenefitInOutExceptionType">
+		<xs:sequence>
+			<xs:element name="InNetwork" type="CoPayInsuranceCoverageType" nillable="true"/>
+			<xs:element name="OutOfNetwork" type="CoPayInsuranceCoverageType" nillable="true"/>
+			<xs:element name="LimitationTypeText" type="xs:string" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BenefitExceptionType">
+		<xs:sequence>
+			<xs:element name="Coverage" type="CoPayInsuranceCoverageType" nillable="true"/>
+			<xs:element name="Exception" type="ExceptionChoiceType" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CoPayInsuranceCoverageType">
+		<xs:sequence>
+			<xs:element name="Benefit" type="CoverageChoiceType" nillable="true"/>
+			<xs:choice minOccurs="0" maxOccurs="1">
+				<xs:element name="Amount" type="xs:decimal"/>
+				<xs:element name="Percent" type="PercentType"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="BenefitCoverageType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Covered"/>
+			<xs:enumeration value="Not Covered"/>
+			<xs:enumeration value="Covered with Limitations"/>
+			<xs:enumeration value="Available for Additional Premium"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ProviderType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="INDEMNITY"/>
+			<xs:enumeration value="HMO"/>
+			<xs:enumeration value="PPO"/>
+			<xs:enumeration value="EPO"/>
+			<xs:enumeration value="POS"/>
+			<xs:enumeration value="Other/Describe"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PlanCostSharingType">
+		<xs:sequence>
+			<xs:element name="FamilyAnnualDeductibleAmount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="IndividualAnnualDeductibleAmount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="PCPCopayAmount" type="CoPayType" nillable="true"/>
+			<xs:element name="CoinsuranceRate" type="CoInsuranceType" nillable="true"/>
+			<xs:element name="FamilyAnnualOOPLimitAmount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="IndividualAnnualOOPLimitAmount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="AnnualOOPElementsText" type="AnnualOOPLimitType" nillable="true"/>
+			<xs:element name="FamilyAnnualMaxBenefitAmount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="IndividualAnnualMaxBenefitAmount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="NoDeductibleServicesText" type="xs:string" nillable="true"/>
+			<xs:element name="DeductibleExceptionsServicesText" type="xs:string" nillable="true"/>
+			<xs:element name="OtherDeductible1ServicesText" type="xs:string" nillable="true"/>
+			<xs:element name="IndividualOtherDeductible1Amount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="FamilyOtherDeductible1Amount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="OtherDeductible2ServicesText" type="xs:string" nillable="true"/>
+			<xs:element name="IndividualOtherDeductible2Amount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="FamilyOtherDeductible2Amount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="OtherDeductible3ServicesText" type="xs:string" nillable="true"/>
+			<xs:element name="IndividualOtherDeductible3Amount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="FamilyOtherDeductible3Amount" type="AmountNoMaxType" nillable="true"/>
+			<xs:element name="AdditionalDeductibleServicesIndicator" type="xs:boolean" nillable="true" />
+			<xs:element name="ExcludedAnnualOOPLimitText" type="xs:string" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProductCostSharingType">
+		<xs:sequence>
+			<xs:element name="AnnualDeductibleAmount" type="AmountNoneOrList" nillable="true"/>
+			<xs:element name="PCPCopayAmount" type="MinMaxCoPayType" nillable="true"/>
+			<xs:element name="CoinsuranceRate" type="MinMaxCoInsuranceType" nillable="true"/>
+			<xs:element name="AnnualOOPLimitAmount" type="AmountNoneOrList" nillable="true"/>
+			<xs:element name="AnnualMaxBenefitAmount" type="AmountNoneOrMax" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="UrlType">
+		<xs:sequence>
+			<xs:element name="URLCode" type="URLCodeType" nillable="true"/>
+			<xs:element name="URLAddress" type="URLAddressType" nillable="true"/>
+			<xs:element name="AlternateText" type="NameTextType" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="URLCodeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Valid"/>
+			<xs:enumeration value="Not Valid"/>
+			<xs:enumeration value="No Link"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="URLAddressType">
+		<xs:restriction base="xs:anyURI"/>
+		<!-- TODO: Add url validations here -->
+	</xs:simpleType>
+	<xs:complexType name="AmountNoMaxType">
+		<xs:choice>
+			<xs:element name="Amount" type="xs:decimal"/>
+			<xs:element name="NoMaximum" type="xs:string" fixed="No Maximum"/>
+			<xs:element name="NotApplicable" type="xs:string" fixed="Not Applicable"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="AmountNoneOrList">
+		<xs:choice>
+			<xs:element name="None" type="xs:string" fixed="None"/>
+			<xs:element name="Amounts" type="Amounts"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="Amounts">
+		<xs:sequence>
+			<xs:element name="Amount" type="xs:decimal" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="AmountNoneOrMax">
+		<xs:choice>
+			<xs:element name="None" type="xs:string" fixed="None"/>
+			<xs:element name="Amount" type="xs:decimal"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:simpleType name="AmountType">
+		<xs:restriction base="xs:decimal">
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="CoPayType">
+		<xs:choice>
+			<xs:element name="NotCovered" type="xs:string" fixed="Not Covered"/>
+			<xs:element name="CoveredAmount" type="xs:decimal"/>
+			<xs:element name="NoMaximum" type="xs:string" fixed="No Maximum"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="MinMaxCoPayType">
+		<xs:choice>
+			<xs:element name="None" type="xs:string" fixed="None"/>
+			<xs:sequence>
+				<xs:element name="Min" type="xs:decimal"/>
+				<xs:element name="Max" type="xs:decimal"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="CoInsuranceType">
+		<xs:choice>
+			<xs:element name="NotCovered" fixed="Not Covered"/>
+			<xs:element name="CoveredPercent" type="PercentType"/>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="MinMaxCoInsuranceType">
+		<xs:choice>
+			<xs:element name="None" type="xs:string" fixed="None"/>
+			<xs:sequence>
+				<xs:element name="Min" type="PercentType"/>
+				<xs:element name="Max" type="PercentType"/>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:simpleType name="AnnualOOPLimitType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="None"/>
+			<xs:enumeration value="Deductible"/>
+			<xs:enumeration value="Co-pay"/>
+			<xs:enumeration value="Coinsurance"/>
+			<xs:enumeration value="Coinsurance + Co-pay"/>
+			<xs:enumeration value="Deductible + Co-pay"/>
+			<xs:enumeration value="Deductible + Coinsurance"/>
+			<xs:enumeration value="Deductible + Coinsurance + Co-pay"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="MedicalCoverageDetailType">
+		<xs:sequence>
+			<xs:element name="DeductibleAmount" type="AmountType" nillable="true"/>
+			<xs:element name="CopayAmount" type="AmountType" nillable="true"/>
+			<xs:element name="CoinsuranceAmount" type="AmountType" nillable="true"/>
+			<xs:element name="LimitsOrExclusionsAmount" type="AmountType" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SBCType">
+		<xs:sequence>
+			<xs:element name="PDFURL" type="UrlType" />
+			<xs:element name="HTMLURL" type="UrlType" nillable="true"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="PlanFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="ProviderTypes" type="ProviderTypeFilterAnalysisType" minOccurs="0" maxOccurs="6"/>
+			<xs:element name="IssuerIDs" type="IssuerFilterAnalysisType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="AnnualIndividualInNetworkDeductible" type="AnnualDeductibleFilterAnalysisType" minOccurs="0" maxOccurs="6"/>
+			<xs:element name="AnnualIndividualInNetworkOOPLimit" type="AnnualOutOfPocketFilterAnalysisType" minOccurs="0" maxOccurs="5"/>
+			<xs:element name="AnnualIndividualInNetworkMaxBenefit" type="AnnualMaxBenefitsFilterAnalysisType" minOccurs="0" maxOccurs="9"/>
+			<xs:element name="BaseRate" type="BaseRateFilterAnalysisType" minOccurs="0" maxOccurs="11"/>
+			<xs:element name="HSAEligibleIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="DomesticPartnerIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="SameSexIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="SubstanceAbuseInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProductFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="ProviderTypes" type="ProviderTypeFilterAnalysisType" minOccurs="0" maxOccurs="6"/>
+			<xs:element name="IssuerIDs" type="IssuerFilterAnalysisType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="HSAEligibleIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="DomesticPartnerIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="SameSexIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProviderTypeFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="ProviderType" type="ProviderType"/>
+			<xs:element name="Quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IssuerFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="IssuerID" type="IssuerIDType"/>
+			<xs:element name="IssuerName" type="xs:string"/>
+			<xs:element name="Quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BooleanFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Indicator" type="xs:boolean"/>
+			<xs:element name="Quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ResponseHeaderType">
+		<xs:sequence>
+			<xs:element name="ReturnCode" type="ReturnCodeType"/>
+			<xs:element name="ErrorMessage" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="ReturnCodeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Success"/>
+			<xs:enumeration value="Error"/>
+		</xs:restriction>
+	</xs:simpleType>	
+	<xs:simpleType name="StateCodeType">
+		<xs:annotation>
+			<xs:documentation>List of US States.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="AK">
+				<xs:annotation>
+					<xs:documentation>ALASKA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ME">
+				<xs:annotation>
+					<xs:documentation>MAINE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NJ">
+				<xs:annotation>
+					<xs:documentation>NEW JERSEY</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WA">
+				<xs:annotation>
+					<xs:documentation>WASHINGTON</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AP">
+				<xs:annotation>
+					<xs:documentation>Armed Forces Pacific</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NY">
+				<xs:annotation>
+					<xs:documentation>NEW YORK</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IA">
+				<xs:annotation>
+					<xs:documentation>IOWA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MO">
+				<xs:annotation>
+					<xs:documentation>MISSOURI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CT">
+				<xs:annotation>
+					<xs:documentation>CONNECTICUT</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AS">
+				<xs:annotation>
+					<xs:documentation>AMERICAN SAMOA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AA">
+				<xs:annotation>
+					<xs:documentation>Armed Forces Americas (except Canada)
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WY">
+				<xs:annotation>
+					<xs:documentation>WYOMING</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VI">
+				<xs:annotation>
+					<xs:documentation>VIRGIN ISLANDS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GU">
+				<xs:annotation>
+					<xs:documentation>GUAM </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PR">
+				<xs:annotation>
+					<xs:documentation>PUERTO RICO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FM">
+				<xs:annotation>
+					<xs:documentation>FEDERATED STATES OF MICRONESIA
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OK">
+				<xs:annotation>
+					<xs:documentation>OKLAHOMA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OH">
+				<xs:annotation>
+					<xs:documentation>OHIO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MN">
+				<xs:annotation>
+					<xs:documentation>MINNESOTA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="FL">
+				<xs:annotation>
+					<xs:documentation>FLORIDA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MD">
+				<xs:annotation>
+					<xs:documentation>MARYLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VA">
+				<xs:annotation>
+					<xs:documentation>VIRGINIA </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="GA">
+				<xs:annotation>
+					<xs:documentation>GEORGIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CO">
+				<xs:annotation>
+					<xs:documentation>COLORADO </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IN">
+				<xs:annotation>
+					<xs:documentation>INDIANA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SD">
+				<xs:annotation>
+					<xs:documentation>SOUTH DAKOTA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="UT">
+				<xs:annotation>
+					<xs:documentation>UTAH</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MI">
+				<xs:annotation>
+					<xs:documentation>MICHIGAN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PW">
+				<xs:annotation>
+					<xs:documentation>PALAU</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KY">
+				<xs:annotation>
+					<xs:documentation>KENTUCKY</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DE">
+				<xs:annotation>
+					<xs:documentation>DELAWARE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="CA">
+				<xs:annotation>
+					<xs:documentation>CALIFORNIA </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="HI">
+				<xs:annotation>
+					<xs:documentation>HAWAII</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MA">
+				<xs:annotation>
+					<xs:documentation>MASSACHUSETTS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NM">
+				<xs:annotation>
+					<xs:documentation>NEW MEXICO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="RI">
+				<xs:annotation>
+					<xs:documentation>RHODE ISLAND</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AL">
+				<xs:annotation>
+					<xs:documentation>ALABAMA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="DC">
+				<xs:annotation>
+					<xs:documentation>DISTRICT OF COLUMBIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="OR">
+				<xs:annotation>
+					<xs:documentation>OREGON</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TX">
+				<xs:annotation>
+					<xs:documentation>TEXAS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="LA">
+				<xs:annotation>
+					<xs:documentation>LOUISIANA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TN">
+				<xs:annotation>
+					<xs:documentation>TENNESSEE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NE">
+				<xs:annotation>
+					<xs:documentation>NEBRASKA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NC">
+				<xs:annotation>
+					<xs:documentation>NORTH CAROLINA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AZ">
+				<xs:annotation>
+					<xs:documentation>ARIZONA </xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NH">
+				<xs:annotation>
+					<xs:documentation>NEW HAMPSHIRE</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WV">
+				<xs:annotation>
+					<xs:documentation>WEST VIRGINIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="IL">
+				<xs:annotation>
+					<xs:documentation>ILLINOIS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AR">
+				<xs:annotation>
+					<xs:documentation>ARKANSAS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MT">
+				<xs:annotation>
+					<xs:documentation>MONTANA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="VT">
+				<xs:annotation>
+					<xs:documentation>VERMONT</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MS">
+				<xs:annotation>
+					<xs:documentation>MISSISSIPPI</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SC">
+				<xs:annotation>
+					<xs:documentation>SOUTH CAROLINA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="KS">
+				<xs:annotation>
+					<xs:documentation>KANSAS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="NV">
+				<xs:annotation>
+					<xs:documentation>NEVADA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MP">
+				<xs:annotation>
+					<xs:documentation>NORTHERN MARIANA ISLANDS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MH">
+				<xs:annotation>
+					<xs:documentation>MARSHALL ISLANDS</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="AE">
+				<xs:annotation>
+					<xs:documentation>Armed Forces Africa, Canada, Europe, Middle East
+					</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ND">
+				<xs:annotation>
+					<xs:documentation>NORTH DAKOTA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ID">
+				<xs:annotation>
+					<xs:documentation>IDAHO</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="PA">
+				<xs:annotation>
+					<xs:documentation>PENNSYLVANIA</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="WI">
+				<xs:annotation>
+					<xs:documentation>WISCONSIN</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

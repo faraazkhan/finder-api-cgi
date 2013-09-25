@@ -1,0 +1,1 @@
+DOI_STATES = ['CO','CT','DE','FL','HI','ME','MA','MI','MS','NH','NC','RI','VT','WA']

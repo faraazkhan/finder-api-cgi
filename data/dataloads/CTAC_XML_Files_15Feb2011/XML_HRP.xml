@@ -1,0 +1,1396 @@
+﻿<HRPS>
+  <HRP>
+    <HRP_ID>900001900001ALHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>27</State_Id>
+    </LookUp>
+    <Brand_name>Alabama Health Insurance Plan (AHIP)</Brand_name>
+    <CS_TollFree>8668333375</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.alseib.org/healthinsurance/ahip/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>no</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>0</Reject_Letter>
+    <Number_Letters></Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>1</HRP_Link_Id>
+        <Premiums_Rates_Url />
+        <Benefit_Cvrg_Url>http://www.alseib.org/PDF/AHIP/AHIPUHCSummary.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.alseib.org/healthinsurance/ahip/Eligibility.aspx</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900002900002AKHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>28</State_Id>
+    </LookUp>
+    <Brand_name>Alaska Comprehensive Health Insurance Association</Brand_name>
+    <CS_TollFree>8882900616</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>www.achia.com</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>12 months</Res_Length>
+    <Age_Limit>less than 65</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>61 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>2</HRP_Link_Id>
+        <Premiums_Rates_Url>https://www.achia.com/premiums.asp</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>https://www.achia.com/benefit_info.asp</Benefit_Cvrg_Url>
+        <Eligibility_Url>https://www.achia.com/qualify.asp</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900003900003ARHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>30</State_Id>
+    </LookUp>
+    <Brand_name>Arkansas Comprehensive Health Insurance Pool</Brand_name>
+    <CS_TollFree>8002856477</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.chiparkansas.org/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>no</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>3</HRP_Link_Id>
+        <Premiums_Rates_Url />
+        <Benefit_Cvrg_Url>http://www.chiparkansas.org/rates-benefit-plans/</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.chiparkansas.org/eligibility/</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900004900004CAHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>31</State_Id>
+    </LookUp>
+    <Brand_name>California Major Risk Medical Insurance Program</Brand_name>
+    <CS_TollFree>8002896574</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.mrmib.ca.gov/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>12 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>See if the plan has a waiting list.</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>4</HRP_Link_Id>
+        <Premiums_Rates_Url />
+        <Benefit_Cvrg_Url />
+        <Eligibility_Url>http://www.mrmib.ca.gov/MRMIB/MRMIPBRO.pdf</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900005900005COHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>32</State_Id>
+    </LookUp>
+    <Brand_name>CoverColorado</Brand_name>
+    <CS_TollFree>8667879129</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>https://www.covercolorado.org/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit>65</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>34</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>$40,000</Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>5</HRP_Link_Id>
+        <Premiums_Rates_Url>https://www.covercolorado.org/downloads/CoverColorado%202010%20Standard%20Rates.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>https://www.covercolorado.org/downloads/CoverColorado_2010_%20Plan_%20Summary.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>https://www.covercolorado.org/default.asp?contentID=666</Eligibility_Url>
+        <Conditions_List_Url>https://www.covercolorado.org/default.asp?contentID=667</Conditions_List_Url>
+        <Low_Income_Subsidy_Url>https://www.covercolorado.org/default.asp?contentID=730</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900006900006CTHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>33</State_Id>
+    </LookUp>
+    <Brand_name>Connecticut Health Reinsurance Association</Brand_name>
+    <CS_TollFree>8008420004</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.hract.org/hra/index.htm</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>180 days</Res_Length>
+    <Age_Limit>HIPAA Elig. less than 65 (other than HIPPA coverage ends 65)</Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>0</Reject_Letter>
+    <Number_Letters></Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>300%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>6</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.hract.org/hra/Rates/Rates.htm</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url />
+        <Eligibility_Url>http://www.hract.org/hra/Brochures/brochures.htm</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900008900008IDHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>39</State_Id>
+    </LookUp>
+    <Brand_name>Idaho Individual High Risk Reinsurance Pool</Brand_name>
+    <CS_TollFree>8007213272</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://healthinsurance.idaho.gov/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>7</HRP_Link_Id>
+        <Premiums_Rates_Url>http://healthinsurance.idaho.gov/healthpage_purchase.aspx</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.doi.idaho.gov/Health/HRP_schedules.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.doi.idaho.gov/Pubs/high_riskbr.pdf</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900009900009ILHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>40</State_Id>
+    </LookUp>
+    <Brand_name>Illinois Comprehensive Health Insurance Plan (ICHIP)</Brand_name>
+    <CS_TollFree>8003676410</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.chip.state.il.us/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>180 days </Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>31</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>See if the plan has a waiting list.</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>8</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.chip.state.il.us/Rates.html</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url />
+        <Eligibility_Url>http://www.chip.state.il.us/downloads/broch0809.pdf</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900010900010INHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>41</State_Id>
+    </LookUp>
+    <Brand_name>Indiana Comprehensive Health Insurance Association (ICHIA)</Brand_name>
+    <CS_TollFree>8005527921</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>https://www.onlinehealthplan.com/index.cfm</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>12 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>200%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>9</HRP_Link_Id>
+        <Premiums_Rates_Url>https://www.onlinehealthplan.com/content/html/acs/12/ICHIA_Rate_Tables_2010.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>https://www.onlinehealthplan.com/index.cfm?xnode=1003000</Benefit_Cvrg_Url>
+        <Eligibility_Url>https://www.onlinehealthplan.com/content/html/acs/12/Applicant_Guide_2010web.pdf</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900011900011IAHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>42</State_Id>
+    </LookUp>
+    <Brand_name>Iowa Comprehensive Health Association</Brand_name>
+    <CS_TollFree>8777936880</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>www.hipiowa.com</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>60 days</Res_Length>
+    <Age_Limit>initially  less than 65 but can age into Medicare product</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>43</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>10</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.hipiowa.com/premiums.asp</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.hipiowa.com/benefit_info.asp</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.hipiowa.com/qualify.asp</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900012900012KSHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>43</State_Id>
+    </LookUp>
+    <Brand_name>Kansas Health Insurance Association</Brand_name>
+    <CS_TollFree>8003629290</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.khiastatepool.com/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit>no</Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List>no</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>2</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>11</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.khiastatepool.com/premiums.asp</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.khiastatepool.com/benefit_info.asp</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.khiastatepool.com/qualify.asp</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900013900013KYHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>44</State_Id>
+    </LookUp>
+    <Brand_name>Kentucky Access</Brand_name>
+    <CS_TollFree>8664056145</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>https://www.kentuckyaccess.com/index.cfm</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>12 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>35</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>12</HRP_Link_Id>
+        <Premiums_Rates_Url>https://www.kentuckyaccess.com/content/html/acs/35/2010_Prem_Rate_Tables.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>https://www.kentuckyaccess.com/index.cfm?xnode=245</Benefit_Cvrg_Url>
+        <Eligibility_Url>https://www.kentuckyaccess.com/index.cfm?xnode=516</Eligibility_Url>
+        <Conditions_List_Url>https://www.kentuckyaccess.com/content/html/acs/35/PrememALL_04102.pdf</Conditions_List_Url>
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900014900014LAHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>45</State_Id>
+    </LookUp>
+    <Brand_name>Louisiana Health Plan (LHP)</Brand_name>
+    <CS_TollFree>8006808728</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.lahealthplan.org/index-noflash.html</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>2</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>13</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.lahealthplan.org/HRRatescolor.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.lahealthplan.org/highrisksummary.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.lahealthplan.org/hr-hipaa-eligibility.pdf</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900015900015MDHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>47</State_Id>
+    </LookUp>
+    <Brand_name>Maryland Health Insurance Plan</Brand_name>
+    <CS_TollFree>8884449016</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.marylandhealthinsuranceplan.state.md.us/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>68 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>300%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>14</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.marylandhealthinsuranceplan.state.md.us/mhip/html/PremiumOverviews.html</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.marylandhealthinsuranceplan.state.md.us/mhip/attachments/BRC6599.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.marylandhealthinsuranceplan.state.md.us/mhip/html/EligibilityRequirements.html</Eligibility_Url>
+        <Conditions_List_Url>http://www.marylandhealthinsuranceplan.state.md.us/mhip/attachments/BRC6599.pdf</Conditions_List_Url>
+        <Low_Income_Subsidy_Url>http://www.marylandhealthinsuranceplan.state.md.us/mhip/html/PremiumOverviews.html</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900016900016MNHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>50</State_Id>
+    </LookUp>
+    <Brand_name>Minnesota Comprehensive Health Association</Brand_name>
+    <CS_TollFree>8668948053</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.mchamn.com/index.html</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit>65 if Medicare Elig.(over65 if not Medicare Elig.)</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>44 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>220%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>15</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.mchamn.com/html/deductible_plan.html</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.mchamn.com/html/benefit_summary.html</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.mchamn.com/html/eligibility.html</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url>http://www.mchamn.com/html/subsidy.html</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900017900017MSHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>51</State_Id>
+    </LookUp>
+    <Brand_name>Mississippi Comprehensive Health Insurance Risk Pool Association</Brand_name>
+    <CS_TollFree>8888209400</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.mississippihealthpool.org/index.html</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit>less than 65</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>88 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>16</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.mississippihealthpool.org/Brochure_122009.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.mississippihealthpool.org/coverage.html</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.mississippihealthpool.org/aboutus.html</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900018900018MOHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>52</State_Id>
+    </LookUp>
+    <Brand_name>Missouri Health Insurance Pool</Brand_name>
+    <CS_TollFree>8008212231</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.mhip.org/page/122931/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>30 days </Res_Length>
+    <Age_Limit>65 if Medicare Elig.(65 &amp; over if not Medicare Elig.)</Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>175%-300% FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>17</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.mhip.org/page/122934/</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.mhip.org/page/122933/</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.mhip.org/page/122932/</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url>http://www.mhip.org/page/subsidy/</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900019900019MTHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>53</State_Id>
+    </LookUp>
+    <Brand_name>Montana Comprehensive Health Association</Brand_name>
+    <CS_TollFree>8004477828</CS_TollFree>
+    <CS_TollFree_Ext>2128</CS_TollFree_Ext>
+    <Main_Url>www.mthealth.org</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>30 days</Res_Length>
+    <Age_Limit>less than 65</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>71 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>2</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>150%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>18</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.mthealth.org/plans_and_rates/</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.mthealth.org/pdf/portability_brochure.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.mthealth.org/eligibility/</Eligibility_Url>
+        <Conditions_List_Url>http://www.mthealth.org/eligibility/</Conditions_List_Url>
+        <Low_Income_Subsidy_Url>http://www.mthealth.org/plans_and_rates/</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900020900020NEHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>54</State_Id>
+    </LookUp>
+    <Brand_name>Nebraska Comprehensive Health Insurance Pool</Brand_name>
+    <CS_TollFree>8773484304</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.nechip.com/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>44 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>19</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.nechip.com/ratecalculator.aspx</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.nechip.com/whatischip.aspx</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.nechip.com/eligibility.aspx</Eligibility_Url>
+        <Conditions_List_Url>http://www.nechip.com/SpecifiedConditionList-Website.docx</Conditions_List_Url>
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900021900021NHHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>56</State_Id>
+    </LookUp>
+    <Brand_name>New Hampshire Health Plan</Brand_name>
+    <CS_TollFree>8778886447</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.nhhp.org/nhhp/index.asp</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>No</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>16 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>250%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>20</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.nhhp.org/nhhp/rates.asp</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.nhhp.org/_downloads/NHHP-Plan_Brochure.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.nhhp.org/nhhp/eligibility.asp</Eligibility_Url>
+        <Conditions_List_Url>http://www.nhhp.org/nhhp/pre-qualifying-conditions.asp</Conditions_List_Url>
+        <Low_Income_Subsidy_Url>http://www.nhhp.org/_downloads/LIPS_2008_web_info_1.pdf</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900022900022NMHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>58</State_Id>
+    </LookUp>
+    <Brand_name>New Mexico Medical Insurance Pool</Brand_name>
+    <CS_TollFree>8004320750</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>www.nmmip.org</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>no</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>53 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>400%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>21</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.nmmip.org/2009/monprems.htm</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.nmmip.org/2009/Summary%20of%20Benefits%20and%20Plan%20Options.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.nmmip.org/2009/eligibility.htm</Eligibility_Url>
+        <Conditions_List_Url>http://www.nmmip.org/2009/medcon.htm</Conditions_List_Url>
+        <Low_Income_Subsidy_Url>http://www.nmmip.org/2009/premiumast.htm</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900023900023NCHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>60</State_Id>
+    </LookUp>
+    <Brand_name>North Carolina Health Insurance Risk Pool</Brand_name>
+    <CS_TollFree>8666652117</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.inclusivehealth.org/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>30 days</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>45 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>300% FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>22</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.inclusivehealth.org/ratequote.php</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.inclusivehealth.org/coverage.htm</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.inclusivehealth.org/who.htm</Eligibility_Url>
+        <Conditions_List_Url>http://www.inclusivehealth.org/who.htm</Conditions_List_Url>
+        <Low_Income_Subsidy_Url>http://www.inclusivehealth.org/subsidy.htm</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900024900024NDHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>61</State_Id>
+    </LookUp>
+    <Brand_name>Comprehensive Health Association of North Dakota</Brand_name>
+    <CS_TollFree>8007370016</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.chand.org</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>183 days</Res_Length>
+    <Age_Limit>no</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>18 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>23</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.chand.org/rates/</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.chand.org/benefits/</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.chand.org/eligible/</Eligibility_Url>
+        <Conditions_List_Url>http://www.chand.org/docs/29312515.pdf</Conditions_List_Url>
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900025900025OKHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>63</State_Id>
+    </LookUp>
+    <Brand_name>Oklahoma Health Insurance High Risk Pool</Brand_name>
+    <CS_TollFree>8777936477</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.bcbsok.com/ohrp/index.html</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>12 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>2</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>24</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.bcbsok.com/ohrp/rates.html</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.bcbsok.com/ohrp/coverage.html</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.bcbsok.com/ohrp/enrolling.html</Eligibility_Url>
+        <Conditions_List_Url>http://www.okhrp.org/cmc.asp</Conditions_List_Url>
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900026900026ORHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>64</State_Id>
+    </LookUp>
+    <Brand_name>Oregon Medical Insurance Pool</Brand_name>
+    <CS_TollFree>8008487280</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.omip.state.or.us/OPHP/OMIP/index.shtml</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>no</Res_Length>
+    <Age_Limit>no, unless Medicare eligible</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>82</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>200% FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>25</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.oregon.gov/OPHP/OMIP/docs/premium_rates.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.omip.state.or.us/OPHP/OMIP/benefit_plan.shtml#2010_Benefit_Plan_Information</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.omip.state.or.us/OPHP/OMIP/apply_omip.shtml#Are_you_eligible_for_OMIP_coverage_</Eligibility_Url>
+        <Conditions_List_Url>http://www.omip.state.or.us/OPHP/OMIP/docs/omip_fillable_application.pdf</Conditions_List_Url>
+        <Low_Income_Subsidy_Url>http://www.oregon.gov/OPHP/FHIAP/member.shtml#What_is_FHIAP_</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900027900027SCHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>67</State_Id>
+    </LookUp>
+    <Brand_name>South Carolina Health Insurance Pool</Brand_name>
+    <CS_TollFree>8008682500</CS_TollFree>
+    <CS_TollFree_Ext>46401</CS_TollFree_Ext>
+    <Main_Url>http://www.doi.sc.gov/consumer/schip.htm</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>30 days</Res_Length>
+    <Age_Limit>less than 65 or on Medicare</Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>26</HRP_Link_Id>
+        <Premiums_Rates_Url />
+        <Benefit_Cvrg_Url />
+        <Eligibility_Url>http://www.doi.sc.gov/consumer/schip.htm</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900028900028SDHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>68</State_Id>
+    </LookUp>
+    <Brand_name>South Dakota Risk Pool</Brand_name>
+    <CS_TollFree>8775737347</CS_TollFree>
+    <CS_TollFree_Ext>2</CS_TollFree_Ext>
+    <Main_Url>http://riskpool.sd.gov/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>1 year</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>0</Reject_Letter>
+    <Number_Letters></Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>27</HRP_Link_Id>
+        <Premiums_Rates_Url>http://riskpool.sd.gov/documents/PremiumRatesFY2011final4_005.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://riskpool.sd.gov/planoptions.aspx</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://riskpool.sd.gov/eligibility.aspx</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900029900029TNHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>69</State_Id>
+    </LookUp>
+    <Brand_name>Access Tennessee</Brand_name>
+    <CS_TollFree>8666360080</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.accesstn.gov/web/access_tn.html</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>6 months</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>55</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>350%FPL with max $75K</Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>28</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.accesstn.gov/web/access_premium.html</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.accesstn.gov/web/accesstn_benefitgrid.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.accesstn.gov/web/access_eligible.html</Eligibility_Url>
+        <Conditions_List_Url>http://www.accesstn.gov/web/access_conditions.html</Conditions_List_Url>
+        <Low_Income_Subsidy_Url>http://www.accesstn.gov/web/access_premiumassist.html</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900030900030TXHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>70</State_Id>
+    </LookUp>
+    <Brand_name>Texas Health Insurance Pool</Brand_name>
+    <CS_TollFree>8883983927</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.txhealthpool.org/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>30 days</Res_Length>
+    <Age_Limit>Under 65</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>54 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>0</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy></Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>29</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.txhealthpool.org/rates.html</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.txhealthpool.org/benefits.html</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.txhealthpool.org/eligibil.html</Eligibility_Url>
+        <Conditions_List_Url>http://www.txhealthpool.org/eligibil.html#Preexisting Conditions</Conditions_List_Url>
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900031900031UTHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>71</State_Id>
+    </LookUp>
+    <Brand_name>Utah Comprehensive Health Insurance Pool (HIPUtah)</Brand_name>
+    <CS_TollFree>8007059173</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://selecthealth.org/HIPUtah</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>12 months</Res_Length>
+    <Age_Limit>less than 65 but can go on Medicare product</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>0</Reject_Letter>
+    <Number_Letters></Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>300%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>0</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>30</HRP_Link_Id>
+        <Premiums_Rates_Url>http://selecthealth.org/Forms%20and%20Documents/HIPUtah/hiputahpremiums.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://selecthealth.org/Forms%20and%20Documents/HIPUtah/hiputahoutline.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://selecthealth.org/Forms%20and%20Documents/HIPUtah/hiputaheligibility0910.pdf</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url>http://selecthealth.org/Forms%20and%20Documents/HIPUtah/hiputahpremiumapplication.pdf</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900032900032WAHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>74</State_Id>
+    </LookUp>
+    <Brand_name>Washington State Health Insurance Pool</Brand_name>
+    <CS_TollFree>8008775187</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>https://www.wship.org/default.asp</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>no</Res_Length>
+    <Age_Limit>less than 65 but can go on Medicare product</Age_Limit>
+    <Cond_Specific>0</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>300%  FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>31</HRP_Link_Id>
+        <Premiums_Rates_Url>https://www.wship.org/monthly_premiums.asp</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>https://www.wship.org/non_medicare_benefits.asp</Benefit_Cvrg_Url>
+        <Eligibility_Url>https://www.wship.org/non_medicare_eligibility.asp</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900033900033WVHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>75</State_Id>
+    </LookUp>
+    <Brand_name>AccessWV</Brand_name>
+    <CS_TollFree>8664458491</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://apps.wvinsurance.gov/accesswv/</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>30 days</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>47 conditions</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>0</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>1</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>200%FPL - Book says N/A - Information is conflicting</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>32</HRP_Link_Id>
+        <Premiums_Rates_Url>http://apps.wvinsurance.gov/accesswv/pdf/premiums.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://apps.wvinsurance.gov/accesswv/pdf/summary-benefits.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://apps.wvinsurance.gov/accesswv/pdf/plan-overview.pdf</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900034900034WIHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>76</State_Id>
+    </LookUp>
+    <Brand_name>Wisconsin Health Insurance Risk-Sharing Plan</Brand_name>
+    <CS_TollFree>8008284777</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://www.hirsp.org</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>3 months</Res_Length>
+    <Age_Limit>under 65 initially, but can age into Medicare product</Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List>1</Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>1</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>0</Medicare_Eligible>
+    <Other_Eligibles>1</Other_Eligibles>
+    <Desc_Other>individuals with group coverage with an annual value of $100,000 or less</Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>$33,000 household income</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>33</HRP_Link_Id>
+        <Premiums_Rates_Url>http://www.hirsp.org/pdfs/2010_04_ratetables.pdf</Premiums_Rates_Url>
+        <Benefit_Cvrg_Url>http://www.hirsp.org/pdfs/outline.pdf</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://www.hirsp.org/plans/state-eligibility.shtml</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url>http://www.hirsp.org/plans/state-low-income.shtml</Low_Income_Subsidy_Url>
+      </Link>
+    </Links>
+  </HRP>
+  <HRP>
+    <HRP_ID>900035900035WYHRPHRP000001</HRP_ID>
+    <LookUp Cat_ID="2">
+      <State_Id>77</State_Id>
+    </LookUp>
+    <Brand_name>Wyoming Health Insurance Pool</Brand_name>
+    <CS_TollFree>8885572519</CS_TollFree>
+    <CS_TollFree_Ext></CS_TollFree_Ext>
+    <Main_Url>http://insurance.state.wy.us/WHIP.html</Main_Url>
+    <State_Res_Req>1</State_Res_Req>
+    <Res_Length>no</Res_Length>
+    <Age_Limit></Age_Limit>
+    <Cond_Specific>1</Cond_Specific>
+    <Cond_List></Cond_List>
+    <Reject_Letter>1</Reject_Letter>
+    <Number_Letters>1</Number_Letters>
+    <Restrictive_Rider>1</Restrictive_Rider>
+    <Excess_Prem>0</Excess_Prem>
+    <HCTC_Eligible>0</HCTC_Eligible>
+    <HIPAA_Eligible>1</HIPAA_Eligible>
+    <Medicare_Eligible>1</Medicare_Eligible>
+    <Other_Eligibles></Other_Eligibles>
+    <Desc_Other></Desc_Other>
+    <Low_Income_Sub_Avail>1</Low_Income_Sub_Avail>
+    <Income_Limit_Subsidy>250%FPL</Income_Limit_Subsidy>
+    <Dependent_Cvrg>1</Dependent_Cvrg>
+    <LookUp Cat_ID="15">
+      <Plan_Type_Id>96</Plan_Type_Id>
+    </LookUp>
+    <Open_To_New_Memb>Open</Open_To_New_Memb>
+    <Links>
+      <Link>
+        <HRP_Link_Id>34</HRP_Link_Id>
+        <Premiums_Rates_Url />
+        <Benefit_Cvrg_Url>http://insurance.state.wy.us/whip.html</Benefit_Cvrg_Url>
+        <Eligibility_Url>http://insurance.state.wy.us/WHIP/WHIP%20flowchart%2010.09.pdf</Eligibility_Url>
+        <Conditions_List_Url />
+        <Low_Income_Subsidy_Url />
+      </Link>
+    </Links>
+  </HRP>
+</HRPS>

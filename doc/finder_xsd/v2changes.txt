@@ -1,0 +1,59 @@
+ComplexTpye "PlanBenefitsType" changes:
+
+	These items were removed
+		"GenericDrugs"
+		"PreferredBrandDrugs"
+		"NonPreferredBrandDrugs"
+		"SpecialtyDrugs"
+
+	These were added in their place (now a distinction is made between mailorder and retail)
+		"GenericDrugsRetail"
+		"GenericDrugsMailOrder"
+		"PreferredBrandDrugsRetail"
+		"PreferredBrandDrugsMailOrder"
+		"NonPreferredBrandDrugsRetail"
+		"NonPreferredBrandDrugsMailOrder"
+		"SpecialtyDrugsRetail"
+		"SpecialtyDrugsMailOrder"
+
+	These Items were added:
+		"SpecialistReferralRequiredIndicator"
+		"SpecialistReferralRequiredServicesText"
+		"PregnancyNotificationRequiredIndicator"
+		"MedicalCoverageDetailType"
+		"DiabetesWellnessProgramOfferedIndicator"
+		"MedicalCoverageDetailType"
+		"SBC"
+
+Simple Type "AmountType" was added
+
+Of ComplexType "BenefitInOutException", "Exception" was renamed "LimitationTypeText"
+
+ComplexType "MedicalCoverageDetailType" was added
+	includes:
+		"DeductibleAmount"
+		"CopaAmount"
+		"CoinsuranceAmount"
+		"LimitsOrExclusionsAmount"
+
+ComplexType "PlanCostSharingType" changes:
+	"AnnualOOPElesText" renamed "AnnualOOPElementsText"
+	Added:
+		"NoDeductibleServicesText"
+		"DeductibleExceptionsServicesText"
+		"OtherDeductible1ServicesText"
+		"IndividualOtherDeductible1Amount"
+		"FamilyOtherDeductible1Amount"
+		"OtherDeductible2ServicesText"
+		"IndividualOtherDeductible2Amount"
+		"FamilyOtherDeductible2Amount"
+		"OtherDeductible3ServicesText"
+		"IndividualOtherDeductible3Amount"
+		"FamilyOtherDeductible3Amount"
+		"AdditionalDeductibleServicesIndicator"
+		"ExcludedAnnualOOPLimitText"
+
+ComplexType "SBCType" added
+	includes:
+		"PDFURL"
+		"HTMLURL"

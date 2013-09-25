@@ -1,0 +1,147 @@
+REQUEST
+
+<PublicOptionsAPIRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/Users/astowell/Documents/ews/finder_api/finder_api_v0.2.xsd">
+    <RequesterInfoData>
+        <OrganizationName>Test</OrganizationName>
+        <ContactEmail>test@ctacorp.com</ContactEmail>
+    </RequesterInfoData>
+    <StateOrTerritory>
+        <TerritoryAbbreviation>VI</TerritoryAbbreviation>
+    </StateOrTerritory>
+    <FamilyAndChildrenAudianceRequest>
+        <Situation>My family and I need health insurance for another reason</Situation>
+        <AgeRange>18 or Under</AgeRange>
+    </FamilyAndChildrenAudianceRequest>
+    <MedicalConditionOrHealthProblemIndicator>true</MedicalConditionOrHealthProblemIndicator>
+    <DisabilityIndicator>true</DisabilityIndicator>
+    <BreastOrCervicalCancerIndicator>true</BreastOrCervicalCancerIndicator>
+    <DependentUnder21Indicator>true</DependentUnder21Indicator>
+    <NursingHomeOrLongTermCareIndicator>true</NursingHomeOrLongTermCareIndicator>
+    <SpecialHealthcareNeedIndicator>true</SpecialHealthcareNeedIndicator>
+    <PregnancyIndicator>true</PregnancyIndicator>
+    <VeteranStatusIndicator>true</VeteranStatusIndicator>
+    <AmericanIndianOrAlaskanNativeIndicator>true</AmericanIndianOrAlaskanNativeIndicator>
+    <IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator>true</IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator>
+</PublicOptionsAPIRequest>
+
+
+RESPONSE
+
+<?xml version="1.0"?>
+<PublicOptionsAPIResponse>
+  <PublicOptions>
+    <PublicOption>
+      <TerritoryData>
+	<TerritoryAbbreviation>VI</TerritoryAbbreviation>
+	<TerritoryServices>
+		<Service>
+			<Name>
+				Clinic Services
+			</Name>
+			<Description>
+				A wide range of healthcare services including services for prevention or treatment of health conditions or illnesses, surgery, and other care provided in a centralized facility.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Dental Services
+			</Name>
+			<Description>
+				Services provided by a dentist or dental assistant to diagnose, prevent and treat conditions of the mouth, teeth, and face.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Early and Periodic Screening, Diagnostic Treatment Services
+			</Name>
+			<Description>
+				Regularly scheduled screenings to identify physical and mental conditions and vision, hearing, and dental problems for people 20 years or younger. Also includes treatment of problems identified through screening regardless of whether that treatment is otherwise part of the Medicaid program.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Home Health Services
+			</Name>
+			<Description>
+				A wide range of services performed at someone's home. They can include skilled and non-skilled services, part-time nursing care, different types of therapy (e.g. PT, OT, speech and audiology), help with activities of daily living and homemaker services such as cleaning and meal preparation.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Inpatient Hospital Services
+			</Name>
+			<Description>
+				Any services that a person might receive at a hospital while they are staying overnight. These could include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Lab and X-ray Services:
+			</Name>
+			<Description>
+				Services such as blood and urine tests and x-ray images ordered by a medical professional to screen for or diagnose a medical condition.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Nursing Facility Services
+			</Name>
+			<Description>
+				Skilled nursing, rehabilitation, and other services provided in a facility to help people with illness, injuries, or other disabilities to recover or to improve, and to provide long term care to those who need support with daily activities such as bathing, dressing and eating.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Physicians Services
+			</Name>
+			<Description>
+				Healthcare services, such as office visits, provided by a licensed doctor.
+			</Description>
+		</Service>
+	</TerritoryServices>
+	<MedicaidContact>
+			Medical Assistance Offices are located at:
+			Knud Hansen Complex
+			ST. THOMAS, VIRGIN ISLANDS
+			Phone: (340) 774-3325
+			Morris DeCastro Clinic
+			CRUZ BAY, ST. JOHN
+			Phone: (340) 776-6400
+			Charles Harwood Complex
+			CHRISTIANSTED, ST. CROIX
+			Phone (340) 773-1311 x. 3094
+			Ingeborg Nesbitt Clinic
+			FREDERIKSTED, ST. CROIX
+			Phone (340) 772-2501
+	</MedicaidContact>
+	<HealthCareResourceContact>
+			USVI Health Department
+			St. Croix Office
+			Charles Harwood Complex
+			3500 Est. Richmond
+			Christiansted, VI 00820
+			Voice: (340) 773-1311
+			St. Thomas / St. John Office
+			1303 Hospital Ground Suite 10
+			Charlotte Amalie
+			St. Thomas, VI 00802
+			Voice: (340) 774-9000
+			
+			Department of Human Services - St. Thomas
+			1303 Hospital Ground Knud Hansen Complex Building A
+			St. Thomas, VI 00802
+			Phone: (340) 774-0930
+			
+			Department of Human Services - St. Croix
+			3011 Golden Rock Christiansted
+			St Croix, VI 00820
+			(340) 773-2323
+			
+			Department of Human Services - St. John
+			St. John, VI
+			(340) 776-6334
+	</HealthCareResourceContact>
+</TerritoryData>
+    </PublicOption>
+  </PublicOptions>
+</PublicOptionsAPIResponse>

@@ -1,0 +1,151 @@
+REQUEST
+
+<?xml version='1.0' encoding='UTF-8'?>
+<PrivateOptionsAPIRequest>
+	<ProductDetailsForSmallGroupRequest>
+		<ProductIDs>
+			<ProductID>50727VA017</ProductID>
+		</ProductIDs>
+	</ProductDetailsForSmallGroupRequest>
+</PrivateOptionsAPIRequest>
+
+
+RESPONSE
+
+<?xml version="1.0"?>
+<PrivateOptionsAPIResponse>
+  <ProductDetailsForSmallGroupResponse>
+    
+    <ProductBenefits>
+        <ProductBenefit>
+            <ProductID>50727VA017</ProductID>
+            <ProductNameText>VA CLASSIC 02</ProductNameText>
+            <ProductApplicantsDeniedPercentage>0</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>0</ProductApplicantsUpRatedPercentage>
+            <IssuerID>50727</IssuerID>
+            <IssuerNameText>Humana Insurance Company</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18777204854</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18777204854</IssuerLocalNumber>
+            <IssuerTTYNumber>18003252028</IssuerTTYNumber>
+            <ProviderType>INDEMNITY</ProviderType>
+            <TotalWrittenPremium>0</TotalWrittenPremium>
+            <AverageCostPerEnrollee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>false</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>false</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <AnnualDeductibleAmount>
+                    <Amounts>
+                        <Amount>500</Amount>
+                        <Amount>1000</Amount>
+                    </Amounts>
+                </AnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <None>None</None>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <Min>20</Min>
+                    <Max>20</Max>
+                </CoinsuranceRate>
+                <AnnualOOPLimitAmount>
+                    <Amounts>
+                        <Amount>1000</Amount>
+                        <Amount>2000</Amount>
+                    </Amounts>
+                </AnnualOOPLimitAmount>
+                <AnnualMaxBenefitAmount>
+                    <None>None</None>
+                </AnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <AnnualDeductibleAmount>
+                    <None>None</None>
+                </AnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <None>None</None>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <None>None</None>
+                </CoinsuranceRate>
+                <AnnualOOPLimitAmount>
+                    <None>None</None>
+                </AnnualOOPLimitAmount>
+                <AnnualMaxBenefitAmount>
+                    <None>None</None>
+                </AnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+            <IssuerURL>
+                <URLCode>Valid</URLCode>
+                <URLAddress>http://humana.com</URLAddress>
+                <AlternateText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </IssuerURL>
+            <ProviderURL>
+                <URLCode>No Link</URLCode>
+                <URLAddress xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+                <AlternateText>No physician or hospital network</AlternateText>
+            </ProviderURL>
+            <ProductBenefitURL>
+                <URLCode>Valid</URLCode>
+                <URLAddress>http://apps.humana.com/marketing/documents.asp?file=60086</URLAddress>
+                <AlternateText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ProductBenefitURL>
+            <ProductFormularyURL>
+                <URLCode>Valid</URLCode>
+                <URLAddress>http://apps.humana.com/marketing/documents.asp?file=1404325</URLAddress>
+                <AlternateText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ProductFormularyURL>
+            <PrimaryCareVisit>Covered</PrimaryCareVisit>
+            <SpecialistVisit>Covered</SpecialistVisit>
+            <OtherPractitionerVisit>Covered</OtherPractitionerVisit>
+            <PreventiveCare>Covered</PreventiveCare>
+            <DiagnosticTest>Covered</DiagnosticTest>
+            <Imaging>Covered</Imaging>
+            <GenericDrugs>Covered</GenericDrugs>
+            <PreferredBrandDrugs>Covered</PreferredBrandDrugs>
+            <NonPreferredBrandDrugs>Covered</NonPreferredBrandDrugs>
+            <SpecialtyDrugs>Covered</SpecialtyDrugs>
+            <OutpatientFacilityFee>Covered</OutpatientFacilityFee>
+            <OutpatientPhysicianFee>Covered</OutpatientPhysicianFee>
+            <EmergencyRoom>Covered</EmergencyRoom>
+            <EmergencyTransportation>Covered</EmergencyTransportation>
+            <UrgentCare>Covered</UrgentCare>
+            <HospitalFacilityFee>Covered</HospitalFacilityFee>
+            <HospitalPhysicianFee>Covered</HospitalPhysicianFee>
+            <MentalOutpatient>Covered with Limitations</MentalOutpatient>
+            <MentalInpatient>Covered with Limitations</MentalInpatient>
+            <SubstanceDisorderOutpatient>Covered with Limitations</SubstanceDisorderOutpatient>
+            <SubstanceDisorderInpatient>Covered with Limitations</SubstanceDisorderInpatient>
+            <PrenatalPostnatalCare>Covered</PrenatalPostnatalCare>
+            <DeliveryInpatient>Covered</DeliveryInpatient>
+            <HomeHealthcare>Covered with Limitations</HomeHealthcare>
+            <OutpatientRehabilitation>Covered with Limitations</OutpatientRehabilitation>
+            <Habilitation>Covered with Limitations</Habilitation>
+            <NursingCare>Covered with Limitations</NursingCare>
+            <DurableMedicalEquipment>Covered</DurableMedicalEquipment>
+            <Hospice>Covered</Hospice>
+            <RoutineEyeCareChildren>Not Covered</RoutineEyeCareChildren>
+            <EyeGlassesChildren>Not Covered</EyeGlassesChildren>
+            <DentalCheckUpChildren>Not Covered</DentalCheckUpChildren>
+            <Acupuncture>Not Covered</Acupuncture>
+            <BariatricSurgery>Available for Additional Premium</BariatricSurgery>
+            <NonEmergencyTravelOutside>Covered</NonEmergencyTravelOutside>
+            <Chiropractic>Covered with Limitations</Chiropractic>
+            <CosmeticSurgery>Not Covered</CosmeticSurgery>
+            <DentalAdult>Not Covered</DentalAdult>
+            <HearingAid>Not Covered</HearingAid>
+            <InfertilityTreatment>Not Covered</InfertilityTreatment>
+            <LongTermCare>Not Covered</LongTermCare>
+            <PrivateNursing>Not Covered</PrivateNursing>
+            <EyeExamAdult>Not Covered</EyeExamAdult>
+            <RoutineFootCare>Not Covered</RoutineFootCare>
+            <WeightLossProgram>Not Covered</WeightLossProgram>
+        </ProductBenefit>
+    </ProductBenefits>
+    
+</ProductDetailsForSmallGroupResponse>
+</PrivateOptionsAPIResponse>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://rbis.cms.org/api/extended"
+	xmlns:rbis="http://rbis.cms.org/api-types" targetNamespace="http://rbis.cms.org/api/extended"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xs:import namespace="http://rbis.cms.org/api"
+		schemaLocation="rbis-api-4.0.xsd" />
+	<xs:import namespace="http://rbis.cms.org/api-types"
+		schemaLocation="rbis-api-types-4.0.xsd" />
+
+	<xs:element name="ExtendedPlanType">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Plan" type="rbis:PlanType"></xs:element>
+				<xs:element name="Enrollments" type="xs:int"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="ExtendedProductType">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Product" type="rbis:ProductType"></xs:element>
+				<xs:element name="Enrollments" type="xs:int"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>	

@@ -1,0 +1,5 @@
+ResidencyLengthRequirmentIndicator renamed to ResidencyLengthRequirementIndicator
+PageSize maximum set to 100 instead of 500.
+PaginationInformation now required for individualplanquoterequest and smallgroupproductquoterequest
+DiscriptionText changed to DescriptionText
+TotalWrittenPremium removed from XSD

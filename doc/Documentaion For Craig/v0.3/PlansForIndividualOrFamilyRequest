@@ -1,0 +1,962 @@
+REQUEST
+
+<?xml version='1.0' encoding='UTF-8'?>
+<PrivateOptionsAPIRequest>
+	<PlansForIndividualOrFamilyRequest>
+		<Enrollees>
+			<Primary>
+				<DateOfBirth>1980-01-01</DateOfBirth>
+				<Gender>Male</Gender>
+				<TobaccoUser>Non-Smoker</TobaccoUser>
+			</Primary>
+		</Enrollees>
+	<Location>
+		<ZipCode>20110</ZipCode>
+		<County>
+			<CountyName>MANASSAS CITY</CountyName>
+			<StateCode>VA</StateCode>
+		</County>
+	</Location>
+	<InsuranceEffectiveDate>2012-05-01</InsuranceEffectiveDate>
+	<IsFilterAnalysisRequiredIndicator>true</IsFilterAnalysisRequiredIndicator>
+	<PaginationInformation>
+		<PageNumber>1</PageNumber>
+		<PageSize>10</PageSize>
+	</PaginationInformation>
+	<SortOrder>
+		<SortField>OOP LIMIT - INDIVIDUAL - IN NETWORK</SortField>
+		<SortDirection>ASC</SortDirection>
+	</SortOrder>
+	<Filter/>
+	</PlansForIndividualOrFamilyRequest>
+</PrivateOptionsAPIRequest>
+
+
+RESPONSE
+
+<?xml version="1.0"?>
+<PrivateOptionsAPIResponse>
+  <PlansForIndividualOrFamilyResponse>
+    
+    <TotalEligiblePlansQuanity>118</TotalEligiblePlansQuanity>
+    <PaginationInformation>
+        <PageNumber>1</PageNumber>
+        <PageSize>10</PageSize>
+    </PaginationInformation>
+    <Plans>
+        <Plan>
+            <PlanID>95185VA0490010</PlanID>
+            <PlanNameText>KP 8000/0%/Rx</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>127.00</BaseRateAmount>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>0</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>0</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490009</PlanID>
+            <PlanNameText>KP 4500/20%/Rx</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>151.00</BaseRateAmount>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>0</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>20</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490008</PlanID>
+            <PlanNameText>KP 2500/30/HSA/Rx</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>159.00</BaseRateAmount>
+            <HSAEligibleIndicator>true</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>30</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>20</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490007</PlanID>
+            <PlanNameText>KP 2000/30/Rx</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>199.00</BaseRateAmount>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>30</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>30</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490006</PlanID>
+            <PlanNameText>KP 1500/30</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>193.00</BaseRateAmount>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>false</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>30</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>30</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490005</PlanID>
+            <PlanNameText>KP 1250/20/HSA/Rx</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>218.00</BaseRateAmount>
+            <HSAEligibleIndicator>true</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>20</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>20</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490004</PlanID>
+            <PlanNameText>KP 1000/30/Rx</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>227.00</BaseRateAmount>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>30</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>20</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490003</PlanID>
+            <PlanNameText>KP 750/30/RX</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>251.00</BaseRateAmount>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>30</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>20</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Deductible + Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490002</PlanID>
+            <PlanNameText>KP 0/35/RX</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>315.00</BaseRateAmount>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>35</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>0</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+        <Plan>
+            <PlanID>95185VA0490001</PlanID>
+            <PlanNameText>KP 0/25/RX</PlanNameText>
+            <ProductID>95185VA049</ProductID>
+            <ProductNameText>KPIF HMO</ProductNameText>
+            <ProductApplicantsDeniedPercentage>45</ProductApplicantsDeniedPercentage>
+            <ProductApplicantsUpRatedPercentage>7</ProductApplicantsUpRatedPercentage>
+            <IssuerID>95185</IssuerID>
+            <IssuerNameText>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerNameText>
+            <IssuerStateCode>VA</IssuerStateCode>
+            <IssuerTollFreeNumber>18008071140</IssuerTollFreeNumber>
+            <IssuerLocalNumber>18008071140</IssuerLocalNumber>
+            <IssuerTTYNumber>17033597616</IssuerTTYNumber>
+            <ProviderType>HMO</ProviderType>
+            <BaseRateAmount>357.00</BaseRateAmount>
+            <HSAEligibleIndicator>false</HSAEligibleIndicator>
+            <SameSexPartnerIndicator>true</SameSexPartnerIndicator>
+            <DomesticPartnerIndicator>true</DomesticPartnerIndicator>
+            <MaternityInNetworkCoverageIndicator>true</MaternityInNetworkCoverageIndicator>
+            <MentalInNetworkCoverageIndicator>true</MentalInNetworkCoverageIndicator>
+            <PrescriptionInNetworkCoverageIndicator>true</PrescriptionInNetworkCoverageIndicator>
+            <SubstanceAbuseInNetworkCoverageIndicator>true</SubstanceAbuseInNetworkCoverageIndicator>
+            <InNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <CoveredAmount>25</CoveredAmount>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <CoveredPercent>0</CoveredPercent>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>Coinsurance + Co-pay</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <NoMaximum>No Maximum</NoMaximum>
+                </IndividualAnnualMaxBenefitAmount>
+            </InNetworkCostSharing>
+            <OutNetworkCostSharing>
+                <FamilyAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </FamilyAnnualDeductibleAmount>
+                <IndividualAnnualDeductibleAmount>
+                    <NotApplicable>Not Applicable</NotApplicable>
+                </IndividualAnnualDeductibleAmount>
+                <PCPCopayAmount>
+                    <NotCovered>Not Covered</NotCovered>
+                </PCPCopayAmount>
+                <CoinsuranceRate>
+                    <NotCovered type="xs:string">Not Covered</NotCovered>
+                </CoinsuranceRate>
+                <FamilyAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualOOPLimitAmount>
+                <IndividualAnnualOOPLimitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualOOPLimitAmount>
+                <AnnualOOPElesText>None</AnnualOOPElesText>
+                <FamilyAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </FamilyAnnualMaxBenefitAmount>
+                <IndividualAnnualMaxBenefitAmount>
+                    <Amount>0</Amount>
+                </IndividualAnnualMaxBenefitAmount>
+            </OutNetworkCostSharing>
+        </Plan>
+    </Plans>
+    <FilterAnalysis>
+        <ProviderTypes>
+            <ProviderType>HMO</ProviderType>
+            <Quantity>10</Quantity>
+        </ProviderTypes>
+        <ProviderTypes>
+            <ProviderType>PPO</ProviderType>
+            <Quantity>102</Quantity>
+        </ProviderTypes>
+        <ProviderTypes>
+            <ProviderType>INDEMNITY</ProviderType>
+            <Quantity>6</Quantity>
+        </ProviderTypes>
+        <IssuerIDs>
+            <IssuerID>95185</IssuerID>
+            <IssuerName>Kaiser Foundation Hlth Plan Mid-Atlantic</IssuerName>
+            <Quantity>10</Quantity>
+        </IssuerIDs>
+        <IssuerIDs>
+            <IssuerID>93848</IssuerID>
+            <IssuerName>Coventry Health &amp; Life Insurance Co.</IssuerName>
+            <Quantity>36</Quantity>
+        </IssuerIDs>
+        <IssuerIDs>
+            <IssuerID>50727</IssuerID>
+            <IssuerName>Humana Insurance Company</IssuerName>
+            <Quantity>17</Quantity>
+        </IssuerIDs>
+        <IssuerIDs>
+            <IssuerID>16064</IssuerID>
+            <IssuerName>Anthem Health Plans of VA(Anthem BCBS)</IssuerName>
+            <Quantity>55</Quantity>
+        </IssuerIDs>
+        <AnnualIndividualInNetworkDeductible>
+            <Filter>$10000-and-above</Filter>
+            <Quantity>106</Quantity>
+        </AnnualIndividualInNetworkDeductible>
+        <AnnualIndividualInNetworkDeductible>
+            <Filter>$0-$500</Filter>
+            <Quantity>12</Quantity>
+        </AnnualIndividualInNetworkDeductible>
+        <AnnualIndividualInNetworkOOPLimit>
+            <Filter>$10000-and-above</Filter>
+            <Quantity>106</Quantity>
+        </AnnualIndividualInNetworkOOPLimit>
+        <AnnualIndividualInNetworkOOPLimit>
+            <Filter>$0-$1000</Filter>
+            <Quantity>12</Quantity>
+        </AnnualIndividualInNetworkOOPLimit>
+        <AnnualIndividualInNetworkMaxBenefit>
+            <Filter>$1000000-and-above</Filter>
+            <Quantity>118</Quantity>
+        </AnnualIndividualInNetworkMaxBenefit>
+        <BaseRate>
+            <Filter>$100-$200</Filter>
+            <Quantity>55</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$200-$300</Filter>
+            <Quantity>7</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$300-$400</Filter>
+            <Quantity>2</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$0-$100</Filter>
+            <Quantity>34</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$400-$500</Filter>
+            <Quantity>5</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$500-$600</Filter>
+            <Quantity>6</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$600-$700</Filter>
+            <Quantity>4</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$700-$800</Filter>
+            <Quantity>2</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$800-$900</Filter>
+            <Quantity>2</Quantity>
+        </BaseRate>
+        <BaseRate>
+            <Filter>$900-$1000</Filter>
+            <Quantity>1</Quantity>
+        </BaseRate>
+        <HSAEligibleIndicator>
+            <Indicator>false</Indicator>
+            <Quantity>80</Quantity>
+        </HSAEligibleIndicator>
+        <HSAEligibleIndicator>
+            <Indicator>true</Indicator>
+            <Quantity>38</Quantity>
+        </HSAEligibleIndicator>
+        <DomesticPartnerIndicator>
+            <Indicator>true</Indicator>
+            <Quantity>82</Quantity>
+        </DomesticPartnerIndicator>
+        <DomesticPartnerIndicator>
+            <Indicator>false</Indicator>
+            <Quantity>36</Quantity>
+        </DomesticPartnerIndicator>
+        <SameSexIndicator>
+            <Indicator>true</Indicator>
+            <Quantity>82</Quantity>
+        </SameSexIndicator>
+        <SameSexIndicator>
+            <Indicator>false</Indicator>
+            <Quantity>36</Quantity>
+        </SameSexIndicator>
+        <MaternityInNetworkCoverageIndicator>
+            <Indicator>true</Indicator>
+            <Quantity>31</Quantity>
+        </MaternityInNetworkCoverageIndicator>
+        <MaternityInNetworkCoverageIndicator>
+            <Indicator>false</Indicator>
+            <Quantity>87</Quantity>
+        </MaternityInNetworkCoverageIndicator>
+        <MentalInNetworkCoverageIndicator>
+            <Indicator>true</Indicator>
+            <Quantity>118</Quantity>
+        </MentalInNetworkCoverageIndicator>
+        <PrescriptionInNetworkCoverageIndicator>
+            <Indicator>true</Indicator>
+            <Quantity>113</Quantity>
+        </PrescriptionInNetworkCoverageIndicator>
+        <PrescriptionInNetworkCoverageIndicator>
+            <Indicator>false</Indicator>
+            <Quantity>5</Quantity>
+        </PrescriptionInNetworkCoverageIndicator>
+        <SubstanceAbuseInNetworkCoverageIndicator>
+            <Indicator>true</Indicator>
+            <Quantity>118</Quantity>
+        </SubstanceAbuseInNetworkCoverageIndicator>
+    </FilterAnalysis>
+    
+</PlansForIndividualOrFamilyResponse>
+</PrivateOptionsAPIResponse>

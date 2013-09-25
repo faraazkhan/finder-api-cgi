@@ -1,0 +1,113 @@
+REQUEST
+
+<?xml version="1.0" encoding="UTF-8"?>
+<PublicOptionsAPIRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/Users/astowell/Documents/ews/finder_api/finder_api_v0.2.xsd">
+    <FamilyAndChildrenAudianceRequest>
+    	<StateAbbreviation>MD</StateAbbreviation>
+        <Situation>My family and I need health insurance for another reason</Situation>
+        <AgeRange>26-64</AgeRange>
+    </FamilyAndChildrenAudianceRequest>
+    <MedicalConditionOrHealthProblemIndicator>true</MedicalConditionOrHealthProblemIndicator>
+    <DisabilityIndicator>true</DisabilityIndicator>
+    <BreastOrCervicalCancerIndicator>true</BreastOrCervicalCancerIndicator>
+    <DependentUnder21Indicator>true</DependentUnder21Indicator>
+    <NursingHomeOrLongTermCareIndicator>true</NursingHomeOrLongTermCareIndicator>
+    <SpecialHealthcareNeedIndicator>true</SpecialHealthcareNeedIndicator>
+    <PregnancyIndicator>true</PregnancyIndicator>
+    <VeteranStatusIndicator>true</VeteranStatusIndicator>
+    <AmericanIndianOrAlaskanNativeIndicator>true</AmericanIndianOrAlaskanNativeIndicator>
+    <IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator>true</IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator>
+</PublicOptionsAPIRequest>
+
+
+RESPONSE
+
+<?xml version="1.0"?>
+<PublicOptionsAPIResponse>
+  <StateData>
+    <StateAbbreviation>MD</StateAbbreviation>
+    <IndividualMarketURL>http://www.commerce.state.ak.us/insurance/</IndividualMarketURL>
+    <GroupMarketURL>http://www.commerce.state.ak.us/insurance/</GroupMarketURL>
+    <StateHighRiskPlan>
+        <PlanName>Maryland Health Insurance Plan</PlanName>
+        <CustomerServicePhoneNumber>18884449016</CustomerServicePhoneNumber>
+        <StateResidencyRestriction>
+          <ResidencyLengthDescription>6 months</ResidencyLengthDescription>
+        </StateResidencyRestriction>
+        <RestrictiveRiderIndicator>true</RestrictiveRiderIndicator>
+        <ExcessivePremiumIndicator>true</ExcessivePremiumIndicator>
+        <HCTCEligibleIndicator>true</HCTCEligibleIndicator>
+        <HIPAAEligibleIndicator>true</HIPAAEligibleIndicator>
+        <MedicareEligibleIndicator>false</MedicareEligibleIndicator>
+        <DependantCoverageIndicator>true</DependantCoverageIndicator>
+        <IncomeLimitSubsidy>300%FPL</IncomeLimitSubsidy>
+        <RejectionLettersCount>1</RejectionLettersCount>
+        <ConditionsCount>68</ConditionsCount>
+        <PlanOpenDescription>Open</PlanOpenDescription>
+        <MainURL>http://www.marylandhealthinsuranceplan.state.md.us/</MainURL>
+        <PremiumRatesURL>http://www.marylandhealthinsuranceplan.state.md.us/mhip/html/PremiumOverviews.html</PremiumRatesURL>
+        <CoverageBenefitsURL>http://www.marylandhealthinsuranceplan.state.md.us/mhip/attachments/BRC6599.pdf</CoverageBenefitsURL>
+        <EligibilityURL>http://www.marylandhealthinsuranceplan.state.md.us/mhip/html/EligibilityRequirements.html</EligibilityURL>
+        <ConditionsListURL>http://www.marylandhealthinsuranceplan.state.md.us/mhip/attachments/BRC6599.pdf</ConditionsListURL>
+        <LowIncomeSubsidyUrl>http://www.marylandhealthinsuranceplan.state.md.us/mhip/html/PremiumOverviews.html</LowIncomeSubsidyUrl>
+      </StateHighRiskPlan>
+    <CHIPAndMedicaidData>
+      <CHIPContactInformation>
+          <BrandName>Maryland Children's Health Program (MCHP)</BrandName>
+          <Description>CHIP provides children and adults with low-cost insurance. Incomes up to about $45,000 a year (for a family of four) may qualify.</Description>
+          <PhoneNumberTextFormat>1-877-Kids-Now</PhoneNumberTextFormat>
+          <PhoneNumber>18775437669</PhoneNumber>
+          <URL/>
+        </CHIPContactInformation>
+      <MedicaidContactInformation>
+          <BrandName>Maryland Medical Assistance Program: Medicaid in Maryland</BrandName>
+          <Description>Medicaid provides coverage for low income children, families, the elderly, and people with disabilities. Pregnant women may qualify with higher incomes.</Description>
+          <PhoneNumber>18774633464</PhoneNumber>
+          <URL>http://www.dhmh.state.md.us/mma/Eligibility/med_medical%20asst%20overview_Doc%202/medasstov.html</URL>
+        </MedicaidContactInformation>
+    </CHIPAndMedicaidData>
+  </StateData>
+  <PublicOptions>
+    <PublicOption>
+      <PublicOptionName>Coverage for Young Adults Under Age 26</PublicOptionName>
+      <PublicOptionDescription>If your parent?s insurance offers dependent coverage, you may be eligible to be covered on their policy until age 26.</PublicOptionDescription>
+      <PublicOptionURL>http://cciio.cms.gov/programs/marketreforms/youngadults/index.html</PublicOptionURL>
+      <PublicOptionContent>[P] Until now, most young adults "aged off" their parent's health insurance when they turned 19 or graduated from college. Under the Affordable Care Act starting as early as September 2010, if you're covered under your parent's policy, you may be able to remain covered up to age 26. You don't need to live with your parents to be eligible for this coverage. You can also remain covered if you're married. However, before 2014, if you're eligible for health benefits from your own job, your parent's existing job-based policy may not have to cover you. [/P]
+[P] Even if you already "aged off" of your parent's policy, you have a chance to rejoin. Starting as early as September 2010, job-based health plans and insurance policies must give young adults who qualify an opportunity to enroll that continues for at least 30 days. Job-based health plans and insurance policies must provide written notice about this special enrollment opportunity. [/P]
+</PublicOptionContent>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionName>Health Insurance Through Work</PublicOptionName>
+      <PublicOptionDescription>You may be eligible for coverage through work - your job or your spouse?s.</PublicOptionDescription>
+      <PublicOptionURL>http://www.dol.gov/ebsa/consumer_info_health.html</PublicOptionURL>
+      <PublicOptionContent>#&lt;NoMethodError: undefined method `link_to' for main:Object&gt;</PublicOptionContent>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionName>Health Insurance Plans for Individuals &amp; Families</PublicOptionName>
+      <PublicOptionDescription>If you do not have job-based or other coverage, you may want to buy a policy from a private insurer.</PublicOptionDescription>
+      <PublicOptionURL></PublicOptionURL>
+      <PublicOptionContent>no content found</PublicOptionContent>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionName>Pre-Existing Condition Insurance Plan (PCIP)/High Risk Pool</PublicOptionName>
+      <PublicOptionDescription>You may qualify for a pre-existing condition insurance plan or a high risk pool, which helps people who have a hard time getting insurance find coverage.</PublicOptionDescription>
+      <PublicOptionURL></PublicOptionURL>
+      <PublicOptionContent>no content found</PublicOptionContent>
+    </PublicOption>
+    <PublicOption>
+      <PublicOptionName>Finding Care You Can Afford</PublicOptionName>
+      <PublicOptionDescription>There may be local facilities that provide free or reduced-cost care, whether you?re insured or not. What you pay depends on your income.</PublicOptionDescription>
+      <PublicOptionURL>http://www.hrsa.gov/gethealthcare/index.html</PublicOptionURL>
+      <PublicOptionContent>[P] If you need health care, finding a provider you can afford can be a problem.  
+Fortunately, there are places you can go for a wide variety of health needs that will provide free or reduced-cost care. 
+They include some hospitals, and health centers and clinics.
+ [/P]
+
+[P] 
+These places provide prenatal care, baby shots, prescription drugs, general primary care, and specialized care for more serious conditions including mental health, substance abuse, and HIV/AIDS. 
+Anyone may use a community health care center, whether you have health insurance or not. 
+How much you pay will depend on your income. [/P]
+</PublicOptionContent>
+    </PublicOption>
+  </PublicOptions>
+</PublicOptionsAPIResponse>

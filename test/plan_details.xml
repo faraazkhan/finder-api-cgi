@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PrivateOptionsAPIRequest>
+    <PlanDetailsForIndividualOrFamilyRequest>
+        <Enrollees>
+            <Primary>
+                <DateOfBirth>1990-01-01</DateOfBirth>
+                <Gender>Male</Gender>
+                <TobaccoUser>Smoker</TobaccoUser>
+            </Primary>
+        </Enrollees>
+        <Location>
+            <ZipCode>69201</ZipCode>
+            <County>
+                <CountyName>CHERRY</CountyName>
+                <StateCode>NE</StateCode>
+            </County>
+        </Location>
+        <InsuranceEffectiveDate>2012-06-01</InsuranceEffectiveDate>
+        <PlanIDs>
+            <PlanID>10324NE0190005</PlanID>
+        </PlanIDs>
+    </PlanDetailsForIndividualOrFamilyRequest>
+</PrivateOptionsAPIRequest>

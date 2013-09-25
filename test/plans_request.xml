@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<PrivateOptionsAPIRequest>
+	<PlansForIndividualOrFamilyRequest>
+		<Enrollees>
+            <Primary>
+                <DateOfBirth>1990-01-01</DateOfBirth>
+                <Gender>Male</Gender>
+                <TobaccoUser>Smoker</TobaccoUser>
+            </Primary>
+        </Enrollees>
+        <Location>
+            <ZipCode>69201</ZipCode>
+            <County>
+                <CountyName>CHERRY</CountyName>
+                <StateCode>NE</StateCode>
+            </County>
+        </Location>
+        <InsuranceEffectiveDate>2012-10-01</InsuranceEffectiveDate>
+	<IsFilterAnalysisRequiredIndicator>false</IsFilterAnalysisRequiredIndicator>
+	<PaginationInformation>
+		<PageNumber>1</PageNumber>
+		<PageSize>10</PageSize>
+	</PaginationInformation>
+	<SortOrder>
+		<SortField>OOP LIMIT - INDIVIDUAL - IN NETWORK</SortField>
+		<SortDirection>ASC</SortDirection>
+	</SortOrder>
+	<Filter/>
+	</PlansForIndividualOrFamilyRequest>
+</PrivateOptionsAPIRequest>

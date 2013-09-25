@@ -1,0 +1,10 @@
+#all paths are in reference to app root
+log: log/server.log
+finder_xsd: doc/finder_xsd/finder_api_v1.0.xsd
+rbis_url: https://rbis2gateway.insuranceoversight.hhs.gov:9443/RBIS-API/v5.6/REST/
+#rbis_url(dev): https://209.251.177.111:8443/RBIS-API/v4.0/REST/
+rbis_xsd: doc/rbis_xsd/v5.6/rbis-api-5.5.xsd
+db_file: data/db/dbpublicoptions.xml
+territory_file: data/db/territorydata.xml
+# this should only ever be set to debug or info (info stores request data as per client request)
+logger_level: debug

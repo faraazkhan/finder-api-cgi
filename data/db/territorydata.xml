@@ -1,0 +1,607 @@
+<Territories>
+<TerritoryData>
+	<TerritoryAbbreviation>AS</TerritoryAbbreviation>
+	<TerritoryServices>
+		<Service>
+			<Name>
+				Clinic Services
+			</Name>
+			<Description>
+				A wide range of healthcare services including services for prevention or treatment of health conditions or illnesses, surgery, and other care provided in a centralized facility.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Dental Services
+			</Name>
+			<Description>
+				Services provided by a dentist or dental assistant to diagnose, prevent and treat conditions of the mouth, teeth, and face.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Diagnostic Services
+			</Name>
+			<Description>
+				Services used to identify a disease based on signs and symptoms. Tools to identify a disease can include blood and urine tests.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Emergency Hospital Services
+			</Name>
+			<Description>
+				Services provided in a hospital emergency department to treat illnesses or injuries that are medical emergencies.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Eyeglasses
+			</Name>
+			<Description>
+				Lenses or frames used to aid vision.	
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Home Health Services
+			</Name>
+			<Description>
+				A wide range of services performed at someone's home. They can include skilled and non-skilled services, part-time nursing care, different types of therapy (e.g. PT, OT, speech and audiology), help with activities of daily living and homemaker services such as cleaning and meal preparation.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Inpatient Hospital Services
+			</Name>
+			<Description>
+				Any services that a person might receive at a hospital while they are staying overnight. These could include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Lab and X-ray Services:
+			</Name>
+			<Description>
+				Services such as blood and urine tests and x-ray images ordered by a medical professional to screen for or diagnose a medical condition.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Nursing Facility Services
+			</Name>
+			<Description>
+				Skilled nursing, rehabilitation, and other services provided in a facility to help people with illness, injuries, or other disabilities to recover or to improve, and to provide long term care to those who need support with daily activities such as bathing, dressing and eating.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Physicians Services
+			</Name>
+			<Description>
+				Healthcare services, such as office visits, provided by a licensed doctor.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Prescribed Drugs
+			</Name>
+			<Description>
+				Drugs that a person can get only if a doctor (or another authorized healthcare provider) gives permission for them through a prescription.
+			</Description>
+		</Service>
+	</TerritoryServices>
+	<MedicaidContact>
+			Medicaid State Agency:
+			LBJ Tropical Medical Center
+			Michael Gerstenberger, CEO
+			Telephone: (684) 633-4590
+			Email: mike.gerstenberger@lbj.as
+	</MedicaidContact>
+	<MedicaidContact>
+			Medicaid Program Director:
+			Niuatoa Andy Puletasi
+			Telephone: (684) 633-4036 or (684) 633-4818
+			Fax: (684) 633-5086
+			Email: andy.puletasi@lbj.as
+	</MedicaidContact>
+	<HealthCareResourceContact>
+			Governor of American Samoa:
+			Togiola T. Tulafono
+			Telephone: (684) 633-4116
+			Email: togiola@americansamoa.gov
+			governor@americansamoa.gov
+			Medicare 1-800-MEDICARE 
+			Web Site: www.Medicare.gov
+	</HealthCareResourceContact>
+	<ExternalSource>
+		http://www.medicare.gov/
+	</ExternalSource>
+</TerritoryData>
+<TerritoryData>
+	<TerritoryAbbreviation>GU</TerritoryAbbreviation>
+	<TerritoryServices>
+		<Service>
+			<Name>
+				Clinic Services
+			</Name>
+			<Description>
+				A wide range of healthcare services including services for prevention or treatment of health conditions or illnesses, surgery, and other care provided in a centralized facility.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Dental Services
+			</Name>
+			<Description>
+				Services provided by a dentist or dental assistant to diagnose, prevent and treat conditions of the mouth, teeth, and face.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Diagnostic Services
+			</Name>
+			<Description>
+				Services used to identify a disease based on signs and symptoms. Tools to identify a disease can include blood and urine tests.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Early and Periodic Screening, Diagnostic Treatment Services
+			</Name>
+			<Description>
+				Regularly scheduled screenings to identify physical and mental conditions and vision, hearing, and dental problems for people 20 years or younger. Also includes treatment of problems identified through screening regardless of whether that treatment is otherwise part of the Medicaid program.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Emergency Hospital Services
+			</Name>
+			<Description>
+				Services provided in a hospital emergency department to treat illnesses or injuries that are medical emergencies.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Home Health Services
+			</Name>
+			<Description>
+				A wide range of services performed at someone's home. They can include skilled and non-skilled services, part-time nursing care, different types of therapy (e.g. PT, OT, speech and audiology), help with activities of daily living and homemaker services such as cleaning and meal preparation.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Inpatient Hospital Services
+			</Name>
+			<Description>
+				Any services that a person might receive at a hospital while they are staying overnight. These could include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Lab and X-ray Services:
+			</Name>
+			<Description>
+				Services such as blood and urine tests and x-ray images ordered by a medical professional to screen for or diagnose a medical condition.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Nursing Facility Services
+			</Name>
+			<Description>
+				Skilled nursing, rehabilitation, and other services provided in a facility to help people with illness, injuries, or other disabilities to recover or to improve, and to provide long term care to those who need support with daily activities such as bathing, dressing and eating.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Physicians Services
+			</Name>
+			<Description>
+				Healthcare services, such as office visits, provided by a licensed doctor.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Prescribed Drugs
+			</Name>
+			<Description>
+				Drugs that a person can get only if a doctor (or another authorized healthcare provider) gives permission for them through a prescription.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Psychologist Services
+			</Name>
+			<Description>
+				Services from someone who has been trained to diagnose and treat a variety of problems through therapy and counseling. These can include mental health problems, distress, emotional disturbances, and others.
+			</Description>
+		</Service>
+	</TerritoryServices>
+	<MedicaidContact>
+			Sandrina Cepeda
+			Management Analyst III 
+			Bureau of Health Care Financing Administration
+			123 Chalan Kareta, Mangilao, Guam 96913-6304
+			Telephone Number: (671) 735-7237
+			Fax Number: (671) 734-6860
+			Email Address: sandrina.cepeda@dphss.guam.gov
+	</MedicaidContact>
+	<MedicaidContact>
+			Maria Theresa L. Arcangel
+			Medicaid Administrator
+			Bureau of Health Care Financing Administration
+			123 Chalan Kareta, Mangilao, Guam 96913-6304
+			Telephone Number: (671) 735-7282
+			Fax Number: (671) 734-6860
+			Email Address: theresa.arcangel@dphss.guam.gov
+			Web Site: http://dphss.guam.gov
+	</MedicaidContact>
+	<HealthCareResourceContact>
+			Medically Indigent Program (MIP)
+			MIP is a locally funded program administered by the Department of Public Health and Social Services which provides assistance with health care costs to individuals who are not eligible for Medicaid or Medicare.
+			Sandrina Cepeda
+			Management Analyst III
+			Bureau of Health Care Financing Administration
+			123 Chalan Kareta, Mangilao, Guam 96913-6304
+			Telephone Number: (671) 735-7237
+			Fax Number: (671) 734-6860
+			Email Address: sandrina.cepeda@dphss.guam.gov
+			Medicare 1-800-MEDICARE
+			Web Site: www.Medicare.gov
+	</HealthCareResourceContact>
+	<ExternalSource>
+		http://dphss.guam.gov
+	</ExternalSource>
+</TerritoryData>
+<TerritoryData>
+	<TerritoryAbbreviation>MP</TerritoryAbbreviation>
+	<TerritoryServices>
+		<Service>
+			<Name>
+				Clinic Services
+			</Name>
+			<Description>
+				A wide range of healthcare services including services for prevention or treatment of health conditions or illnesses, surgery, and other care provided in a centralized facility.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Dental Services
+			</Name>
+			<Description>
+				Services provided by a dentist or dental assistant to diagnose, prevent and treat conditions of the mouth, teeth, and face.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Early and Periodic Screening, Diagnostic Treatment Services
+			</Name>
+			<Description>
+				Regularly scheduled screenings to identify physical and mental conditions and vision, hearing, and dental problems for people 20 years or younger. Also includes treatment of problems identified through screening regardless of whether that treatment is otherwise part of the Medicaid program.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Emergency Hospital Services
+			</Name>
+			<Description>
+				Services provided in a hospital emergency department to treat illnesses or injuries that are medical emergencies.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Eyeglasses
+			</Name>
+			<Description>
+				Lenses or frames used to aid vision.	
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Family Planning Services
+			</Name>
+			<Description>
+				Medical services for diagnosis, treatment, counseling, drugs, supplies, or devices prescribed or provided by a doctor or nurse to individuals of child-bearing age, to help them determine how many children they will have and how far apart in age their children will be spaced.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Home Health Services
+			</Name>
+			<Description>
+				A wide range of services performed at someone's home. They can include skilled and non-skilled services, part-time nursing care, different types of therapy (e.g. PT, OT, speech and audiology), help with activities of daily living and homemaker services such as cleaning and meal preparation.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Inpatient Hospital Services
+			</Name>
+			<Description>
+				Any services that a person might receive at a hospital while they are staying overnight. These could include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Lab and X-ray Services:
+			</Name>
+			<Description>
+				Services such as blood and urine tests and x-ray images ordered by a medical professional to screen for or diagnose a medical condition.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Nursing Facility Services
+			</Name>
+			<Description>
+				Skilled nursing, rehabilitation, and other services provided in a facility to help people with illness, injuries, or other disabilities to recover or to improve, and to provide long term care to those who need support with daily activities such as bathing, dressing and eating.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Physicians Services
+			</Name>
+			<Description>
+				Healthcare services, such as office visits, provided by a licensed doctor.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Prescribed Drugs
+			</Name>
+			<Description>
+				Drugs that a person can get only if a doctor (or another authorized healthcare provider) gives permission for them through a prescription.
+			</Description>
+		</Service>
+	</TerritoryServices>
+	<MedicaidContact>
+			Helen Sablan, Administrator
+			Medicaid
+			PO Box 500409
+			Saipan, MP 96950
+			Telephone: (670) 664-4890
+			Fax: (670) 236-8604
+			Email: chcmc@pticom.com
+	</MedicaidContact>
+	<HealthCareResourceContact>
+			Division of Public Health (670) 234-8950
+			Department of Public Health
+			PO Box 500409CK
+			Saipan, MP 96950
+			Medicare 1-800-MEDICARE
+			Web Site: www.Medicare.gov
+	</HealthCareResourceContact>
+	<ExternalSource>
+		http://www.medicare.gov/
+	</ExternalSource>
+</TerritoryData>
+<TerritoryData>
+	<TerritoryAbbreviation>PR</TerritoryAbbreviation>
+	<TerritoryServices>
+		<Service>
+			<Name>
+				Clinic Services
+			</Name>
+			<Description>
+				A wide range of healthcare services including services for prevention or treatment of health conditions or illnesses, surgery, and other care provided in a centralized facility.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Dental Services
+			</Name>
+			<Description>
+				Services provided by a dentist or dental assistant to diagnose, prevent and treat conditions of the mouth, teeth, and face.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Early and Periodic Screening, Diagnostic Treatment Services
+			</Name>
+			<Description>
+				Regularly scheduled screenings to identify physical and mental conditions and vision, hearing, and dental problems for people 20 years or younger. Also includes treatment of problems identified through screening regardless of whether that treatment is otherwise part of the Medicaid program.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Emergency Hospital Services
+			</Name>
+			<Description>
+				Services provided in a hospital emergency department to treat illnesses or injuries that are medical emergencies.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Home Health Services
+			</Name>
+			<Description>
+				A wide range of services performed at someone's home. They can include skilled and non-skilled services, part-time nursing care, different types of therapy (e.g. PT, OT, speech and audiology), help with activities of daily living and homemaker services such as cleaning and meal preparation.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Inpatient Hospital Services
+			</Name>
+			<Description>
+				Any services that a person might receive at a hospital while they are staying overnight. These could include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Lab and X-ray Services:
+			</Name>
+			<Description>
+				Services such as blood and urine tests and x-ray images ordered by a medical professional to screen for or diagnose a medical condition.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Nursing Facility Services
+			</Name>
+			<Description>
+				Skilled nursing, rehabilitation, and other services provided in a facility to help people with illness, injuries, or other disabilities to recover or to improve, and to provide long term care to those who need support with daily activities such as bathing, dressing and eating.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Physicians Services
+			</Name>
+			<Description>
+				Healthcare services, such as office visits, provided by a licensed doctor.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Prescribed Drugs
+			</Name>
+			<Description>
+				Drugs that a person can get only if a doctor (or another authorized healthcare provider) gives permission for them through a prescription.
+			</Description>
+		</Service>
+	</TerritoryServices>
+	<MedicaidContact>
+			Medicaid Office
+			PO Box 7018
+			San Juan, Puerto Rico
+			Tel: 787-765-1230
+			Fax: 787-250-0990
+	</MedicaidContact>
+	<HealthCareResourceContact>
+			Medicare
+			Phone: 1-800-MEDICARE
+			Web Site: www.Medicare.gov
+			Veterans Administration
+			Caribbean Healthcare System
+			10 Casia Street
+			San Juan, PR 00921-3201
+			787-641-7582 Or 800-449-8729
+	</HealthCareResourceContact>
+	<ExternalSource>
+		http://www.medicare.gov/
+	</ExternalSource>
+</TerritoryData>
+<TerritoryData>
+	<TerritoryAbbreviation>VI</TerritoryAbbreviation>
+	<TerritoryServices>
+		<Service>
+			<Name>
+				Clinic Services
+			</Name>
+			<Description>
+				A wide range of healthcare services including services for prevention or treatment of health conditions or illnesses, surgery, and other care provided in a centralized facility.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Dental Services
+			</Name>
+			<Description>
+				Services provided by a dentist or dental assistant to diagnose, prevent and treat conditions of the mouth, teeth, and face.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Early and Periodic Screening, Diagnostic Treatment Services
+			</Name>
+			<Description>
+				Regularly scheduled screenings to identify physical and mental conditions and vision, hearing, and dental problems for people 20 years or younger. Also includes treatment of problems identified through screening regardless of whether that treatment is otherwise part of the Medicaid program.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Home Health Services
+			</Name>
+			<Description>
+				A wide range of services performed at someone's home. They can include skilled and non-skilled services, part-time nursing care, different types of therapy (e.g. PT, OT, speech and audiology), help with activities of daily living and homemaker services such as cleaning and meal preparation.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Inpatient Hospital Services
+			</Name>
+			<Description>
+				Any services that a person might receive at a hospital while they are staying overnight. These could include services from a doctor or nurse, lab work, surgery, drugs, and food and bed.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Lab and X-ray Services:
+			</Name>
+			<Description>
+				Services such as blood and urine tests and x-ray images ordered by a medical professional to screen for or diagnose a medical condition.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Nursing Facility Services
+			</Name>
+			<Description>
+				Skilled nursing, rehabilitation, and other services provided in a facility to help people with illness, injuries, or other disabilities to recover or to improve, and to provide long term care to those who need support with daily activities such as bathing, dressing and eating.
+			</Description>
+		</Service>
+		<Service>
+			<Name>
+				Physicians Services
+			</Name>
+			<Description>
+				Healthcare services, such as office visits, provided by a licensed doctor.
+			</Description>
+		</Service>
+	</TerritoryServices>
+	<MedicaidContact>
+			Knud Hansen Complex
+			ST. THOMAS, VIRGIN ISLANDS
+			Phone: (340) 774-3325
+	</MedicaidContact>
+	<MedicaidContact>
+			Morris DeCastro Clinic
+			CRUZ BAY, ST. JOHN
+			Phone: (340) 776-6400
+	</MedicaidContact>
+	<MedicaidContact>
+			Charles Harwood Complex
+			CHRISTIANSTED, ST. CROIX
+			Phone (340) 773-1311 x. 3094
+	</MedicaidContact>
+	<MedicaidContact>		
+			Ingeborg Nesbitt Clinic
+			FREDERIKSTED, ST. CROIX
+			Phone (340) 772-2501
+	</MedicaidContact>
+	<HealthCareResourceContact>
+			USVI Health Department
+			St. Croix Office
+			Charles Harwood Complex
+			3500 Est. Richmond
+			Christiansted, VI 00820
+			Voice: (340) 773-1311
+	</HealthCareResourceContact>	
+	<HealthCareResourceContact>		
+			St. Thomas / St. John Office
+			1303 Hospital Ground Suite 10
+			Charlotte Amalie
+			St. Thomas, VI 00802
+			Voice: (340) 774-9000
+	</HealthCareResourceContact>	
+	<HealthCareResourceContact>
+			Department of Human Services - St. Thomas
+			1303 Hospital Ground Knud Hansen Complex Building A
+			St. Thomas, VI 00802
+			Phone: (340) 774-0930
+	</HealthCareResourceContact>	
+	<HealthCareResourceContact>	
+			Department of Human Services - St. Croix
+			3011 Golden Rock Christiansted
+			St Croix, VI 00820
+			(340) 773-2323
+	</HealthCareResourceContact>	
+	<HealthCareResourceContact>		
+			Department of Human Services - St. John
+			St. John, VI
+			(340) 776-6334
+	</HealthCareResourceContact>
+	<ExternalSource>
+		http://www.medicare.gov/
+	</ExternalSource>
+</TerritoryData>
+</Territories>

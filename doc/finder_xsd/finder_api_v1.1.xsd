@@ -1,0 +1,4454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:private="http://www.healthcare.gov/api-types" elementFormDefault="qualified">
+
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- REQUEST -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+
+  <xs:element name="PublicOptionsAPIRequest">
+    <xs:complexType>
+      <xs:sequence>
+      	<xs:element name="RequesterInfoData" type="RequesterInfoDataType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>Requester Info</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      	<xs:element name="StateOrTerritory" type="StateOrTerritoryType">
+          <xs:annotation>
+            <xs:documentation>State or Territory</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:choice minOccurs="0" maxOccurs="1">
+          <xs:sequence>
+            <xs:choice>
+              <xs:element name="FamilyAndChildrenAudienceRequest">
+                <xs:annotation>
+                  <xs:documentation>Family and Children Audience Request</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Situation">
+                      <xs:annotation>
+                        <xs:documentation>Situation</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="familylosingworkinsurance">
+                            <xs:annotation>
+                              <xs:documentation>My family and I are losing the health insurance we have through work</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="familyrejectedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>My family and I tried to get health insurance, but we were rejected for coverage</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="familyneedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>My family and I need health insurance for another reason</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="AgeRange" type="AgeRangeFullType">
+                      <xs:annotation>
+                        <xs:documentation>Age Range</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="HealthyIndividualAudienceRequest">
+                <xs:annotation>
+                  <xs:documentation>Healthy Individual Audience Request</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Situation">
+                      <xs:annotation>
+                        <xs:documentation>Situation</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="individuallosingworkinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I'm losing the health insurance I have through work.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="individualneedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I need health insurance.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="AgeRange" type="AgeRangeFullType">
+                      <xs:annotation>
+                        <xs:documentation>Age Range</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="IndividualWithMedicalConditionAudienceRequest">
+                <xs:annotation>
+                  <xs:documentation>Individual With Medical Condition Audience Request</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Situation">
+                      <xs:annotation>
+                        <xs:documentation>Situation</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="medicallosingworkinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I'm losing the health insurance I have through work.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="medicalrejectedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I've tried to get health insurance, but I was rejected for coverage because of my medical condition.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="medicalneedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I need health insurance.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="AgeRange" type="AgeRangeFullType">
+                      <xs:annotation>
+                        <xs:documentation>Age Range</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PregnantWomanAudienceRequest">
+                <xs:annotation>
+                  <xs:documentation>Pregnant Woman Audience Request</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Situation">
+                      <xs:annotation>
+                        <xs:documentation>Situation</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="pregnantlosingworkinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I'm losing the health insurance I have through work.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="pregnantrejectedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I've tried to get health insurance, but I was rejected for coverage because of my medical condition.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="pregnantneedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I need health insurance.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="AgeRange">
+                      <xs:annotation>
+                        <xs:documentation>Age Range</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="18 or Under">
+                            <xs:annotation>
+                              <xs:documentation>18 or Under</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="19-25">
+                            <xs:annotation>
+                              <xs:documentation>19-25</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="26-64">
+                            <xs:annotation>
+                              <xs:documentation>26-64</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PersonWithDisabilityAudienceRequest">
+                <xs:annotation>
+                  <xs:documentation>Person With Disability Audience Request</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Situation">
+                      <xs:annotation>
+                        <xs:documentation>Situation</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="disabilitylosingworkinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I'm losing the health insurance I have through work.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="disabilityrejectedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I've tried to get health insurance, but I was rejected for coverage because of my medical condition.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="disabilityneedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I need health insurance.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="disabilitylongtermcare">
+                            <xs:annotation>
+                              <xs:documentation>I need help paying for long-term care.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="AgeRange" type="AgeRangeFullType">
+                      <xs:annotation>
+                        <xs:documentation>Age Range</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="SeniorAudienceRequest">
+                <xs:annotation>
+                  <xs:documentation>Senior Audience Request</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Situation">
+                      <xs:annotation>
+                        <xs:documentation>Situation</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="seniorlearnaboutlaw">
+                            <xs:annotation>
+                              <xs:documentation>I have Medicare and want to learn how the new health law will help me.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="seniorinsurancenomedicare">
+                            <xs:annotation>
+                              <xs:documentation>I don't have Medicare and want to learn about other health insurance options.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="seniorinsurancebenefits">
+                            <xs:annotation>
+                              <xs:documentation>I want to know more about insurance for benefits that are not covered by Medicare.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="seniorhowmedicare">
+                            <xs:annotation>
+                              <xs:documentation>How do I get Medicare?</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="seniorcantafford">
+                            <xs:annotation>
+                              <xs:documentation>I can't afford to pay for my costs under Medicare.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="seniorlongtermcare">
+                            <xs:annotation>
+                              <xs:documentation>I need help paying for long-term care.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="YoungAdultAudienceRequest">
+                <xs:annotation>
+                  <xs:documentation>Young Adult Audience Request</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Situation">
+                      <xs:annotation>
+                        <xs:documentation>Situation</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="studentlosingschoolinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I'm losing the student health insurance I had through my school</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="studentlosingparentalinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I'm losing the health insurance I had through work (or my parent's work).</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="studentrejectedcondition">
+                            <xs:annotation>
+                              <xs:documentation>I've tried to get health insurance, but I was rejected for coverage because I'm sick or disabled.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="studentneedinsurance">
+                            <xs:annotation>
+                              <xs:documentation>I need health insurance.</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="AgeRange">
+                      <xs:annotation>
+                        <xs:documentation>Age Range</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="18 or Under">
+                            <xs:annotation>
+                              <xs:documentation>18 or Under</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                          <xs:enumeration value="19-25">
+                            <xs:annotation>
+                              <xs:documentation>19-25</xs:documentation>
+                            </xs:annotation>
+                          </xs:enumeration>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:element name="MedicalConditionOrHealthProblemIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Medical condition or health problem</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <!-- A value of of true will be implied for a an IndividualWithMedicalCondition -->
+            <xs:element name="DisabilityIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Disability</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <!-- A value of of true will be implied for a an PersonWithDisability -->
+            <xs:element name="BreastOrCervicalCancerIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Breast or Cervical Cancer</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="DependentUnder21Indicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>dependent under 21</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="NursingHomeOrLongTermCareIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Nursing home or long term care</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="SpecialHealthcareNeedIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Special healthcare need</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="PregnancyIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Pregnancy</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <!-- A value of of true will be implied for a PregnantWoman and ignored for Senior -->
+            <xs:element name="VeteranStatusIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Veteran status</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="AmericanIndianOrAlaskanNativeIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>American Indian or Alaskan Native</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="IsItDifficultForYouOrYourFamilyMemberToAffordInsuranceIndicator" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Is it difficult to afford insurance</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+          <xs:element name="SmallEmployerOrSelfEmployedAudienceRequest">
+            <xs:annotation>
+              <xs:documentation>Small Employed Or Self Employed Audience Request</xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Situation">
+                  <xs:annotation>
+                    <xs:documentation>Situation</xs:documentation>
+                  </xs:annotation>
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:enumeration value="employerinsurance">
+                        <xs:annotation>
+                          <xs:documentation>I need health unsurance for my employees.</xs:documentation>
+                        </xs:annotation>
+                      </xs:enumeration>
+                      <xs:enumeration value="selfemployedinsurance">
+                        <xs:annotation>
+                          <xs:documentation>I'm self-employed with no other employees.</xs:documentation>
+                        </xs:annotation>
+                      </xs:enumeration>
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="PrivateOptionsAPIRequest">
+  	<xs:complexType>
+  		<xs:sequence>
+	  		<xs:element name="RequesterInfoData" type="RequesterInfoDataType" minOccurs="0">  
+          <xs:annotation>
+            <xs:documentation>Requester Info</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+	  		<xs:choice>
+	  			<xs:element name="CountiesForPostalCodeRequest" type="ZipCodeValidationRequest">
+            <xs:annotation>
+              <xs:documentation>Counties for Postal Code</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+	  			<xs:element name="PlansForIndividualOrFamilyRequest" type="IndividualPlanQuoteRequest" >
+            <xs:annotation>
+              <xs:documentation>Plans for Individual or Family</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+	  			<xs:element name="PlanDetailsForIndividualOrFamilyRequest" type="IndividualPlanBenefitRequest">
+            <xs:annotation>
+              <xs:documentation>Plan Details for Individual or Family</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+	  			<xs:element name="ProductsForSmallGroupRequest" type="SmallGroupProductQuoteRequest">
+            <xs:annotation>
+              <xs:documentation>Products for Small Group</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+	  			<xs:element name="ProductDetailsForSmallGroupRequest" type="SmallGroupProductBenefitRequest">
+            <xs:annotation>
+              <xs:documentation>Product Details for Small Group</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+	  		</xs:choice>
+  		</xs:sequence>
+  	</xs:complexType>
+  </xs:element>
+  
+  
+
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- RESPONSE -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+
+
+  <xs:element name="PublicOptionsAPIResponse">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element name="PublicOptions">
+            <xs:annotation>
+              <xs:documentation>Public Options</xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="PublicOption" minOccurs="1" maxOccurs="unbounded" >
+                  <xs:annotation>
+                    <xs:documentation>Public Option</xs:documentation>
+                  </xs:annotation>
+                	<xs:complexType>
+                		<xs:choice>
+                			<xs:element name="ChipData" type="ChipOrMcdDataType" >
+                        <xs:annotation>
+                          <xs:documentation>Chip Data</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                			<xs:element name="MedicaidData" type="ChipOrMcdDataType" >
+                        <xs:annotation>
+                          <xs:documentation>Medicaid Data</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                			<xs:element name="HighriskData" type="HighriskDataType" >
+                        <xs:annotation>
+                          <xs:documentation>Highrisk Data</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                			<xs:element name="TerritoryData" type="TerritoryDataType" >
+                        <xs:annotation>
+                          <xs:documentation>Territory Data</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                			<xs:element name="IndividualAndFamilyPlanData" type="IndividualAndFamilyPlanDataType">
+                        <xs:annotation>
+                          <xs:documentation>Individual and Family Plan Data</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                			<xs:element name="SmallBusinessProductData" type="SmallBusinessProductDataType">
+                        <xs:annotation>
+                          <xs:documentation>Small Business Product Data</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                			<xs:element name="PublicOptionData" type="GenericPublicOptionDataType" >
+                        <xs:annotation>
+                          <xs:documentation>Public Option Data</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                		</xs:choice>
+                	</xs:complexType>
+                </xs:element>
+                <xs:element name="CHIPAndMedicaidBenefitGroups" type="CHIPAndMedicaidBenefitGroupsType" minOccurs="0" >
+                  <xs:annotation>
+                    <xs:documentation>CHIP and Medicaid Benefit Groups</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+                <xs:element name="CHIPAndMedicaidDisclaimers" type="CHIPAndMedicaidDisclaimersType" minOccurs="0">
+                  <xs:annotation>
+                    <xs:documentation>CHIP and Medicaid Disclaimers</xs:documentation>
+                  </xs:annotation>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element name="InvalidRequestReason" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Reason for invalid request.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="InvalidRequestDetails" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>Details of invalid request.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:choice>
+    </xs:complexType>
+ </xs:element>
+ 
+  <xs:element name="PrivateOptionsAPIResponse">
+  	<xs:complexType>
+  		<xs:choice>
+  			<xs:element name="CountiesForPostalCodeResponse" type="ZipCodeValidationResponse" >
+          <xs:annotation>
+            <xs:documentation>Counties For Postal Code</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+  			<xs:element name="PlansForIndividualOrFamilyResponse" type="IndividualPlanQuoteResponse" >
+          <xs:annotation>
+            <xs:documentation>Plans for Individual or Family</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+  			<xs:element name="PlanDetailsForIndividualOrFamilyResponse" type="IndividualPlanBenefitResponse">
+          <xs:annotation>
+            <xs:documentation>Plan Details for Individual or Family</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+  			<xs:element name="ProductsForSmallGroupResponse" type="SmallGroupProductQuoteResponse">
+          <xs:annotation>
+            <xs:documentation>Products for Small Group</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+  			<xs:element name="ProductDetailsForSmallGroupResponse" type="SmallGroupProductBenefitResponse">
+          <xs:annotation>
+            <xs:documentation>Product Details for Small Group</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+  		</xs:choice>
+  	</xs:complexType>
+  </xs:element>
+
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- Public Option DATA TYPES -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <xs:complexType name="RequesterInfoDataType">
+  	<xs:sequence>
+  		<xs:element name="OrganizationName" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Name of organization requesting info.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+  		<xs:element name="ContactEmail" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Contact email for requestor.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+   	</xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="ChipOrMcdDataType">
+	<xs:sequence>
+	  <xs:element name="ContactInformation" type="StateMedicaidOrChipInfoType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Contact Information for CHIP or State Medicaid program</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+		<xs:element name="Programs" type="CHIPAndMedicaidProgramsType" minOccurs="0">
+           <xs:annotation>
+             <xs:documentation>Programs for CHIP or State Medicaid Program</xs:documentation>
+           </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="IndividualAndFamilyPlanDataType">
+  	<xs:sequence>
+  	  <xs:element name="IndividualMarketURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>URL for the individual market</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+   	</xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="SmallBusinessProductDataType">
+  	<xs:sequence>
+  	  <xs:element name="GroupMarketURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>URL for Group Market</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+   	</xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="HighriskDataType">
+  	<xs:sequence>
+  	  <xs:element name="FederalHighRiskPlan" type="HighRiskPlanType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Federal High Risk Plan</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StateHighRiskPlan" type="HighRiskPlanType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>State High Risk Plan</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="CHIPAndMedicaidBenefitDataType">
+  	<xs:sequence>
+  		<xs:element name="Benefits">
+  			<xs:complexType >
+  				<xs:sequence>
+			  		<xs:element name="NameText" type="xs:string">
+              <xs:annotation>
+                <xs:documentation>Name Text</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+	          <xs:element name="DescriptionText" type="xs:string">
+              <xs:annotation>
+                <xs:documentation>Description Text</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+				  </xs:sequence>
+			  </xs:complexType>
+		  </xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="CostSharingData">
+  	<xs:sequence>
+  		<xs:element name="QualifyingIncomeLevelAsPercentRangeOfFpl" type="xs:string" >
+        <xs:annotation>
+          <xs:documentation>Qualifying Income Level As Percentage Range of Federal Poverty Level</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+  		<xs:element name="EnrollmentFeeAmount" type="xs:string" >
+        <xs:annotation>
+          <xs:documentation>Enrollment Fee Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+  		<xs:element name="CopaymentAmount" type="xs:float" >
+        <xs:annotation>
+          <xs:documentation>Copay Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+  		<xs:element name="DeductibleAmount" type="xs:float" >
+        <xs:annotation>
+          <xs:documentation>Deductible Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+  		<xs:element name="AnnualCapLimitAmount" type="xs:float" >
+        <xs:annotation>
+          <xs:documentation>Annual Cap Limit</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+  	</xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="AgeRangeFullType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="18 or Under">
+        <xs:annotation>
+          <xs:documentation>18 or Under</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="19-25">
+        <xs:annotation>
+          <xs:documentation>19-25</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="26-64">
+        <xs:annotation>
+          <xs:documentation>26-64</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="65 or older">
+        <xs:annotation>
+          <xs:documentation>65 or older</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="YesNoAnyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Yes">
+        <xs:annotation>
+          <xs:documentation>Yes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="No">
+        <xs:annotation>
+          <xs:documentation>No</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Any">
+        <xs:annotation>
+          <xs:documentation>Any</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PhoneNumberType">
+    <xs:annotation>
+      <xs:documentation>Allow 11 digits for a phone number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{11,11}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PhoneNumberExtensionType">
+    <xs:annotation>
+      <xs:documentation>Allow 1 to 6 digits for a phone number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{1,6}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ZipCodeType">
+    <xs:annotation>
+      <xs:documentation>Allow 5 digits for a phone number</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{5,5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="URLType">
+    <xs:annotation>
+      <xs:documentation>Allow any valid URI</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:anyURI">
+      <!-- <xs:pattern value="/(http|https):\/\/[a-zA-Z0-9]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,5}(:[0-9]{1,5})?(\/.*)?"/> -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AlwaysFalseType">
+    <xs:annotation>
+      <xs:documentation>Always false</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:boolean">
+      <xs:pattern value="false"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="BooleanType">
+    <xs:annotation>
+      <xs:documentation>Either true or false</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:boolean"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="DatabaseIdentifierType">
+    <xs:annotation>
+      <xs:documentation>Allow only positive integer values</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:positiveInteger"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringUnlimited">
+    <xs:annotation>
+      <xs:documentation>String of any size greater than 0</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax6Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1 (min) to 6 (max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="6"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax10Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 10(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax15Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 15(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="15"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax30Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 30(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax50Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 50(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax100Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 100(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax200Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 200(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax500Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 500(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="500"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax1000Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 1000(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="1000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax1500Length">
+    <xs:annotation>
+      <xs:documentation>String of length 1(min) to 1500(max)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="1500"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="StateOrTerritoryType">
+    <xs:choice>
+      <xs:element name="StateAbbreviation" type="StateAbbreviationType">
+        <xs:annotation>
+          <xs:documentation>State Abbreviation</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TerritoryAbbreviation" type="TerritoryAbbreviationType">
+        <xs:annotation>
+          <xs:documentation>Territory Abbreviation</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+
+  </xs:complexType>
+
+  <xs:simpleType name="TerritoryAbbreviationType">
+    <xs:annotation>
+      <xs:documentation>List of US Territories.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AS">
+        <xs:annotation>
+          <xs:documentation>AMERICAN SAMOA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GU">
+        <xs:annotation>
+          <xs:documentation>GUAM </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MP">
+        <xs:annotation>
+          <xs:documentation>NORTHERN MARIANA ISLANDS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PR">
+        <xs:annotation>
+          <xs:documentation>PUERTO RICO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VI">
+        <xs:annotation>
+          <xs:documentation>VIRGIN ISLANDS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StateAbbreviationType">
+    <xs:annotation>
+      <xs:documentation>List of US States.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AL">
+        <xs:annotation>
+          <xs:documentation>ALABAMA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AK">
+        <xs:annotation>
+          <xs:documentation>ALASKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AZ">
+        <xs:annotation>
+          <xs:documentation>ARIZONA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AR">
+        <xs:annotation>
+          <xs:documentation>ARKANSAS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CA">
+        <xs:annotation>
+          <xs:documentation>CALIFORNIA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CO">
+        <xs:annotation>
+          <xs:documentation>COLORADO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CT">
+        <xs:annotation>
+          <xs:documentation>CONNECTICUT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DE">
+        <xs:annotation>
+          <xs:documentation>DELAWARE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DC">
+        <xs:annotation>
+          <xs:documentation>DISTRICT OF COLUMBIA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FL">
+        <xs:annotation>
+          <xs:documentation>FLORIDA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GA">
+        <xs:annotation>
+          <xs:documentation>GEORGIA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HI">
+        <xs:annotation>
+          <xs:documentation>HAWAII</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ID">
+        <xs:annotation>
+          <xs:documentation>IDAHO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IL">
+        <xs:annotation>
+          <xs:documentation>ILLINOIS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IN">
+        <xs:annotation>
+          <xs:documentation>INDIANA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IA">
+        <xs:annotation>
+          <xs:documentation>IOWA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KS">
+        <xs:annotation>
+          <xs:documentation>KANSAS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KY">
+        <xs:annotation>
+          <xs:documentation>KENTUCKY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LA">
+        <xs:annotation>
+          <xs:documentation>LOUISIANA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ME">
+        <xs:annotation>
+          <xs:documentation>MAINE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MD">
+        <xs:annotation>
+          <xs:documentation>MARYLAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MA">
+        <xs:annotation>
+          <xs:documentation>MASSACHUSETTS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MI">
+        <xs:annotation>
+          <xs:documentation>MICHIGAN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MN">
+        <xs:annotation>
+          <xs:documentation>MINNESOTA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MS">
+        <xs:annotation>
+          <xs:documentation>MISSISSIPPI</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MO">
+        <xs:annotation>
+          <xs:documentation>MISSOURI</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MT">
+        <xs:annotation>
+          <xs:documentation>MONTANA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NE">
+        <xs:annotation>
+          <xs:documentation>NEBRASKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NV">
+        <xs:annotation>
+          <xs:documentation>NEVADA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NH">
+        <xs:annotation>
+          <xs:documentation>NEW HAMPSHIRE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NJ">
+        <xs:annotation>
+          <xs:documentation>NEW JERSEY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NM">
+        <xs:annotation>
+          <xs:documentation>NEW MEXICO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NY">
+        <xs:annotation>
+          <xs:documentation>NEW YORK</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NC">
+        <xs:annotation>
+          <xs:documentation>NORTH CAROLINA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ND">
+        <xs:annotation>
+          <xs:documentation>NORTH DAKOTA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OH">
+        <xs:annotation>
+          <xs:documentation>OHIO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OK">
+        <xs:annotation>
+          <xs:documentation>OKLAHOMA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OR">
+        <xs:annotation>
+          <xs:documentation>OREGON</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PA">
+        <xs:annotation>
+          <xs:documentation>PENNSYLVANIA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RI">
+        <xs:annotation>
+          <xs:documentation>RHODE ISLAND</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SC">
+        <xs:annotation>
+          <xs:documentation>SOUTH CAROLINA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SD">
+        <xs:annotation>
+          <xs:documentation>SOUTH DAKOTA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TN">
+        <xs:annotation>
+          <xs:documentation>TENNESSEE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TX">
+        <xs:annotation>
+          <xs:documentation>TEXAS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UT">
+        <xs:annotation>
+          <xs:documentation>UTAH</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VT">
+        <xs:annotation>
+          <xs:documentation>VERMONT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VA">
+        <xs:annotation>
+          <xs:documentation>VIRGINIA </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WA">
+        <xs:annotation>
+          <xs:documentation>WASHINGTON</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WV">
+        <xs:annotation>
+          <xs:documentation>WEST VIRGINIA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WI">
+        <xs:annotation>
+          <xs:documentation>WISCONSIN</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WY">
+        <xs:annotation>
+          <xs:documentation>WYOMING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- GLOBAL complex types  -->
+
+  <xs:complexType name="URLOrReasonForMissingType">
+    <xs:annotation>
+      <xs:documentation>URL or Reason For Missing</xs:documentation>
+    </xs:annotation>
+    <xs:choice>
+      <xs:element name="URL" type="URLType">
+        <xs:annotation>
+          <xs:documentation>URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MissingURLExplanation">
+        <xs:annotation>
+          <xs:documentation>Missing URL Explanation</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Invalid URL Provided">
+              <xs:annotation>
+                <xs:documentation>Invalid URL Provided</xs:documentation>
+              </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="URL Not Provided">
+              <xs:annotation>
+                <xs:documentation>URL Not Provided</xs:documentation>
+              </xs:annotation>
+            </xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="TerritoryDataType">
+    <xs:sequence>
+      <xs:element name="TerritoryAbbreviation" type="TerritoryAbbreviationType">
+        <xs:annotation>
+          <xs:documentation>Territory Abberviation</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="TerritoryServices" type="TerritoryServiceType" minOccurs="0" maxOccurs="20">
+        <xs:annotation>
+          <xs:documentation>Territory Services</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+   	  <xs:element name="MedicaidContact" type="xs:string" maxOccurs="20">
+        <xs:annotation>
+          <xs:documentation>Medicaid Contact</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+   	  <xs:element name="HealthCareResourceContact" type="xs:string" maxOccurs="20">
+        <xs:annotation>
+          <xs:documentation>Health Care Resource Contact</xs:documentation>
+        </xs:annotation>
+   	  </xs:element>
+      <xs:element name="ExternalSource" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>URL for External Source of Information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="TerritoryServiceType">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="Service">
+        <xs:annotation>
+          <xs:documentation>Service</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Name" type="StringOfMax200Length">
+              <xs:annotation>
+                <xs:documentation>Name</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="Description" type="StringOfMax1000Length">
+              <xs:annotation>
+                <xs:documentation>Description</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- Private Options DATA TYPES -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+
+	<xs:complexType name="ZipCodeValidationRequest">
+		<xs:sequence>
+			<xs:element name="ZipCode" type="ZipCodeType">
+        <xs:annotation>
+          <xs:documentation>Zip Code</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ZipCodeValidationResponse">
+		<xs:sequence>	
+			<xs:element name="Counties">
+        <xs:annotation>
+          <xs:documentation>Counties in zip code</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="County" type="CountyType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>County</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+			
+	<xs:complexType name="IndividualPlanQuoteRequest">
+		<xs:sequence>
+			<xs:element name="Enrollees" type="EnrolleesType">
+        <xs:annotation>
+          <xs:documentation>Enrollees</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Location" type="LocationType">
+        <xs:annotation>
+          <xs:documentation>Location</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="InsuranceEffectiveDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Insurance Effective Date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="IsFilterAnalysisRequiredIndicator" type="xs:boolean" default="false" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Is Filter Analysis Required?</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="PaginationInformation" type="PaginationInformationType">
+        <xs:annotation>
+          <xs:documentation>Pagination Information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="SortOrder" type="PlanSortOrderType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Sort Order</xs:documentation>
+        </xs:annotation>
+      </xs:element>				
+			<xs:element name="Filter" type="PlanFilterType" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Filter</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="ComparePlans" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Compare Plans</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="PlanIds" type="PlanIDType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Plan IDS</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType  name="IndividualPlanQuoteResponse">
+		<xs:sequence>
+			<xs:element name="TotalEligiblePlansQuanity" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>Total Eligible Plans Quantity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="PaginationInformation" type="PaginationInformationType">
+        <xs:annotation>
+          <xs:documentation>Pagination Information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Plans">
+        <xs:annotation>
+          <xs:documentation>Plans</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Plan" type="PlanType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Pagination Information</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FilterAnalysis" type="PlanFilterAnalysisType" minOccurs="0">
+        <xs:annotation>
+         <xs:documentation>Filter Analysis</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="ComparePlans" minOccurs="0">
+        <xs:annotation>
+         <xs:documentation>Compare Plans</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Plan" type="PlanType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Plan</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="IndividualPlanBenefitRequest">
+		<xs:sequence>
+			<xs:element name="Enrollees" type="EnrolleesType">
+        <xs:annotation>
+         <xs:documentation>Enrollees</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Location" type="LocationType">
+        <xs:annotation>
+         <xs:documentation>Location</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="InsuranceEffectiveDate" type="xs:date">
+        <xs:annotation>
+         <xs:documentation>Insurance Effective Date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="PlanIDs">
+        <xs:annotation>
+         <xs:documentation>Plan IDs</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="PlanID" type="PlanIDType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Plan ID</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="IndividualPlanBenefitResponse">
+		<xs:sequence>
+			<xs:element name="PlanBenefits">
+        <xs:annotation>
+         <xs:documentation>Plan Benefits</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="PlanBenefit" type="PlanBenefitsType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Plan Benefit</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+		
+	<!--  Small Group Services -->
+	<xs:complexType name="SmallGroupProductQuoteRequest">
+		<xs:sequence>
+			<xs:element name="NumberOfEmployees" type="xs:int">
+        <xs:annotation>
+         <xs:documentation>Number of Employees</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Location" type="LocationType">
+        <xs:annotation>
+         <xs:documentation>Location</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="InsuranceEffectiveDate" type="xs:date">
+        <xs:annotation>
+         <xs:documentation>Insurance Effective Date</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="IsFilterAnalysisRequiredIndicator" type="xs:boolean" default="false" minOccurs="0">
+        <xs:annotation>
+         <xs:documentation>Is Filter Analysis Required</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="PaginationInformation" type="PaginationInformationType">
+        <xs:annotation>
+         <xs:documentation>Pagination Information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="SortOrder" type="ProductSortOrderType" minOccurs="0">
+        <xs:annotation>
+         <xs:documentation>Sort Order</xs:documentation>
+        </xs:annotation>
+      </xs:element>				
+			<xs:element name="Filter" type="ProductFilterType" minOccurs="0">
+        <xs:annotation>
+         <xs:documentation>Filter</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="CompareProducts" minOccurs="0">
+        <xs:annotation>
+         <xs:documentation>Compare Products</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ProductIds" type="ProductIDType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Product IDs</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SmallGroupProductQuoteResponse">
+		<xs:sequence>
+			<xs:element name="TotalEligibleProductsQuanity" type="xs:int">
+        <xs:annotation>
+         <xs:documentation>Total Eligible Products Quantity</xs:documentation>
+        </xs:annotation>
+      </xs:element> 
+			<xs:element name="PaginationInformation" type="PaginationInformationType">
+        <xs:annotation>
+         <xs:documentation>Pagination Information</xs:documentation>
+        </xs:annotation>
+      </xs:element> 
+			<xs:element name="Products">
+        <xs:annotation>
+         <xs:documentation>Products</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Product" type="ProductType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Product</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="FilterAnalysis" type="ProductFilterAnalysisType" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Filter Analysis</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="CompareProducts">
+        <xs:annotation>
+         <xs:documentation>Compare Products</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Product" type="ProductType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Product</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SmallGroupProductBenefitRequest">
+		<xs:sequence>
+			<xs:element name="ProductIDs">
+        <xs:annotation>
+         <xs:documentation>Product IDs</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ProductID" type="ProductIDType" minOccurs="1" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Product ID</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="SmallGroupProductBenefitResponse">
+		<xs:sequence>
+			<xs:element name="ProductBenefits">
+        <xs:annotation>
+         <xs:documentation>Product Benefits</xs:documentation>
+        </xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ProductBenefit" type="ProductBenefitsType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+               <xs:documentation>Product Benefit</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+			
+	<xs:complexType name="CountyType">
+		<xs:sequence>
+			<xs:element name="CountyName" type="CountyNameType">
+       <xs:annotation>
+         <xs:documentation>County Name</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="StateCode" type="StateAbbreviationType">
+       <xs:annotation>
+         <xs:documentation>State Code</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LocationType">
+		<xs:sequence>
+			<xs:element name="ZipCode" type="ZipCodeType">
+       <xs:annotation>
+         <xs:documentation>Zip Code</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="County" type="CountyType" minOccurs="0" maxOccurs="1">
+       <xs:annotation>
+         <xs:documentation>County</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="CountyNameType">
+		<xs:annotation>
+			<xs:documentation>allow max 60 characters </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="60"/>
+			<xs:pattern value="([a-zA-z \-,'.])+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NameTextType">
+		<xs:annotation>
+			<xs:documentation>allow max 512 characters </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="512"/>			
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="EnrolleesType">
+		<xs:sequence>
+			<xs:element name="Primary" type="EnrolleeType" minOccurs="1">
+       <xs:annotation>
+         <xs:documentation>Primary</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:choice minOccurs="0">
+				<xs:element name="Spouse" type="EnrolleeType">
+         <xs:annotation>
+           <xs:documentation>Spouse</xs:documentation>
+         </xs:annotation>
+        </xs:element>
+				<xs:element name="DomesticPartner" type="EnrolleeType">
+       <xs:annotation>
+         <xs:documentation>Domestic Partner</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			</xs:choice>
+			<xs:element name="Child1" type="EnrolleeType" minOccurs="0" >
+       <xs:annotation>
+         <xs:documentation>Child</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Child2" type="EnrolleeType" minOccurs="0" >
+       <xs:annotation>
+         <xs:documentation>Child</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Child3" type="EnrolleeType" minOccurs="0" >
+       <xs:annotation>
+         <xs:documentation>Child</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Child4" type="EnrolleeType" minOccurs="0" >
+       <xs:annotation>
+         <xs:documentation>Child</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Child5" type="EnrolleeType" minOccurs="0" >
+       <xs:annotation>
+         <xs:documentation>Child</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EnrolleeType">
+		<xs:sequence>
+			<xs:element name="DateOfBirth" type="xs:date">
+       <xs:annotation>
+         <xs:documentation>Date of Birth</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Gender" type="GenderType">
+       <xs:annotation>
+         <xs:documentation>Gender</xs:documentation>
+       </xs:annotation>
+      </xs:element>	
+			<xs:element name="TobaccoUser" type="TobaccoUserType">
+       <xs:annotation>
+         <xs:documentation>Tobacco User</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="GenderType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Male">
+       <xs:annotation>
+         <xs:documentation>Male</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Female">
+       <xs:annotation>
+         <xs:documentation>Female</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TobaccoUserType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Smoker">
+       <xs:annotation>
+         <xs:documentation>Smoker</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Non-Smoker">
+       <xs:annotation>
+         <xs:documentation>Non-Smoker</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PlanIDType">
+		<xs:annotation>
+			<xs:documentation>allow 14 characters </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">			
+			<xs:pattern value="([a-zA-z0-9]{14})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ProductIDType">
+		<xs:annotation>
+			<xs:documentation>allow 10 characters </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">			
+			<xs:pattern value="([a-zA-z0-9]{10})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IssuerIDType">
+		<xs:annotation>
+			<xs:documentation>allow 5 digits </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9]{5})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PaginationInformationType">
+		<xs:sequence>
+			<xs:element name="PageNumber" type="PageNumberType" default="1">
+       <xs:annotation>
+         <xs:documentation>Page Number</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="PageSize" type="PageSizeType" default="10">
+       <xs:annotation>
+         <xs:documentation>Page Size</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="PageSizeType">
+    <xs:annotation>
+         <xs:documentation>Allow integer 1 to 100</xs:documentation>
+    </xs:annotation>
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PageNumberType">
+    <xs:annotation>
+         <xs:documentation>Allow integer 1 and up</xs:documentation>
+    </xs:annotation>
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PlanSortOrderType">
+		<xs:sequence>
+			<xs:element name="SortField" type="PlanSortFieldsType" default="OOP LIMIT - INDIVIDUAL - IN NETWORK" minOccurs="0" maxOccurs="1">
+       <xs:annotation>
+         <xs:documentation>Sort Field</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SortDirection" type="SortDirectionType" default="ASC" minOccurs="0" maxOccurs="1">
+       <xs:annotation>
+         <xs:documentation>Sort Direction</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="PlanSortFieldsType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OOP LIMIT - INDIVIDUAL - IN NETWORK">
+       <xs:annotation>
+         <xs:documentation>In-Network Out-of-Pocket limit</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="BASE RATE">
+       <xs:annotation>
+         <xs:documentation>Estimated Monthly Base Rate</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="ANNUAL DEDUCTIBLE - INDIVIDUAL - IN NETWORK">
+       <xs:annotation>
+         <xs:documentation>Annual Deductible</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="ANNUAL MAX BENEFITS - FAMILY - IN NETWORK">
+       <xs:annotation>
+         <xs:documentation>Annual Maximum Benefits</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="ENROLLMENT">
+       <xs:annotation>
+         <xs:documentation>Enrollment</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="ProductSortOrderType">
+		<xs:sequence>
+			<xs:element name="SortField" type="ProductSortFieldsType" default="OOP LIMIT - IN NETWORK" minOccurs="0" maxOccurs="1">
+       <xs:annotation>
+         <xs:documentation>Sort Field</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SortDirection" type="SortDirectionType" default="ASC" minOccurs="0" maxOccurs="1">
+       <xs:annotation>
+         <xs:documentation>Sort Direction</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="ProductSortFieldsType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OOP LIMIT - IN NETWORK">
+       <xs:annotation>
+         <xs:documentation>Annual Out-of-Pocket Limit</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="ENROLLMENT">
+       <xs:annotation>
+         <xs:documentation>Enrollment</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="AVERAGE COST PER ENROLLMENT">
+       <xs:annotation>
+         <xs:documentation>AVERAGE COST PER ENROLLMENT</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:simpleType name="SortDirectionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ASC">
+       <xs:annotation>
+         <xs:documentation>ASC</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="DESC">
+       <xs:annotation>
+         <xs:documentation>DESC</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="PlanFilterType">
+		<xs:sequence>
+			<xs:element name="ProviderTypes" type="ProviderType" minOccurs="0" maxOccurs="5">
+       <xs:annotation>
+         <xs:documentation>Provider Types</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Issuers" type="IssuerIDType" minOccurs="0" maxOccurs="unbounded">
+       <xs:annotation>
+         <xs:documentation>Issuers</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualDeductibleFilterRange" type="AnnualDeductibleFilterRangeType" minOccurs="0" maxOccurs="6">
+       <xs:annotation>
+         <xs:documentation>Annual Deductible Filter Range</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualOutOfPocketFilterRange" type="AnnualOutOfPocketFilterRangeType" minOccurs="0" maxOccurs="4">
+       <xs:annotation>
+         <xs:documentation>Annual out of Pocket Filter Range</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualMaxBenefitsFilterRange" type="AnnualMaxBenefitsFilterRangeType" minOccurs="0" maxOccurs="8">
+       <xs:annotation>
+         <xs:documentation>Annual Max Benefits Filter Range</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="BaseRateFilterRange" type="BaseRateFilterRangeType" minOccurs="0" maxOccurs="10">
+       <xs:annotation>
+         <xs:documentation>Base Rate Filter Range</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="HSAEligibleIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>HSA Eligible</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="DomesticPartnerIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Domestic Partner Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SameSexIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Same Sex Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Maternity Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Mental Health Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Rx Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SubstanceAbuseInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Substance Abuse Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProductFilterType">
+		<xs:sequence>
+			<xs:element name="ProviderTypes" type="ProviderType" minOccurs="0" maxOccurs="5">
+       <xs:annotation>
+         <xs:documentation>Provider Types</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Issuers" type="IssuerIDType" minOccurs="0" maxOccurs="unbounded">
+       <xs:annotation>
+         <xs:documentation>Issuers</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="HSAEligibleIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>HSA Eligible</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="DomesticPartnerIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Domestic Partner Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SameSexIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Same Sex Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Maternity Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Mental Health Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="xs:boolean" minOccurs="0">
+       <xs:annotation>
+         <xs:documentation>Rx Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="AnnualDeductibleFilterRangeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="$0-$500">
+       <xs:annotation>
+         <xs:documentation>Up to $500</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$500-$1000">
+       <xs:annotation>
+         <xs:documentation>$500 to $1000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$1000-$2500">
+       <xs:annotation>
+         <xs:documentation>$1000 to $2500</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$2500-$5000">
+       <xs:annotation>
+         <xs:documentation>$2500 to $5000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$5000-$10000">
+       <xs:annotation>
+         <xs:documentation>$5000 to $10000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$10000-and-above">
+       <xs:annotation>
+         <xs:documentation>$10000 and above</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnnualDeductibleFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Filter" type="AnnualDeductibleFilterRangeType">
+       <xs:annotation>
+         <xs:documentation>Filter</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Quantity" type="xs:int">
+       <xs:annotation>
+         <xs:documentation>Quantity</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="AnnualOutOfPocketFilterRangeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="$0-$1000">
+       <xs:annotation>
+         <xs:documentation>Up to $1000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$1000-$2500">
+       <xs:annotation>
+         <xs:documentation>$1000 to $2500</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$2500-$5000">
+       <xs:annotation>
+         <xs:documentation>$2500 to $5000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$5000-$10000">
+       <xs:annotation>
+         <xs:documentation>$5000 to $10000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$10000-and-above">
+       <xs:annotation>
+         <xs:documentation>$10000 and above</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnnualOutOfPocketFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Filter" type="AnnualOutOfPocketFilterRangeType">
+       <xs:annotation>
+         <xs:documentation>Filter</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Quantity" type="xs:int">
+       <xs:annotation>
+         <xs:documentation>Quantity</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="AnnualMaxBenefitsFilterRangeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="$0-$10000">
+       <xs:annotation>
+         <xs:documentation>Up to $10000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$10000-$50000">
+       <xs:annotation>
+         <xs:documentation>$10000 to $50000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$50000-$100000">
+       <xs:annotation>
+         <xs:documentation>$50000 to $100000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$100000-$200000">
+       <xs:annotation>
+         <xs:documentation>$100000 to $200000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$200000-$400000">
+       <xs:annotation>
+         <xs:documentation>$200000 to $400000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$400000-$600000">
+       <xs:annotation>
+         <xs:documentation>$400000 to $600000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$600000-$800000">
+       <xs:annotation>
+         <xs:documentation>$600000 to $800000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$800000-$1000000">
+       <xs:annotation>
+         <xs:documentation>$800000 to $1000000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$1000000-and-above">
+       <xs:annotation>
+         <xs:documentation>$1000000 and above</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnnualMaxBenefitsFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Filter" type="AnnualMaxBenefitsFilterRangeType">
+       <xs:annotation>
+         <xs:documentation>Filter</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Quantity" type="xs:int">
+       <xs:annotation>
+         <xs:documentation>Quantity</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="BaseRateFilterRangeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="$0-$100">
+       <xs:annotation>
+         <xs:documentation>Up to $100</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$100-$200">
+       <xs:annotation>
+         <xs:documentation>$100 to $200</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$200-$300">
+       <xs:annotation>
+         <xs:documentation>$200 to $300</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$300-$400">
+       <xs:annotation>
+         <xs:documentation>$300 to $400</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$400-$500">
+       <xs:annotation>
+         <xs:documentation>$400 to $500</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$500-$600">
+       <xs:annotation>
+         <xs:documentation>$500 to $600</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$600-$700">
+       <xs:annotation>
+         <xs:documentation>$600 to $700</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$700-$800">
+       <xs:annotation>
+         <xs:documentation>$700 to $800</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$800-$900">
+       <xs:annotation>
+         <xs:documentation>$800 to $900</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$900-$1000">
+       <xs:annotation>
+         <xs:documentation>$900 to $1000</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="$1000-and-above">
+       <xs:annotation>
+         <xs:documentation>$1000 and above</xs:documentation>
+       </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="BaseRateFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Filter" type="BaseRateFilterRangeType">
+       <xs:annotation>
+         <xs:documentation>Filter</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Quantity" type="xs:int">
+       <xs:annotation>
+         <xs:documentation>Quantity</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="PercentType">
+    <xs:annotation>
+     <xs:documentation>Percent</xs:documentation>
+   </xs:annotation>
+		<xs:restriction base="xs:int">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PlanType">
+		<xs:sequence>
+			<xs:element name="PlanID" type="PlanIDType">
+       <xs:annotation>
+         <xs:documentation>Plan ID</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="PlanNameText" type="NameTextType">
+       <xs:annotation>
+         <xs:documentation>Plan Name</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="ProductID" type="ProductIDType">
+       <xs:annotation>
+         <xs:documentation>Product ID</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="ProductNameText" type="NameTextType">
+       <xs:annotation>
+         <xs:documentation>Product Name</xs:documentation>
+       </xs:annotation>
+      </xs:element>			 
+			<xs:element name="ProductApplicantsDeniedPercentage" type="PercentType">
+       <xs:annotation>
+         <xs:documentation>Product Applicant Denied Percentage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="ProductApplicantsUpRatedPercentage" type="PercentType">
+       <xs:annotation>
+         <xs:documentation>Product Applicant Up Rated Percentage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerID" type="IssuerIDType">
+       <xs:annotation>
+         <xs:documentation>Issuer ID</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerNameText" type="NameTextType">
+       <xs:annotation>
+         <xs:documentation>Issuer Name</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerStateCode" type="StateAbbreviationType">
+       <xs:annotation>
+         <xs:documentation>Issuer State</xs:documentation>
+       </xs:annotation>
+      </xs:element>				
+			<xs:element name="IssuerTollFreeNumber" type="PhoneNumberType"  nillable="true" >
+       <xs:annotation>
+         <xs:documentation>Issuer Toll-Free Number</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerLocalNumber" type="PhoneNumberType"  nillable="true" >
+       <xs:annotation>
+         <xs:documentation>Issuer Local Number</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerTTYNumber" type="PhoneNumberType"  nillable="true" >
+       <xs:annotation>
+         <xs:documentation>Issuer TTY Number</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="ProviderType" type="ProviderType">
+       <xs:annotation>
+         <xs:documentation>Provider Type</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="BaseRateAmount" type="xs:decimal">
+       <xs:annotation>
+         <xs:documentation>Base Rate Amount</xs:documentation>
+       </xs:annotation>
+      </xs:element>			
+			<xs:element name="HSAEligibleIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>HSA Eligibile</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SameSexPartnerIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Same Sex Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="DomesticPartnerIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Domestic Partner Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>			
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Maternity Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Mental Health Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Rx Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SubstanceAbuseInNetworkCoverageIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Substance Abuse Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="InNetworkCostSharing" type="PlanCostSharingType">
+       <xs:annotation>
+         <xs:documentation>In Network Cost Sharing</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="OutNetworkCostSharing" type="PlanCostSharingType">
+       <xs:annotation>
+         <xs:documentation>Out Network Cost Sharing</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="PlanBenefitsType">
+		<xs:complexContent>
+			<xs:extension base="PlanType">
+				<xs:sequence>
+					<xs:element name="IssuerURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Issuer URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="ProviderURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Provider URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="ProductBenefitURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Product Benefit URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="ProductFormularyURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Product Formulary URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PlanBrochureURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Plan Brochure URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>					
+					<!-- IN/OUT Network Coverage -->
+					<xs:element name="OtherPractitionerVisit" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Other practitioner office visit</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PrimaryCareVisit" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Primary care physician office visit</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="SpecialistVisit" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Specialist physician office visit</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PreventiveCare" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Preventive care/screening/immunization</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DiagnosticTest" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Diagnostic Test (X-ray, blood work)</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Imaging" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Imaging (CT/PET scans, MRIs)</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="OutpatientFacilityFee" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Outpatient facility fee</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="OutpatientPhysicianFee" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Outpatient Physician/Surgeon Fee</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="EmergencyRoom" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Emergency Room</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="EmergencyTransportation" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Emergency Transportation</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="UrgentCare" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Urgent Care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="HospitalFacilityFee" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Hospital facility fee</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="HospitalPhysicianFee" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Hospital physician/surgeon fee</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="MentalOutpatient" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Mental/behavioral health outpatient services</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="MentalInpatient" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Mental/behavioral health inpatient services</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="SubstanceDisorderOutpatient" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Substance use disorder outpatient services</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="SubstanceDisorderInpatient" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Substance use disorder inpatient services</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PrenatalPostnatalCare" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Prenatal postnatal care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DeliveryInpatient" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Delivery and all inpatient services for maternity care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="HomeHealthcare" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Home health care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="InpatientRehabilitation" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Inpatient Rehabilitation</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="OutpatientRehabilitation" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Outpatient Rehabilitation</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="NursingCare" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Skilled Nursing Care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DurableMedicalEquipment" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Durable medical equipment</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Hospice" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Hospice</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="RoutineEyeCareChildren" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Routine eye exam children</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="EyeGlassesChildren" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Eye glasses children</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DentalCheckUpChildren" type="BenefitInOutExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Dental check up children</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<!-- No Network coverage-->
+					<xs:element name="GenericDrugs" type="BenefitExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Generic drugs</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PreferredBrandDrugs" type="BenefitExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Preferred Brand Drugs</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="NonPreferredBrandDrugs" type="BenefitExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Non-Preferred brand drugs</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="SpecialtyDrugs" type="BenefitExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Specialty Drugs</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Habilitation" type="BenefitExceptionType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Habilitation</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Acupuncture" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Acupuncture</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="BariatricSurgery" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Bariatric surgery</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="NonEmergencyTravelOutside" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Non-emergency care outside U.S.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Chiropractic" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Chiropractic</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="CosmeticSurgery" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Cosmetic surgery</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DentalAdult" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Dental care adult</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="HearingAid" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Hearing aid</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="InfertilityTreatment" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Infertility treatment</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="LongTermCare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Long-term care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PrivateNursing" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Private duty nursing</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="EyeExamAdult" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Eye exam adult</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="RoutineFootCare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Routine foot care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="WeightLossProgram" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Weight loss program</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="RoutineHearingTests" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Routine hearing tests</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>	
+	
+	<xs:complexType name="ProductType">
+		<xs:sequence>
+			<xs:element name="ProductID" type="ProductIDType">
+       <xs:annotation>
+         <xs:documentation>Product ID</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="ProductNameText" type="NameTextType">
+       <xs:annotation>
+         <xs:documentation>Product Name</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="ProductApplicantsDeniedPercentage" type="PercentType">
+       <xs:annotation>
+         <xs:documentation>Product Applicants Denied Percentage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="ProductApplicantsUpRatedPercentage" type="PercentType">
+       <xs:annotation>
+         <xs:documentation>Product Applicants Up Rated Percentage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerID" type="IssuerIDType">
+       <xs:annotation>
+         <xs:documentation>Issuer ID</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerNameText" type="NameTextType">
+       <xs:annotation>
+         <xs:documentation>Issuer Name</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerStateCode" type="StateAbbreviationType">
+       <xs:annotation>
+         <xs:documentation>Issuer State</xs:documentation>
+       </xs:annotation>
+      </xs:element>			
+			<xs:element name="IssuerTollFreeNumber" type="PhoneNumberType"  nillable="true" >
+       <xs:annotation>
+         <xs:documentation>Issuer Toll Free Number</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerLocalNumber" type="PhoneNumberType"  nillable="true" >
+       <xs:annotation>
+         <xs:documentation>Issuer Local Number</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerTTYNumber" type="PhoneNumberType"  nillable="true" >
+       <xs:annotation>
+         <xs:documentation>Issuer TTY Number</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="ProviderType" type="ProviderType">
+       <xs:annotation>
+         <xs:documentation>Provider Type</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="AverageCostPerEnrollee" type="xs:decimal" nillable="true">
+       <xs:annotation>
+         <xs:documentation>Average Cost Per Enrollee</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="HSAEligibleIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>HSA Eligible</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SameSexPartnerIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Same Sex Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="DomesticPartnerIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Domestic Partner Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>		
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Maternity Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Mental Health Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Rx Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="SubstanceAbuseInNetworkCoverageIndicator" type="xs:boolean">
+       <xs:annotation>
+         <xs:documentation>Substance Abuse Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="InNetworkCostSharing" type="ProductCostSharingType">
+       <xs:annotation>
+         <xs:documentation>In Network Cost Sharing</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="OutNetworkCostSharing" type="ProductCostSharingType">
+       <xs:annotation>
+         <xs:documentation>Out Network Cost Sharing</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProductBenefitsType">
+		<xs:complexContent>
+			<xs:extension base="ProductType">
+				<xs:sequence>
+					<xs:element name="IssuerURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Issuer URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="ProviderURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Provider URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="ProductBenefitURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Product Benefit URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="ProductFormularyURL" type="UrlType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Product Formulary URL URL</xs:documentation>
+           </xs:annotation>
+          </xs:element>				
+					<!-- IN/OUT Network Coverage -->
+					<xs:element name="PrimaryCareVisit" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Primary care visit</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="SpecialistVisit" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Specialist visit</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="OtherPractitionerVisit" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Other practitioner visit</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PreventiveCare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Preventive care/screening/immunization</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DiagnosticTest" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Diagnostic Test (X-ray, blood work)</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Imaging" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Imaging (CT/PET scans, MRIs)</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="GenericDrugs" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Generic drugs</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PreferredBrandDrugs" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Preferred brand drugs</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="NonPreferredBrandDrugs" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Non-preferred brand drugs</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="SpecialtyDrugs" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Specialty drugs</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="OutpatientFacilityFee" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Outpatient facility fee</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="OutpatientPhysicianFee" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Outpatient Physician/Surgeon Fee</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="EmergencyRoom" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Emergency room</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="EmergencyTransportation" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Emergency Transportation</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="UrgentCare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Urgent care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="HospitalFacilityFee" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Hospital facility fee</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="HospitalPhysicianFee" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Hospital physician/surgeon fee</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="MentalOutpatient" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Mental/behavioral health outpatient services</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="MentalInpatient" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Mental/behavioral health inpatient services</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="SubstanceDisorderOutpatient" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Substance use disorder outpatient services</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="SubstanceDisorderInpatient" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Substance use disorder inpatient services</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PrenatalPostnatalCare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Prenatal postnatal care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DeliveryInpatient" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Delivery and all inpatient services for maternity care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="HomeHealthcare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Home health care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="OutpatientRehabilitation" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Rehabilitation</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Habilitation" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Habilitation</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="NursingCare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Skilled nursing care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DurableMedicalEquipment" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Durable medical equipment</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Hospice" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Hospice</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="RoutineEyeCareChildren" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Routine eye exam children</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="EyeGlassesChildren" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Eye glasses children</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DentalCheckUpChildren" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Dental check up children</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Acupuncture" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Acupuncture</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="BariatricSurgery" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Bariatric surgery</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="NonEmergencyTravelOutside" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Non-emergency care outside U.S.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="Chiropractic" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Chiropractic</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="CosmeticSurgery" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Cosmetic surgery</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="DentalAdult" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Dental care adult</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="HearingAid" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Hearing aid</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="InfertilityTreatment" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Infertility treatment</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="LongTermCare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Long-term care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="PrivateNursing" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Private-duty nursing</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="EyeExamAdult" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Routine eye care adult</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="RoutineFootCare" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Routine foot care</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+					<xs:element name="WeightLossProgram" type="BenefitCoverageType" nillable="true">
+           <xs:annotation>
+             <xs:documentation>Weight loss program</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:simpleType name="ExceptionChoiceType">
+    <xs:annotation>
+     <xs:documentation>Exception Type</xs:documentation>
+   </xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="None">
+        <xs:annotation>
+          <xs:documentation>None</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Limitations or Exceptions may apply">
+        <xs:annotation>
+          <xs:documentation>Limitations or Exceptions may apply</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CoverageChoiceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Not Covered">
+        <xs:annotation>
+          <xs:documentation>Not Covered</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="No Charge">
+        <xs:annotation>
+          <xs:documentation>No Charge</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="No Charge after deductible">
+        <xs:annotation>
+          <xs:documentation>No Charge After Deductible</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="$X Copay">
+        <xs:annotation>
+          <xs:documentation>$X Copay</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X% Coinsurance after deductible">
+        <xs:annotation>
+          <xs:documentation>X% Coinsurance after deductible</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X% Coinsurance before deductible">
+        <xs:annotation>
+          <xs:documentation>X% Coinsurance before deductible</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X% Coinsurance">
+        <xs:annotation>
+          <xs:documentation>X% Coinsurance</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="$X Copay before deductible">
+        <xs:annotation>
+          <xs:documentation>$X Copay before deductible</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="$X Copay after deductible">
+        <xs:annotation>
+          <xs:documentation>$X Copay after deductible</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="No Maximum">
+        <xs:annotation>
+          <xs:documentation>No Maximum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>   
+  </xs:simpleType>
+	<xs:complexType name="BenefitInOutExceptionType">
+		<xs:sequence>
+			<xs:element name="InNetwork" type="CoPayInsuranceCoverageType" nillable="true">
+       <xs:annotation>
+         <xs:documentation>In Netwrok</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="OutOfNetwork" type="CoPayInsuranceCoverageType" nillable="true">
+       <xs:annotation>
+         <xs:documentation>Out of Network</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Exception" type="ExceptionChoiceType" nillable="true">
+       <xs:annotation>
+         <xs:documentation>Exception</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BenefitExceptionType">
+		<xs:sequence>
+			<xs:element name="Coverage" type="CoPayInsuranceCoverageType" nillable="true">
+       <xs:annotation>
+         <xs:documentation>Coverage</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:element name="Exception" type="ExceptionChoiceType" nillable="true">
+       <xs:annotation>
+         <xs:documentation>Exception</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CoPayInsuranceCoverageType">
+		<xs:sequence>
+			<xs:element name="Benefit" type="CoverageChoiceType" nillable="true">
+       <xs:annotation>
+         <xs:documentation>Benefit</xs:documentation>
+       </xs:annotation>
+      </xs:element>
+			<xs:choice minOccurs="0" maxOccurs="1">
+				<xs:element name="Amount" type="xs:decimal">
+         <xs:annotation>
+           <xs:documentation>Amount</xs:documentation>
+         </xs:annotation>
+        </xs:element>
+				<xs:element name="Percent" type="PercentType">
+         <xs:annotation>
+           <xs:documentation>Percent</xs:documentation>
+         </xs:annotation>
+        </xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="BenefitCoverageType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Covered">
+        <xs:annotation>
+          <xs:documentation>Covered</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Not Covered">
+        <xs:annotation>
+          <xs:documentation>Not Covered</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Covered with Limitations">
+        <xs:annotation>
+          <xs:documentation>Covered with Limitations</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Available for Additional Premium">
+        <xs:annotation>
+          <xs:documentation>Available for Additional Premium</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ProviderType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="INDEMNITY">
+        <xs:annotation>
+          <xs:documentation>INDEMNITY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="HMO">
+        <xs:annotation>
+          <xs:documentation>HMO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="PPO">
+        <xs:annotation>
+          <xs:documentation>PPO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="EPO">
+        <xs:annotation>
+          <xs:documentation>EPO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="POS">
+        <xs:annotation>
+          <xs:documentation>POS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Other/Describe">
+        <xs:annotation>
+          <xs:documentation>Other/Describe</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PlanCostSharingType">
+		<xs:sequence>
+			<xs:element name="FamilyAnnualDeductibleAmount" type="AmountNoMaxType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Family Annual Deductible Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="IndividualAnnualDeductibleAmount" type="AmountNoMaxType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Individual Annual Deductible Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="PCPCopayAmount" type="CoPayType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>PCP Copay Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="CoinsuranceRate" type="CoInsuranceType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Coinsurance Rate</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="FamilyAnnualOOPLimitAmount" type="AmountNoMaxType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Family Annual OOP Limit Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="IndividualAnnualOOPLimitAmount" type="AmountNoMaxType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Individual Annual OOP Limit Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualOOPElesText" type="AnnualOOPLimitType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Annual OOP Eles Text</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="FamilyAnnualMaxBenefitAmount" type="AmountNoMaxType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Family Annual Max Benefit Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="IndividualAnnualMaxBenefitAmount" type="AmountNoMaxType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Individual Annual Max Benefit Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProductCostSharingType">
+		<xs:sequence>
+			<xs:element name="AnnualDeductibleAmount" type="AmountNoneOrList" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Annual Deductible Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="PCPCopayAmount" type="MinMaxCoPayType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>PCP Copay Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="CoinsuranceRate" type="MinMaxCoInsuranceType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Coinsurance Rate</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualOOPLimitAmount" type="AmountNoneOrList" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Annual OOP Limit Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualMaxBenefitAmount" type="AmountNoneOrMax" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Annual Max Benefit Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="UrlType">
+		<xs:sequence>
+			<xs:element name="URLCode" type="URLCodeType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>URL Code</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="URLAddress" type="URLAddressType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>URL Address</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="AlternateText" type="NameTextType" nillable="true">
+        <xs:annotation>
+          <xs:documentation>Alternate Text</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="URLCodeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Valid">
+        <xs:annotation>
+          <xs:documentation>Valid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Not Valid">
+        <xs:annotation>
+          <xs:documentation>Not Valid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="No Link">
+        <xs:annotation>
+          <xs:documentation>No Link</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="URLAddressType">
+		<xs:restriction base="xs:anyURI"/>
+		<!-- TODO: Add url validations here -->
+	</xs:simpleType>
+	<xs:complexType name="AmountNoMaxType">
+    <xs:choice>
+      <xs:element name="Amount" type="xs:decimal">
+        <xs:annotation>
+          <xs:documentation>Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="NoMaximum" type="xs:string" fixed="No Maximum">
+        <xs:annotation>
+          <xs:documentation>No Maximum</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="NotApplicable" type="xs:string" fixed="Not Applicable">
+        <xs:annotation>
+          <xs:documentation>Not Applicable</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+	
+	<xs:complexType name="AmountNoneOrList">
+		<xs:choice>
+			<xs:element name="None" type="xs:string" fixed="None">
+        <xs:annotation>
+          <xs:documentation>None</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Amounts" type="Amounts">
+        <xs:annotation>
+          <xs:documentation>Amounts</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="Amounts">
+		<xs:sequence>
+			<xs:element name="Amount" type="xs:decimal" minOccurs="1" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="AmountNoneOrMax">
+		<xs:choice>
+			<xs:element name="None" type="xs:string" fixed="None">
+        <xs:annotation>
+          <xs:documentation>None</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Amount" type="xs:decimal">
+        <xs:annotation>
+          <xs:documentation>Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:choice>
+	</xs:complexType>
+	
+	
+	
+	<xs:complexType name="CoPayType">
+		<xs:choice>
+			<xs:element name="NotCovered" type="xs:string" fixed="Not Covered">
+        <xs:annotation>
+          <xs:documentation>Not Covered</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="CoveredAmount" type="xs:decimal">
+        <xs:annotation>
+          <xs:documentation>Covered Amount</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="NoMaximum" type="xs:string" fixed="No Maximum">
+        <xs:annotation>
+          <xs:documentation>No Maximum</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="MinMaxCoPayType">
+		<xs:choice>
+			<xs:element name="None" type="xs:string" fixed="None">
+        <xs:annotation>
+          <xs:documentation>None</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:sequence>
+				<xs:element name="Min" type="xs:decimal">
+        <xs:annotation>
+          <xs:documentation>Min</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+				<xs:element name="Max" type="xs:decimal">
+        <xs:annotation>
+          <xs:documentation>Max</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="CoInsuranceType">
+		<xs:choice>
+			<xs:element name="NotCovered" fixed="Not Covered">
+        <xs:annotation>
+          <xs:documentation>Not Covered</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="CoveredPercent" type="PercentType">
+        <xs:annotation>
+          <xs:documentation>Covered Percent</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:complexType name="MinMaxCoInsuranceType">
+		<xs:choice>
+			<xs:element name="None" type="xs:string" fixed="None">
+        <xs:annotation>
+          <xs:documentation>None</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:sequence>
+				<xs:element name="Min" type="xs:decimal">
+        <xs:annotation>
+          <xs:documentation>Min</xs:documentation>
+        </xs:annotation>
+        </xs:element>
+        <xs:element name="Max" type="xs:decimal">
+          <xs:annotation>
+            <xs:documentation>Max</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+			</xs:sequence>
+		</xs:choice>
+	</xs:complexType>
+	
+	<xs:simpleType name="AnnualOOPLimitType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="None">
+        <xs:annotation>
+          <xs:documentation>None</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Deductible">
+        <xs:annotation>
+          <xs:documentation>Deductible</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Co-pay">
+        <xs:annotation>
+          <xs:documentation>Co-pay</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Coinsurance">
+        <xs:annotation>
+          <xs:documentation>Coinsurance</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Coinsurance + Co-pay">
+        <xs:annotation>
+          <xs:documentation>Coinsurance + Cop-pay</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Deductible + Co-pay">
+        <xs:annotation>
+          <xs:documentation>deductible + Co-pay</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Deductible + Coinsurance">
+        <xs:annotation>
+          <xs:documentation>Deductible + Coinsurance</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+			<xs:enumeration value="Deductible + Coinsurance + Co-pay">
+        <xs:annotation>
+          <xs:documentation>Deductible + Coinsurance + Co-pay</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PlanFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="ProviderTypes" type="ProviderTypeFilterAnalysisType" minOccurs="0" maxOccurs="6">
+        <xs:annotation>
+          <xs:documentation>Provider Types</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerIDs" type="IssuerFilterAnalysisType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Issuer IDs</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualIndividualInNetworkDeductible" type="AnnualDeductibleFilterAnalysisType" minOccurs="0" maxOccurs="6">
+        <xs:annotation>
+          <xs:documentation>Annual Individual In Network Deductible</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualIndividualInNetworkOOPLimit" type="AnnualOutOfPocketFilterAnalysisType" minOccurs="0" maxOccurs="5">
+        <xs:annotation>
+          <xs:documentation>Annual Individual In Network OOP Limit</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="AnnualIndividualInNetworkMaxBenefit" type="AnnualMaxBenefitsFilterAnalysisType" minOccurs="0" maxOccurs="9">
+        <xs:annotation>
+          <xs:documentation>Annual Individual In Network Max Benefit</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="BaseRate" type="BaseRateFilterAnalysisType" minOccurs="0" maxOccurs="11">
+        <xs:annotation>
+          <xs:documentation>Base Rate</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="HSAEligibleIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>HSA Eligible</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="DomesticPartnerIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Domestic Partner Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="SameSexIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Same Sex Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Maternity Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Mental Health Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Rx Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="SubstanceAbuseInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Substance Abuse Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProductFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="ProviderTypes" type="ProviderTypeFilterAnalysisType" minOccurs="0" maxOccurs="6">
+        <xs:annotation>
+          <xs:documentation>Provider Types</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerIDs" type="IssuerFilterAnalysisType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Issuer IDs</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="HSAEligibleIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>HSA Eligible</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="DomesticPartnerIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Domestic Partner Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="SameSexIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Same Sex Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="MaternityInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Maternity Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="MentalInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Mental Health Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="PrescriptionInNetworkCoverageIndicator" type="BooleanFilterAnalysisType" minOccurs="0" maxOccurs="2">
+        <xs:annotation>
+          <xs:documentation>Rx Coverage</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ProviderTypeFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="ProviderType" type="ProviderType">
+        <xs:annotation>
+          <xs:documentation>Provider Type</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Quantity" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>Quantity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="IssuerFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="IssuerID" type="IssuerIDType">
+        <xs:annotation>
+          <xs:documentation>Issuer ID</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="IssuerName" type="xs:string">
+        <xs:annotation>
+          <xs:documentation>Issuer Name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Quantity" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>Quantity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BooleanFilterAnalysisType">
+		<xs:sequence>
+			<xs:element name="Indicator" type="xs:boolean">
+        <xs:annotation>
+          <xs:documentation>Indicator</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+			<xs:element name="Quantity" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>Quantity</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- DATABASE -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <!-- ******************************************** -->
+  <xs:element name="DBPublicOptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="States">
+          <xs:annotation>
+            <xs:documentation>List of States</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="State" type="StateDataType" minOccurs="51" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>State</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CHIPAndMedicaidDisclaimers" type="CHIPAndMedicaidDisclaimersType">
+          <xs:annotation>
+            <xs:documentation>CHIP and Medicaid Disclaimers</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <!-- ******************************************** -->
+  <!-- high risk data -->
+  <!-- ******************************************** -->
+
+  <xs:complexType name="HighRiskPlanType">
+    <xs:sequence>
+      <xs:element name="PlanName" type="StringOfMax100Length">
+        <xs:annotation>
+          <xs:documentation>Plan Name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CustomerServicePhoneNumber" type="PhoneNumberType">
+        <xs:annotation>
+          <xs:documentation>Customer Service Phone Number</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CustomerServicePhoneNumberExtension" type="PhoneNumberExtensionType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Customer Service Phone Number Extension</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StateResidencyRestriction" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>State Residency Restriction</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:choice>
+            <xs:element name="ResidencyLengthRequirementIndicator" type="AlwaysFalseType">
+              <xs:annotation>
+                <xs:documentation>Residency Length Requirement Indicator</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="ResidencyLengthDescription" type="StringOfMax100Length">
+              <xs:annotation>
+                <xs:documentation>Residency Length Description</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AgeLimitDescription" type="StringOfMax100Length" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Age Limit Description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="RestrictiveRiderIndicator" type="BooleanType">
+        <xs:annotation>
+          <xs:documentation>Restrictive Rider Indicator</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ExcessivePremiumIndicator" type="BooleanType">
+        <xs:annotation>
+          <xs:documentation>Excessive Premium Indicator</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="HCTCEligibleIndicator" type="BooleanType">
+        <xs:annotation>
+          <xs:documentation>HCTC Eligigble Indicator</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="HIPAAEligibleIndicator" type="BooleanType">
+        <xs:annotation>
+          <xs:documentation>HIPAA Eligible Indicator</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MedicareEligibleIndicator" type="BooleanType">
+        <xs:annotation>
+          <xs:documentation>Medicare Eligible Indicator</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="DependantCoverageIndicator" type="BooleanType">
+        <xs:annotation>
+          <xs:documentation>Dependant Coverage Indicator</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="OtherEligibleDescription" type="StringOfMax100Length" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Other Eligible Description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="OtherDescription" type="StringOfMax100Length" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Other Description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="IncomeLimitSubsidy" type="StringOfMax100Length" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Income Limit Subsidy</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="RejectionLettersCount" type="xs:positiveInteger" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Rejection Letters Count</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ConditionsCount" type="xs:positiveInteger" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Conditions Count</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PlanOpenDescription" type="StringOfMax100Length" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Plan Open Description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="MainURL" type="URLType">
+        <xs:annotation>
+          <xs:documentation>Main URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PremiumRatesURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Premium Rates URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CoverageBenefitsURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Coverage Benefits URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EligibilityURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Eligibility URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ConditionsListURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Conditions List URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="LowIncomeSubsidyUrl" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Low Income Subsidy URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ******************************************** -->
+  <!-- state data -->
+  <!-- ******************************************** -->
+
+
+  <xs:complexType name="StateDataType">
+    <xs:sequence>
+      <xs:element name="StateAbbreviation" type="StateAbbreviationType">
+        <xs:annotation>
+          <xs:documentation>State Abbreviation</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="IndividualMarketURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Individual Market URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="GroupMarketURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Group Market URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="FederalHighRiskPlan" type="HighRiskPlanType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Federal High Risk Plan</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="StateHighRiskPlan" type="HighRiskPlanType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>State High Risk Plan</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CHIPAndMedicaidData">
+        <xs:annotation>
+          <xs:documentation>CHIP and Medicaid Data</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="CHIPContactInformation" type="StateMedicaidOrChipInfoType">
+              <xs:annotation>
+                <xs:documentation>CHIP Contact Information</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="MedicaidContactInformation" type="StateMedicaidOrChipInfoType">
+              <xs:annotation>
+                <xs:documentation>Medicaid Contact Information</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:choice minOccurs="0" maxOccurs="1">
+              <!-- elg list is internal only... but aaron was too lazy to break out statedatatype -->
+              <xs:element name="EligibilityList" type="CHIPAndMedicaidEligibilityListType">
+                <xs:annotation>
+                  <xs:documentation>Eligibility List</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Programs" type="CHIPAndMedicaidProgramsType">
+                <xs:annotation>
+                  <xs:documentation>Programs</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:choice>
+            <xs:element name="BenefitGroups" type="CHIPAndMedicaidBenefitGroupsType" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Benefit Groups</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>      
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:complexType name="StateMedicaidOrChipInfoType">
+    <xs:sequence>
+      <xs:element name="BrandName" type="StringOfMax100Length">
+        <xs:annotation>
+          <xs:documentation>Brand Name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Description" type="StringOfMax500Length">
+        <xs:annotation>
+          <xs:documentation>Description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PhoneNumberTextFormat" type="StringOfMax100Length" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Phone Number Text Format</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PhoneNumber" type="PhoneNumberType">
+        <xs:annotation>
+          <xs:documentation>Phone Number</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="URL" type="URLType">
+        <xs:annotation>
+          <xs:documentation>URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+
+
+
+  <!-- ******************************************** -->
+  <!-- cms/chip data -->
+  <!-- ******************************************** -->
+
+  <xs:simpleType name="CMSProgramType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CHIP">
+        <xs:annotation>
+          <xs:documentation>CHIP</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Medicaid">
+        <xs:annotation>
+          <xs:documentation>Medicaid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CMSAgeRangeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="0-18">
+        <xs:annotation>
+          <xs:documentation>18 or under</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="19-64">
+        <xs:annotation>
+          <xs:documentation>19-64</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="65+">
+        <xs:annotation>
+          <xs:documentation>65 or older</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Any">
+        <xs:annotation>
+          <xs:documentation>Any</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <xs:complexType name="PublicOptionWithIDType">
+    <xs:sequence>
+      <xs:element name="PublicOptionName" type="StringOfMax30Length">
+        <xs:annotation>
+          <xs:documentation>Public Option Name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PublicOptionDescription" type="StringOfMax1000Length">
+        <xs:annotation>
+          <xs:documentation>Public Option Description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PublicOptionURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Public Option URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PublicOptionContent" type="StringUnlimited">
+        <xs:annotation>
+          <xs:documentation>Public Option Content</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="ID" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="GenericPublicOptionDataType">
+    <xs:sequence>
+      <xs:element name="PublicOptionName" type="StringOfMax100Length">
+        <xs:annotation>
+          <xs:documentation>Public Option Name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PublicOptionDescription" type="StringOfMax1000Length">
+        <xs:annotation>
+          <xs:documentation>Public Option Description</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PublicOptionURL" type="URLType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Public Option URL</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="PublicOptionContent" type="StringUnlimited">
+        <xs:annotation>
+          <xs:documentation>Public Option Content</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CHIPAndMedicaidDisclaimersType">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="unbounded" name="Disclaimer">
+        <xs:annotation>
+          <xs:documentation>Disclaimer</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="DisclaimerText" type="StringOfMax1000Length">
+              <xs:annotation>
+                <xs:documentation>Disclaimer Text</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute name="ID" use="required" type="xs:ID">
+            <xs:annotation>
+              <xs:documentation>ID</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="MedicaidOnly" use="required" type="BooleanType">
+            <xs:annotation>
+              <xs:documentation>Medicaid Only</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CHIPAndMedicaidProgramsType">
+    <xs:sequence>
+      <xs:element name="Program" maxOccurs="unbounded" >
+        <xs:annotation>
+          <xs:documentation>Program</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice maxOccurs="unbounded">
+              <xs:element name="BenefitGroups">
+                <xs:annotation>
+                  <xs:documentation>Benefit Groups</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="BenefitGroup">
+                      <xs:annotation>
+                        <xs:documentation>Benefit Group</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:attribute name="Name" type="StringOfMax50Length" use="required">
+                          <xs:annotation>
+                            <xs:documentation>Name</xs:documentation>
+                          </xs:annotation>
+                        </xs:attribute>
+                        <xs:attribute name="IDREF" type="xs:IDREF">
+                          <xs:annotation>
+                            <xs:documentation>IDREF</xs:documentation>
+                          </xs:annotation>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CostSharing">
+                <xs:annotation>
+                  <xs:documentation>Cost Sharing</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CostSharingRow" maxOccurs="11">
+                      <xs:annotation>
+                        <xs:documentation>Cost Sharing Row</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="EffectiveDate" type="xs:date" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Effective Date</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="FPL" type="StringOfMax1000Length">
+                            <xs:annotation>
+                              <xs:documentation>FPL</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="EnrollmentFee" type="StringOfMax1000Length">
+                            <xs:annotation>
+                              <xs:documentation>Enrollment Fee</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Copay" type="StringOfMax1000Length">
+                            <xs:annotation>
+                              <xs:documentation>Copay</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Deductibles" type="StringOfMax1000Length">
+                            <xs:annotation>
+                              <xs:documentation>Deductibles</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="LimitAnnualCap" type="StringOfMax1000Length">
+                            <xs:annotation>
+                              <xs:documentation>Limit Annual Cap</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="LimitTrackingMethod" minOccurs="0" type="StringOfMax1000Length">
+                            <xs:annotation>
+                              <xs:documentation>Limit Annual Cap</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DemoPrograms">
+                <xs:annotation>
+                  <xs:documentation>Demo Programs</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="DemoProgram" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Demo Program</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="BrandName" minOccurs="0" type="StringOfMax200Length">
+                            <xs:annotation>
+                              <xs:documentation>Brand Name</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="DemonstrationPurpose" minOccurs="0" type="StringOfMax1500Length">
+                            <xs:annotation>
+                              <xs:documentation>Demonstration Purpose</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Exclusions" minOccurs="0" type="StringOfMax1000Length">
+                            <xs:annotation>
+                              <xs:documentation>Exclusions</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="DemoRowId" type="xs:positiveInteger">
+                            <xs:annotation>
+                              <xs:documentation>Demo Row ID</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="DemoBenefits">
+                            <xs:annotation>
+                              <xs:documentation>Demo Benefits</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="DemoBenefit">
+                                  <xs:annotation>
+                                    <xs:documentation>Demo Benefit</xs:documentation>
+                                  </xs:annotation>
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="BenefitName" type="xs:string">
+                                        <xs:annotation>
+                                          <xs:documentation>Benefit Name</xs:documentation>
+                                        </xs:annotation>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="IDREF" type="xs:IDREF" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:sequence>
+          <xs:attribute name="Name" type="CMSProgramType" use="required">
+            <xs:annotation>
+              <xs:documentation>Name</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CHIPAndMedicaidEligibilityListType">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="Eligibility">
+        <xs:annotation>
+          <xs:documentation>Eligibility</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Programs" type="CHIPAndMedicaidProgramsType">
+              <xs:annotation>
+                <xs:documentation>Programs</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute name="Age" type="CMSAgeRangeType" use="required">
+            <xs:annotation>
+              <xs:documentation>Age</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="Dependents" type="YesNoAnyType" use="required">
+            <xs:annotation>
+              <xs:documentation>Dependents</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="Disability" type="YesNoAnyType" use="required">
+            <xs:annotation>
+              <xs:documentation>Disability</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="LongTermCare" type="YesNoAnyType" use="required">
+            <xs:annotation>
+              <xs:documentation>Long Term Care</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="MedicalCondition" type="YesNoAnyType" use="required">
+            <xs:annotation>
+              <xs:documentation>Medical Condition</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="NoAfford" type="YesNoAnyType" use="required">
+            <xs:annotation>
+              <xs:documentation>No Afford</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="Pregnant" type="YesNoAnyType" use="required">
+            <xs:annotation>
+              <xs:documentation>Pregnant</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="SpecialNeed" type="YesNoAnyType" use="required">
+            <xs:annotation>
+              <xs:documentation>Special Need</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="Cancer" type="YesNoAnyType" use="required">
+            <xs:annotation>
+              <xs:documentation>Cancer</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="QuestionName" type="StringOfMax30Length" use="required">
+            <xs:annotation>
+              <xs:documentation>Question Name</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="disclaimerIDREF" type="xs:IDREF" use="optional">
+            <xs:annotation>
+              <xs:documentation>Disclaimer IDREF</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="CHIPAndMedicaidBenefitGroupsType">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="BenefitGroup">
+        <xs:annotation>
+          <xs:documentation>Benefit Group</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Description" type="StringOfMax500Length" minOccurs="0">
+              <xs:annotation>
+                <xs:documentation>Description</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Benefits">
+              <xs:annotation>
+                <xs:documentation>Benefits</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element maxOccurs="unbounded" name="Benefit">
+                    <xs:annotation>
+                      <xs:documentation>Benefit</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Name" type="StringOfMax200Length">
+                          <xs:annotation>
+                            <xs:documentation>Name</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="Description" type="StringOfMax1000Length">
+                          <xs:annotation>
+                            <xs:documentation>Description</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+          <xs:attribute name="Name" type="StringOfMax50Length" use="required">
+            <xs:annotation>
+              <xs:documentation>Name</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+          <xs:attribute name="ID" use="required" type="xs:ID">
+            <xs:annotation>
+              <xs:documentation>ID</xs:documentation>
+            </xs:annotation>
+          </xs:attribute>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  
+</xs:schema>

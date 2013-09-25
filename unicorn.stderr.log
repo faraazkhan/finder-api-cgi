@@ -1,0 +1,357 @@
+I, [2012-09-11T14:13:43.718509 #21774]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-11T14:13:43.719255 #21774]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-11T14:13:43.720649 #21774]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-11T14:13:43.721634 #21774]  INFO -- : Refreshing Gem list
+I, [2012-09-11T14:13:44.497241 #21775]  INFO -- : worker=0 ready
+I, [2012-09-11T14:13:44.497241 #21777]  INFO -- : worker=2 ready
+I, [2012-09-11T14:13:44.498576 #21776]  INFO -- : worker=1 ready
+I, [2012-09-11T14:13:44.498929 #21774]  INFO -- : master process ready
+I, [2012-09-11T14:13:44.505138 #21779]  INFO -- : worker=4 ready
+I, [2012-09-11T14:13:44.505307 #21778]  INFO -- : worker=3 ready
+127.0.0.1 - - [11/Sep/2012 14:13:54] "POST / HTTP/1.1" 500 - 0.4145
+E, [2012-09-11T14:14:38.818617 #21835] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-11T14:14:38.819397 #21835] ERROR -- : retrying in 0.5 seconds (4 tries left)
+I, [2012-09-11T14:14:39.319921 #21835]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-11T14:14:39.320815 #21835]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-11T14:14:39.323168 #21835]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-11T14:14:39.324636 #21835]  INFO -- : Refreshing Gem list
+I, [2012-09-11T14:14:39.749683 #21835]  INFO -- : master process ready
+I, [2012-09-11T14:14:39.750781 #21838]  INFO -- : worker=2 ready
+I, [2012-09-11T14:14:39.750991 #21837]  INFO -- : worker=1 ready
+I, [2012-09-11T14:14:39.751334 #21836]  INFO -- : worker=0 ready
+I, [2012-09-11T14:14:39.757497 #21840]  INFO -- : worker=4 ready
+I, [2012-09-11T14:14:39.757608 #21839]  INFO -- : worker=3 ready
+127.0.0.1 - - [11/Sep/2012 14:14:50] "POST / HTTP/1.1" 500 - 4.6729
+127.0.0.1 - - [11/Sep/2012 14:16:55] "POST / HTTP/1.1" 200 - 1.5262
+127.0.0.1 - - [11/Sep/2012 14:17:32] "POST / HTTP/1.1" 500 - 2.5217
+127.0.0.1 - - [11/Sep/2012 14:17:52] "POST / HTTP/1.1" 500 - 1.3733
+127.0.0.1 - - [11/Sep/2012 14:18:59] "POST / HTTP/1.1" 500 - 1.1339
+D, [2012-09-11T19:38:27.593551 #21835] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-12T08:21:27.057254 #21835] DEBUG -- : waiting 31.0s after suspend/hibernation
+E, [2012-09-12T09:37:10.427967 #26013] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-12T09:37:10.428432 #26013] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-12T09:37:10.929194 #26013] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-12T09:37:10.929391 #26013] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2012-09-12T09:37:11.429877 #26013] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-12T09:37:11.430025 #26013] ERROR -- : retrying in 0.5 seconds (2 tries left)
+E, [2012-09-12T09:37:11.930520 #26013] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-12T09:37:11.930648 #26013] ERROR -- : retrying in 0.5 seconds (1 tries left)
+I, [2012-09-12T09:37:12.431234 #26013]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-12T09:37:12.432129 #26013]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-12T09:37:12.434255 #26013]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-12T09:37:12.436828 #26013]  INFO -- : Refreshing Gem list
+I, [2012-09-12T09:37:13.724790 #26013]  INFO -- : master process ready
+I, [2012-09-12T09:37:13.726989 #26014]  INFO -- : worker=0 ready
+I, [2012-09-12T09:37:13.727669 #26017]  INFO -- : worker=3 ready
+I, [2012-09-12T09:37:13.728871 #26016]  INFO -- : worker=2 ready
+I, [2012-09-12T09:37:13.731990 #26015]  INFO -- : worker=1 ready
+I, [2012-09-12T09:37:13.737177 #26018]  INFO -- : worker=4 ready
+127.0.0.1 - - [12/Sep/2012 10:02:35] "POST / HTTP/1.1" 500 - 0.4742
+E, [2012-09-12T10:08:22.431247 #26153] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-12T10:08:22.431650 #26153] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-12T10:08:22.932089 #26153] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-12T10:08:22.932370 #26153] ERROR -- : retrying in 0.5 seconds (3 tries left)
+I, [2012-09-12T10:08:23.432925 #26153]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-12T10:08:23.607280 #26153]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-12T10:08:23.609294 #26153]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-12T10:08:23.610395 #26153]  INFO -- : Refreshing Gem list
+I, [2012-09-12T10:08:24.091943 #26154]  INFO -- : worker=0 ready
+I, [2012-09-12T10:08:24.092274 #26155]  INFO -- : worker=1 ready
+I, [2012-09-12T10:08:24.094035 #26153]  INFO -- : master process ready
+I, [2012-09-12T10:08:24.093891 #26156]  INFO -- : worker=2 ready
+I, [2012-09-12T10:08:24.099427 #26157]  INFO -- : worker=3 ready
+I, [2012-09-12T10:08:24.100056 #26158]  INFO -- : worker=4 ready
+127.0.0.1 - - [12/Sep/2012 10:08:31] "POST / HTTP/1.1" 500 - 0.1920
+E, [2012-09-12T10:10:01.697394 #26213] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-12T10:10:01.697890 #26213] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-12T10:10:02.198396 #26213] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-12T10:10:02.198759 #26213] ERROR -- : retrying in 0.5 seconds (3 tries left)
+I, [2012-09-12T10:10:02.699230 #26213]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-12T10:10:02.699748 #26213]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-12T10:10:02.702191 #26213]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-12T10:10:02.703359 #26213]  INFO -- : Refreshing Gem list
+I, [2012-09-12T10:10:03.040461 #26213]  INFO -- : master process ready
+I, [2012-09-12T10:10:03.041940 #26214]  INFO -- : worker=0 ready
+I, [2012-09-12T10:10:03.041940 #26216]  INFO -- : worker=2 ready
+I, [2012-09-12T10:10:03.042226 #26215]  INFO -- : worker=1 ready
+I, [2012-09-12T10:10:03.046898 #26217]  INFO -- : worker=3 ready
+I, [2012-09-12T10:10:03.050496 #26218]  INFO -- : worker=4 ready
+127.0.0.1 - - [12/Sep/2012 10:10:09] "POST / HTTP/1.1" 200 - 1.5227
+127.0.0.1 - - [12/Sep/2012 10:10:35] "POST / HTTP/1.1" 200 - 0.9432
+127.0.0.1 - - [12/Sep/2012 10:10:49] "POST / HTTP/1.1" 200 - 3.2988
+127.0.0.1 - - [12/Sep/2012 12:53:09] "POST / HTTP/1.1" 200 - 1.8140
+127.0.0.1 - - [12/Sep/2012 12:53:43] "POST / HTTP/1.1" 200 - 3.3588
+127.0.0.1 - - [12/Sep/2012 12:59:09] "POST / HTTP/1.1" 200 - 1.3770
+127.0.0.1 - - [12/Sep/2012 12:59:40] "POST / HTTP/1.1" 200 - 1.1997
+127.0.0.1 - - [12/Sep/2012 13:01:18] "POST / HTTP/1.1" 200 - 1.2355
+127.0.0.1 - - [12/Sep/2012 13:01:48] "POST / HTTP/1.1" 200 - 0.6747
+D, [2012-09-12T17:02:48.597517 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-12T22:53:16.333081 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-13T09:18:14.694357 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-13T09:50:09.592947 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-13T17:35:51.609881 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-13T18:04:11.153586 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-13T20:22:11.603261 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-14T00:42:31.579900 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-14T10:18:23.766136 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-14T10:47:42.892619 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-14T11:25:14.509325 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-14T12:36:53.083170 #26213] DEBUG -- : waiting 31.0s after suspend/hibernation
+I, [2012-09-14T14:17:23.048620 #26213]  INFO -- : reaped #<Process::Status: pid 26218 exit 0> worker=4
+I, [2012-09-14T14:17:23.048829 #26213]  INFO -- : reaped #<Process::Status: pid 26217 exit 0> worker=3
+I, [2012-09-14T14:17:23.048940 #26213]  INFO -- : reaped #<Process::Status: pid 26216 exit 0> worker=2
+I, [2012-09-14T14:17:23.049064 #26213]  INFO -- : reaped #<Process::Status: pid 26215 exit 0> worker=1
+I, [2012-09-14T14:17:23.049170 #26213]  INFO -- : reaped #<Process::Status: pid 26214 exit 0> worker=0
+I, [2012-09-14T14:17:23.049398 #26213]  INFO -- : master complete
+I, [2012-09-19T00:49:28.117705 #9023]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-19T00:49:28.132056 #9023]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-19T00:49:28.133132 #9023]  INFO -- : Refreshing Gem list
+I, [2012-09-19T00:49:29.496280 #9023]  INFO -- : master process ready
+I, [2012-09-19T00:49:29.498298 #9024]  INFO -- : worker=0 ready
+I, [2012-09-19T00:49:29.498298 #9025]  INFO -- : worker=1 ready
+I, [2012-09-19T00:49:29.500754 #9027]  INFO -- : worker=3 ready
+I, [2012-09-19T00:49:29.501475 #9026]  INFO -- : worker=2 ready
+I, [2012-09-19T00:49:29.506485 #9028]  INFO -- : worker=4 ready
+127.0.0.1 - - [19/Sep/2012 00:51:30] "POST / HTTP/1.1" 200 - 1.7304
+127.0.0.1 - - [19/Sep/2012 00:52:04] "POST / HTTP/1.1" 200 - 1.0958
+I, [2012-09-19T00:57:37.149057 #9176]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-19T00:57:37.150127 #9176]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-19T00:57:37.151822 #9176]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-19T00:57:37.153083 #9176]  INFO -- : Refreshing Gem list
+I, [2012-09-19T00:57:37.644822 #9177]  INFO -- : worker=0 ready
+I, [2012-09-19T00:57:37.644965 #9179]  INFO -- : worker=2 ready
+I, [2012-09-19T00:57:37.645941 #9180]  INFO -- : worker=3 ready
+I, [2012-09-19T00:57:37.646441 #9176]  INFO -- : master process ready
+I, [2012-09-19T00:57:37.646403 #9178]  INFO -- : worker=1 ready
+I, [2012-09-19T00:57:37.653895 #9181]  INFO -- : worker=4 ready
+127.0.0.1 - - [19/Sep/2012 00:57:43] "POST / HTTP/1.1" 500 - 0.3619
+E, [2012-09-19T00:58:28.950386 #9232] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T00:58:28.950859 #9232] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-19T00:58:29.452033 #9232] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T00:58:29.452186 #9232] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2012-09-19T00:58:29.952837 #9232] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T00:58:29.952962 #9232] ERROR -- : retrying in 0.5 seconds (2 tries left)
+I, [2012-09-19T00:58:30.453788 #9232]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-19T00:58:30.454311 #9232]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-19T00:58:30.457147 #9232]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-19T00:58:30.458517 #9232]  INFO -- : Refreshing Gem list
+I, [2012-09-19T00:58:30.790839 #9233]  INFO -- : worker=0 ready
+I, [2012-09-19T00:58:30.790839 #9234]  INFO -- : worker=1 ready
+I, [2012-09-19T00:58:30.792510 #9232]  INFO -- : master process ready
+I, [2012-09-19T00:58:30.794939 #9236]  INFO -- : worker=3 ready
+I, [2012-09-19T00:58:30.795431 #9235]  INFO -- : worker=2 ready
+I, [2012-09-19T00:58:30.798943 #9237]  INFO -- : worker=4 ready
+127.0.0.1 - - [19/Sep/2012 00:58:39] "POST / HTTP/1.1" 200 - 2.8433
+127.0.0.1 - - [19/Sep/2012 00:58:55] "POST / HTTP/1.1" 200 - 1.1032
+127.0.0.1 - - [19/Sep/2012 01:32:52] "POST / HTTP/1.1" 200 - 1.1349
+D, [2012-09-19T10:19:26.568219 #9232] DEBUG -- : waiting 31.0s after suspend/hibernation
+127.0.0.1 - - [19/Sep/2012 13:20:15] "POST / HTTP/1.1" 200 - 4.3180
+127.0.0.1 - - [19/Sep/2012 13:20:24] "POST / HTTP/1.1" 200 - 5.3961
+I, [2012-09-19T13:21:04.301602 #12258]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-19T13:21:04.302657 #12258]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-19T13:21:04.303928 #12258]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-19T13:21:04.305002 #12258]  INFO -- : Refreshing Gem list
+I, [2012-09-19T13:21:05.634232 #12259]  INFO -- : worker=0 ready
+I, [2012-09-19T13:21:05.634232 #12260]  INFO -- : worker=1 ready
+I, [2012-09-19T13:21:05.636011 #12258]  INFO -- : master process ready
+I, [2012-09-19T13:21:05.636133 #12261]  INFO -- : worker=2 ready
+I, [2012-09-19T13:21:05.637087 #12262]  INFO -- : worker=3 ready
+I, [2012-09-19T13:21:05.643103 #12263]  INFO -- : worker=4 ready
+127.0.0.1 - - [19/Sep/2012 13:21:16] "POST / HTTP/1.1" 200 - 3.1751
+127.0.0.1 - - [19/Sep/2012 13:21:25] "POST / HTTP/1.1" 200 - 1.6767
+127.0.0.1 - - [19/Sep/2012 13:21:40] "POST / HTTP/1.1" 200 - 1.3472
+127.0.0.1 - - [19/Sep/2012 13:31:25] "POST / HTTP/1.1" 200 - 1.2821
+127.0.0.1 - - [19/Sep/2012 13:32:22] "POST / HTTP/1.1" 500 - 1.6599
+E, [2012-09-19T13:33:09.665481 #12340] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T13:33:09.693884 #12340] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-19T13:33:10.194354 #12340] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T13:33:10.194491 #12340] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2012-09-19T13:33:10.695265 #12340] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T13:33:10.695439 #12340] ERROR -- : retrying in 0.5 seconds (2 tries left)
+E, [2012-09-19T13:33:11.195998 #12340] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T13:33:11.196342 #12340] ERROR -- : retrying in 0.5 seconds (1 tries left)
+I, [2012-09-19T13:33:11.696836 #12340]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-19T13:33:11.736880 #12340]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-19T13:33:11.738912 #12340]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-19T13:33:11.806353 #12340]  INFO -- : Refreshing Gem list
+I, [2012-09-19T13:33:12.630209 #12342]  INFO -- : worker=1 ready
+I, [2012-09-19T13:33:12.630157 #12341]  INFO -- : worker=0 ready
+I, [2012-09-19T13:33:12.638551 #12344]  INFO -- : worker=3 ready
+I, [2012-09-19T13:33:12.639580 #12340]  INFO -- : master process ready
+I, [2012-09-19T13:33:12.639614 #12343]  INFO -- : worker=2 ready
+I, [2012-09-19T13:33:12.649818 #12345]  INFO -- : worker=4 ready
+127.0.0.1 - - [19/Sep/2012 13:33:20] "POST / HTTP/1.1" 200 - 3.3172
+127.0.0.1 - - [19/Sep/2012 13:34:16] "POST / HTTP/1.1" 200 - 3.2790
+E, [2012-09-19T13:35:09.981117 #12428] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T13:35:09.998549 #12428] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-19T13:35:10.499160 #12428] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-19T13:35:10.499322 #12428] ERROR -- : retrying in 0.5 seconds (3 tries left)
+I, [2012-09-19T13:35:11.000122 #12428]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-19T13:35:11.041266 #12428]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-19T13:35:11.044141 #12428]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-19T13:35:11.072121 #12428]  INFO -- : Refreshing Gem list
+I, [2012-09-19T13:35:11.583280 #12429]  INFO -- : worker=0 ready
+I, [2012-09-19T13:35:11.583280 #12430]  INFO -- : worker=1 ready
+I, [2012-09-19T13:35:11.584839 #12428]  INFO -- : master process ready
+I, [2012-09-19T13:35:11.585444 #12431]  INFO -- : worker=2 ready
+I, [2012-09-19T13:35:11.589487 #12432]  INFO -- : worker=3 ready
+I, [2012-09-19T13:35:11.591860 #12433]  INFO -- : worker=4 ready
+127.0.0.1 - - [19/Sep/2012 13:35:47] "POST / HTTP/1.1" 200 - 29.3157
+127.0.0.1 - - [19/Sep/2012 13:35:48] "POST / HTTP/1.1" 200 - 1.9259
+127.0.0.1 - - [19/Sep/2012 13:36:46] "POST / HTTP/1.1" 200 - 0.8788
+127.0.0.1 - - [19/Sep/2012 13:37:03] "POST / HTTP/1.1" 200 - 2.6303
+D, [2012-09-19T16:06:32.556405 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T00:01:26.548569 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T01:37:57.573716 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T10:20:19.141721 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T10:33:50.555954 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T17:13:08.565606 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T17:17:01.655125 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T17:36:28.175526 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T18:36:01.739471 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T18:38:26.555949 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-20T21:06:35.306706 #12428] DEBUG -- : waiting 31.0s after suspend/hibernation
+I, [2012-09-21T04:15:39.878513 #18087]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-21T04:15:39.938285 #18087]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-21T04:15:39.940274 #18087]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-21T04:15:39.968255 #18087]  INFO -- : Refreshing Gem list
+I, [2012-09-21T04:15:41.322547 #18088]  INFO -- : worker=0 ready
+I, [2012-09-21T04:15:41.330203 #18090]  INFO -- : worker=2 ready
+I, [2012-09-21T04:15:41.331565 #18089]  INFO -- : worker=1 ready
+I, [2012-09-21T04:15:41.338315 #18087]  INFO -- : master process ready
+I, [2012-09-21T04:15:41.338910 #18091]  INFO -- : worker=3 ready
+I, [2012-09-21T04:15:41.340652 #18092]  INFO -- : worker=4 ready
+127.0.0.1 - - [21/Sep/2012 04:15:50] "POST / HTTP/1.1" 500 - 2.0793
+E, [2012-09-21T04:17:13.888318 #18153] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-21T04:17:13.889051 #18153] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-21T04:17:14.389548 #18153] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-21T04:17:14.389659 #18153] ERROR -- : retrying in 0.5 seconds (3 tries left)
+I, [2012-09-21T04:17:14.890159 #18153]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-21T04:17:14.890523 #18153]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-21T04:17:14.892512 #18153]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-21T04:17:14.893630 #18153]  INFO -- : Refreshing Gem list
+I, [2012-09-21T04:17:15.240356 #18156]  INFO -- : worker=2 ready
+I, [2012-09-21T04:17:15.240599 #18157]  INFO -- : worker=3 ready
+I, [2012-09-21T04:17:15.240356 #18155]  INFO -- : worker=1 ready
+I, [2012-09-21T04:17:15.240356 #18154]  INFO -- : worker=0 ready
+I, [2012-09-21T04:17:15.241847 #18153]  INFO -- : master process ready
+I, [2012-09-21T04:17:15.248694 #18158]  INFO -- : worker=4 ready
+127.0.0.1 - - [21/Sep/2012 04:17:21] "POST / HTTP/1.1" 500 - 0.1998
+E, [2012-09-21T04:17:58.523072 #18209] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-21T04:17:58.524479 #18209] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-21T04:17:59.024968 #18209] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-21T04:17:59.025287 #18209] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2012-09-21T04:17:59.525712 #18209] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-21T04:17:59.525846 #18209] ERROR -- : retrying in 0.5 seconds (2 tries left)
+I, [2012-09-21T04:18:00.026492 #18209]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-21T04:18:00.026844 #18209]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-21T04:18:00.028298 #18209]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-21T04:18:00.029532 #18209]  INFO -- : Refreshing Gem list
+I, [2012-09-21T04:18:00.366057 #18210]  INFO -- : worker=0 ready
+I, [2012-09-21T04:18:00.366057 #18212]  INFO -- : worker=2 ready
+I, [2012-09-21T04:18:00.367114 #18211]  INFO -- : worker=1 ready
+I, [2012-09-21T04:18:00.367712 #18209]  INFO -- : master process ready
+I, [2012-09-21T04:18:00.370908 #18213]  INFO -- : worker=3 ready
+I, [2012-09-21T04:18:00.376929 #18214]  INFO -- : worker=4 ready
+127.0.0.1 - - [21/Sep/2012 04:18:07] "POST / HTTP/1.1" 500 - 1.1488
+127.0.0.1 - - [21/Sep/2012 04:22:56] "POST / HTTP/1.1" 200 - 0.4323
+127.0.0.1 - - [21/Sep/2012 04:23:18] "POST / HTTP/1.1" 200 - 0.5050
+D, [2012-09-21T10:35:50.592111 #18209] DEBUG -- : waiting 31.0s after suspend/hibernation
+I, [2012-09-21T11:29:21.711692 #18209]  INFO -- : reaped #<Process::Status: pid 18214 exit 0> worker=4
+I, [2012-09-21T11:29:21.712555 #18209]  INFO -- : reaped #<Process::Status: pid 18213 exit 0> worker=3
+I, [2012-09-21T11:29:21.712932 #18209]  INFO -- : reaped #<Process::Status: pid 18212 exit 0> worker=2
+I, [2012-09-21T11:29:21.713043 #18209]  INFO -- : reaped #<Process::Status: pid 18211 exit 0> worker=1
+I, [2012-09-21T11:29:21.713150 #18209]  INFO -- : reaped #<Process::Status: pid 18210 exit 0> worker=0
+I, [2012-09-21T11:29:21.713332 #18209]  INFO -- : master complete
+I, [2012-09-24T13:59:55.198270 #8538]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-24T13:59:55.213780 #8538]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-24T13:59:55.215065 #8538]  INFO -- : Refreshing Gem list
+I, [2012-09-24T13:59:56.193587 #8538]  INFO -- : master process ready
+I, [2012-09-24T13:59:56.195830 #8540]  INFO -- : worker=1 ready
+I, [2012-09-24T13:59:56.195940 #8539]  INFO -- : worker=0 ready
+I, [2012-09-24T13:59:56.199254 #8542]  INFO -- : worker=3 ready
+I, [2012-09-24T13:59:56.199771 #8541]  INFO -- : worker=2 ready
+I, [2012-09-24T13:59:56.201630 #8543]  INFO -- : worker=4 ready
+127.0.0.1 - - [24/Sep/2012 15:39:34] "POST / HTTP/1.1" 200 - 0.9729
+127.0.0.1 - - [24/Sep/2012 16:20:22] "POST / HTTP/1.1" 200 - 2.5954
+127.0.0.1 - - [24/Sep/2012 16:20:28] "POST / HTTP/1.1" 200 - 0.5765
+127.0.0.1 - - [24/Sep/2012 16:20:31] "POST / HTTP/1.1" 200 - 0.7771
+127.0.0.1 - - [24/Sep/2012 16:20:33] "POST / HTTP/1.1" 200 - 1.7109
+127.0.0.1 - - [24/Sep/2012 16:20:37] "POST / HTTP/1.1" 200 - 0.9063
+127.0.0.1 - - [24/Sep/2012 16:20:39] "POST / HTTP/1.1" 200 - 2.0415
+127.0.0.1 - - [24/Sep/2012 16:25:04] "POST / HTTP/1.1" 200 - 0.0412
+127.0.0.1 - - [24/Sep/2012 16:25:20] "POST / HTTP/1.1" 200 - 1.1073
+127.0.0.1 - - [24/Sep/2012 16:25:23] "POST / HTTP/1.1" 200 - 0.5199
+127.0.0.1 - - [24/Sep/2012 16:25:26] "POST / HTTP/1.1" 200 - 0.5736
+127.0.0.1 - - [24/Sep/2012 16:26:26] "POST / HTTP/1.1" 500 - 60.2568
+127.0.0.1 - - [24/Sep/2012 16:26:28] "POST / HTTP/1.1" 200 - 0.5385
+127.0.0.1 - - [24/Sep/2012 16:27:28] "POST / HTTP/1.1" 500 - 60.2601
+E, [2012-09-24T16:27:45.061732 #8888] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-24T16:27:45.062387 #8888] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2012-09-24T16:27:45.563211 #8888] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-24T16:27:45.563433 #8888] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2012-09-24T16:27:46.063892 #8888] ERROR -- : adding listener failed addr=/tmp/.sock (in use)
+E, [2012-09-24T16:27:46.064035 #8888] ERROR -- : retrying in 0.5 seconds (2 tries left)
+I, [2012-09-24T16:27:46.564763 #8888]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-24T16:27:46.565260 #8888]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-24T16:27:46.567592 #8888]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-24T16:27:46.568730 #8888]  INFO -- : Refreshing Gem list
+I, [2012-09-24T16:27:47.198725 #8891]  INFO -- : worker=0 ready
+I, [2012-09-24T16:27:47.209865 #8892]  INFO -- : worker=1 ready
+I, [2012-09-24T16:27:47.217247 #8893]  INFO -- : worker=2 ready
+I, [2012-09-24T16:27:47.218677 #8894]  INFO -- : worker=3 ready
+I, [2012-09-24T16:27:47.224787 #8888]  INFO -- : master process ready
+I, [2012-09-24T16:27:47.224887 #8895]  INFO -- : worker=4 ready
+D, [2012-09-24T16:46:51.990357 #8888] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-24T19:44:47.564082 #8888] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-24T22:16:34.521888 #8888] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-24T22:47:33.574963 #8888] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-24T23:31:43.050899 #8888] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-25T00:50:52.257802 #8888] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-25T10:24:22.700701 #8888] DEBUG -- : waiting 31.0s after suspend/hibernation
+I, [2012-09-25T14:30:39.921596 #11867]  INFO -- : unlinking existing socket=/tmp/.sock
+I, [2012-09-25T14:30:39.922500 #11867]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-25T14:30:39.924661 #11867]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-25T14:30:39.935536 #11867]  INFO -- : Refreshing Gem list
+I, [2012-09-25T14:30:41.704362 #11929]  INFO -- : worker=2 ready
+I, [2012-09-25T14:30:41.704918 #11928]  INFO -- : worker=1 ready
+I, [2012-09-25T14:30:41.706414 #11867]  INFO -- : master process ready
+I, [2012-09-25T14:30:41.707626 #11927]  INFO -- : worker=0 ready
+I, [2012-09-25T14:30:41.709051 #11930]  INFO -- : worker=3 ready
+I, [2012-09-25T14:30:41.713708 #11931]  INFO -- : worker=4 ready
+127.0.0.1 - - [25/Sep/2012 14:31:26] "POST / HTTP/1.1" 200 - 0.6619
+127.0.0.1 - - [25/Sep/2012 14:31:33] "POST / HTTP/1.1" 200 - 0.7427
+127.0.0.1 - - [25/Sep/2012 14:31:36] "POST / HTTP/1.1" 200 - 0.2298
+127.0.0.1 - - [25/Sep/2012 14:31:43] "POST / HTTP/1.1" 200 - 0.3752
+127.0.0.1 - - [25/Sep/2012 14:31:44] "POST / HTTP/1.1" 200 - 0.8276
+127.0.0.1 - - [25/Sep/2012 14:32:05] "POST / HTTP/1.1" 200 - 0.2181
+127.0.0.1 - - [25/Sep/2012 14:32:06] "POST / HTTP/1.1" 200 - 0.3867
+I, [2012-09-25T14:51:16.955004 #11867]  INFO -- : reaped #<Process::Status: pid 11931 exit 0> worker=4
+I, [2012-09-25T14:51:16.955191 #11867]  INFO -- : reaped #<Process::Status: pid 11930 exit 0> worker=3
+I, [2012-09-25T14:51:16.955274 #11867]  INFO -- : reaped #<Process::Status: pid 11929 exit 0> worker=2
+I, [2012-09-25T14:51:16.955348 #11867]  INFO -- : reaped #<Process::Status: pid 11928 exit 0> worker=1
+I, [2012-09-25T14:51:16.955636 #11867]  INFO -- : reaped #<Process::Status: pid 11927 exit 0> worker=0
+I, [2012-09-25T14:51:16.955808 #11867]  INFO -- : master complete
+I, [2012-09-25T15:47:11.502207 #1505]  INFO -- : listening on addr=/tmp/.sock fd=5
+I, [2012-09-25T15:47:11.511051 #1505]  INFO -- : listening on addr=0.0.0.0:8080 fd=7
+I, [2012-09-25T15:47:11.512105 #1505]  INFO -- : Refreshing Gem list
+I, [2012-09-25T15:47:16.065986 #1510]  INFO -- : worker=1 ready
+I, [2012-09-25T15:47:16.068679 #1511]  INFO -- : worker=2 ready
+I, [2012-09-25T15:47:16.068863 #1509]  INFO -- : worker=0 ready
+I, [2012-09-25T15:47:16.069764 #1505]  INFO -- : master process ready
+I, [2012-09-25T15:47:16.074632 #1512]  INFO -- : worker=3 ready
+I, [2012-09-25T15:47:16.076134 #1513]  INFO -- : worker=4 ready
+127.0.0.1 - - [25/Sep/2012 16:07:48] "POST / HTTP/1.1" 200 - 0.5403
+127.0.0.1 - - [25/Sep/2012 16:08:01] "POST / HTTP/1.1" 200 - 0.9806
+127.0.0.1 - - [25/Sep/2012 16:08:05] "POST / HTTP/1.1" 200 - 0.7594
+127.0.0.1 - - [25/Sep/2012 16:08:08] "POST / HTTP/1.1" 200 - 0.4919
+127.0.0.1 - - [25/Sep/2012 16:08:10] "POST / HTTP/1.1" 200 - 1.9853
+127.0.0.1 - - [25/Sep/2012 16:08:20] "POST / HTTP/1.1" 200 - 0.5855
+127.0.0.1 - - [25/Sep/2012 16:08:21] "POST / HTTP/1.1" 200 - 0.8124
+D, [2012-09-25T16:43:13.002372 #1505] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-25T16:44:22.304207 #1505] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-25T17:59:49.154929 #1505] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-25T20:05:32.562003 #1505] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-25T23:42:17.546593 #1505] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-26T09:42:30.822012 #1505] DEBUG -- : waiting 31.0s after suspend/hibernation
+D, [2012-09-26T10:00:02.544814 #1505] DEBUG -- : waiting 31.0s after suspend/hibernation

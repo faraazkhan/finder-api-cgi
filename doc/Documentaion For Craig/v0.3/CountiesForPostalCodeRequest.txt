@@ -1,0 +1,33 @@
+REQUEST
+
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<PrivateOptionsAPIRequest>
+  <CountiesForPostalCodeRequest>
+      <ZipCode>20110</ZipCode>
+  </CountiesForPostalCodeRequest>
+</PrivateOptionsAPIRequest>
+
+
+RESPONSE
+
+<?xml version="1.0"?>
+<PrivateOptionsAPIResponse>
+  <CountiesForPostalCodeResponse>
+    
+    <Counties>
+        <County>
+            <CountyName>PRINCE WILLIAM</CountyName>
+            <StateCode>VA</StateCode>
+        </County>
+        <County>
+            <CountyName>MANASSAS CITY</CountyName>
+            <StateCode>VA</StateCode>
+        </County>
+        <County>
+            <CountyName>MANASSAS PARK CITY</CountyName>
+            <StateCode>VA</StateCode>
+        </County>
+    </Counties>
+    
+</CountiesForPostalCodeResponse>
+</PrivateOptionsAPIResponse>

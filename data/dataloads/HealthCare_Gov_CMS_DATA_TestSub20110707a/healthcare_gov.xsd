@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <!-- THIS IS AN INITIAL DRAFT THIS FILE STILL NEEDS CLEANUP AND TESTING!  -->
+
+  <!-- things still to do -->
+  <!-- test regex url validation -->
+  <!-- uniq indexes for state abbrevations and db id fields -->
+  <!-- make naming more NEIM friendly -->
+  <!-- other general clean up... this is just a draft -->
+
+  <!-- GLOBAL types  -->
+
+  <xs:simpleType name="PhoneNumberType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{11,11}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PhoneNumberExtensionType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{1,6}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ZipCodeType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{5,5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="URLType">
+    <xs:restriction base="xs:anyURI">
+      <xs:pattern value="/(http|https):\/\/[a-zA-Z0-9]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,5}(:[0-9]{1,5})?(\/.*)?"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="BooleanType">
+    <xs:restriction base="xs:boolean"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="DatabaseIdentifierType">
+    <xs:restriction base="xs:positiveInteger"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax6Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="6"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax10Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax15Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="15"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax30Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax50Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax100Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax200Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax500Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="500"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="StringOfMax1000Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="1000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StringOfMax1500Length">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="1500"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="StateAbbreviationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AL"/>
+      <xs:enumeration value="AK"/>
+      <xs:enumeration value="AZ"/>
+      <xs:enumeration value="AR"/>
+      <xs:enumeration value="CA"/>
+      <xs:enumeration value="CO"/>
+      <xs:enumeration value="CT"/>
+      <xs:enumeration value="DE"/>
+      <xs:enumeration value="DC"/>
+      <xs:enumeration value="FL"/>
+      <xs:enumeration value="GA"/>
+      <xs:enumeration value="HI"/>
+      <xs:enumeration value="ID"/>
+      <xs:enumeration value="IL"/>
+      <xs:enumeration value="IN"/>
+      <xs:enumeration value="IA"/>
+      <xs:enumeration value="KS"/>
+      <xs:enumeration value="KY"/>
+      <xs:enumeration value="LA"/>
+      <xs:enumeration value="ME"/>
+      <xs:enumeration value="MD"/>
+      <xs:enumeration value="MA"/>
+      <xs:enumeration value="MI"/>
+      <xs:enumeration value="MN"/>
+      <xs:enumeration value="MS"/>
+      <xs:enumeration value="MO"/>
+      <xs:enumeration value="MT"/>
+      <xs:enumeration value="NE"/>
+      <xs:enumeration value="NV"/>
+      <xs:enumeration value="NH"/>
+      <xs:enumeration value="NJ"/>
+      <xs:enumeration value="NM"/>
+      <xs:enumeration value="NY"/>
+      <xs:enumeration value="NC"/>
+      <xs:enumeration value="ND"/>
+      <xs:enumeration value="OH"/>
+      <xs:enumeration value="OK"/>
+      <xs:enumeration value="OR"/>
+      <xs:enumeration value="PA"/>
+      <xs:enumeration value="RI"/>
+      <xs:enumeration value="SC"/>
+      <xs:enumeration value="SD"/>
+      <xs:enumeration value="TN"/>
+      <xs:enumeration value="TX"/>
+      <xs:enumeration value="UT"/>
+      <xs:enumeration value="VT"/>
+      <xs:enumeration value="VA"/>
+      <xs:enumeration value="WA"/>
+      <xs:enumeration value="WV"/>
+      <xs:enumeration value="WI"/>
+      <xs:enumeration value="WY"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="ZipCodesType">
+    <xs:sequence>
+      <xs:element name="ZipCode" type="ZipCodeType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ******************************************** -->
+  <!-- issuers -->
+  <!-- ******************************************** -->
+
+  <xs:element name="Issuers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Issuer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IssuerSourceDatabaseIdentifier" type="DatabaseIdentifierType"/>
+              <xs:element name="IssuerStateAbbreviation" type="StateAbbreviationType"/>
+              <xs:element name="IssuerName" type="StringOfMax100Length"/>
+              <xs:element name="IssuerEIN" type="StringOfMax10Length" minOccurs="0" maxOccurs="1"/>
+              <xs:sequence minOccurs="1" maxOccurs="2">
+                <xs:element name="IssuerIndividualMarket" type="MarketInformationType" minOccurs="0" maxOccurs="1"/>
+                <xs:element name="IssuerGroupMarket" type="MarketInformationType" minOccurs="0" maxOccurs="1"/>
+              </xs:sequence>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- This could be moved to a lookup (in the XML file)... but we would need to define DB rules -->
+  <xs:simpleType name="ProductTypeCodeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Indemnity"/>
+      <xs:enumeration value="HMO"/>
+      <xs:enumeration value="PPO"/>
+      <xs:enumeration value="EPO"/>
+      <xs:enumeration value="POS"/>
+      <xs:enumeration value="Other"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <xs:complexType name="URLOrReasonForMissingType">
+    <xs:choice>
+      <xs:element name="URL" type="URLType"/>
+      <xs:element name="MissingURLExplanation">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Invalid URL Provied"/>
+            <xs:enumeration value="URL Not Provided"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="MarketInformationType">
+    <xs:sequence>
+      <xs:element name="NAICCode" type="StringOfMax6Length" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="MarketUrl" type="URLType"/>
+      <xs:element name="CustmerServiceLocalPhoneNumber" type="PhoneNumberType"/>
+      <xs:element name="CustmerServiceTollFreePhoneNumber" type="PhoneNumberType"/>
+      <!-- is this for both numbers? -->
+      <xs:element name="PhoneNumberExtension" type="PhoneNumberExtensionType"/>
+      <xs:element name="CustmerServiceTTYNumber" type="PhoneNumberType"/>
+      <xs:element name="CustmerServiceURL" type="URLType"/>
+      <xs:element name="Products">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Product">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ProductTypeCode" type="ProductTypeCodeType"/>
+                  <xs:element name="ProductSourceDatabaseIdentifer" type="DatabaseIdentifierType"/>
+                  <xs:element name="ProductName" type="StringOfMax100Length"/>
+                  <xs:element name="ProductEnrollmentCode" type="StringOfMax30Length"/>
+                  <xs:element name="ProductDescription" type="StringOfMax100Length"/>
+                  <xs:element name="BenefitsWebsite" type="URLOrReasonForMissingType"/>
+                  <xs:element name="FormularyWebsite" type="URLOrReasonForMissingType"/>
+                  <xs:element name="ProviderWebsite" type="URLOrReasonForMissingType"/>
+                  <!-- Opt_Out_Of_Phase2 what is this? a boolean -->
+                  <!-- note if ProductZipCodes codes is blank we assume whole state -->
+                  <xs:element name="ProductZipCodes" minOccurs="0" maxOccurs="1" type="ZipCodesType"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <!-- ******************************************** -->
+  <!-- state data -->
+  <!-- ******************************************** -->
+
+  <xs:element name="States">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="State" minOccurs="51" maxOccurs="51">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StateAbbreviation" type="StateAbbreviationType"/>
+              <xs:element name="StateIndividualMarket" type="StateMarketType"/>
+              <xs:element name="StateGroupMarket" type="StateMarketType"/>
+              <xs:element name="StateCHIPProgramName" type="StringOfMax100Length"/>
+              <xs:element name="StateCHIPContactInformation" type="StateMedicaidOrChipInfoType"/>
+              <xs:element name="StateMedicaidContactInformation" type="StateMedicaidOrChipInfoType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="StateMarketType">
+    <xs:sequence>
+      <xs:element name="InteractiveComparisonToolIndicator" type="BooleanType"/>
+      <xs:element name="MarketURL" type="URLType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="StateMedicaidOrChipInfoType">
+    <xs:sequence>
+      <xs:element name="PhoneNumber" type="PhoneNumberType"/>
+      <xs:element name="URL" type="URLType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <!-- ******************************************** -->
+  <!-- high risk data -->
+  <!-- ******************************************** -->
+
+  <!-- can this be merged with state? -->
+  <xs:element name="HighRiskPlans">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StateAbbreviation" type="StateAbbreviationType"/>
+        <xs:element name="SourceDBIdentifier" type="StringOfMax30Length"/>
+        <xs:element name="PlanName" type="StringOfMax100Length"/>
+        <xs:element name="CustomerServicePhoneNumber" type="PhoneNumberType"/>
+        <xs:element name="CustomerServicePhoneNumberExtension" type="PhoneNumberExtensionType"/>
+        <xs:element name="FederalPlanIndicator" type="BooleanType"/>
+        <xs:element name="StateResidencyRequiredIndicator" type="BooleanType"/>
+        <!-- some logic is lost here this would only be required for true StateResidencyRequiredIndicator can we do away wtih boolean? -->
+        <xs:element name="StateResidencyLengthDescription" type="StringOfMax100Length" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="ConditionSpecificIndicator" type="BooleanType"/>
+        <!-- some logic is lost here this would only be required for true ConditionSpecificIndicator can we do away wtih boolean?-->
+        <xs:element name="ConditionCount" type="xs:positiveInteger" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="RestrictiveRiderIndicator" type="BooleanType"/>
+        <xs:element name="ExcessivePremiumIndicator" type="BooleanType"/>
+        <xs:element name="HCTCEligibleIndicator" type="BooleanType"/>
+        <xs:element name="HIPAAEligibleIndicator" type="BooleanType"/>
+        <xs:element name="MedicareEligibleIndicator" type="BooleanType"/>
+        <xs:element name="DependantCoverageIndicator" type="BooleanType"/>
+        <xs:element name="OtherEligibleDescription" type="StringOfMax100Length" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="AgeLimitDescription" type="StringOfMax100Length" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="IncomeLimitSubsidy" type="StringOfMax100Length" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="RejectionLettersCount" type="xs:positiveInteger" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="PlanOpenDescription" type="StringOfMax100Length" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="MainURL" type="URLType"/>
+        <!-- some of these might need to required based on boolean flags above? -->
+        <xs:element name="PremiumRatesURL" type="URLType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="CoverageBenefitsURL" type="URLType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="EligibilityURL" type="URLType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="ConditionsListURL" type="URLType" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="Low_Income_Subsidy_Url" type="URLType" minOccurs="0" maxOccurs="1"/>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <!-- ******************************************** -->
+  <!-- cms/chip data -->
+  <!-- ******************************************** -->
+
+
+  <xs:simpleType name="CMSValueType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Yes"/>
+      <xs:enumeration value="No"/>
+      <xs:enumeration value="Any"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CMSProgramType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CHIP"/>
+      <xs:enumeration value="Medicaid"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="CMSAgeRangeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="0-18"/>
+      <xs:enumeration value="19-64"/>
+      <xs:enumeration value="65+"/>
+      <xs:enumeration value="Any"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="CMSData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="States">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="State">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="MedicaidBrandName" type="StringOfMax100Length"/>
+                    <xs:element name="MedicaidProgramDesc" type="StringOfMax500Length"/>
+                    <xs:element name="ChipBrandName" type="StringOfMax100Length"/>
+                    <xs:element name="ChipProgramDesc" type="StringOfMax500Length"/>
+                    <xs:element name="EligibilityList">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Eligibility">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Programs">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="2" name="Program">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:choice maxOccurs="unbounded">
+                                              <xs:element name="BenefitGroups">
+                                                <xs:complexType>
+                                                  <xs:sequence>
+                                                    <xs:element maxOccurs="unbounded" name="BenefitGroup">
+                                                      <xs:complexType>
+                                                        <xs:attribute name="Name" type="StringOfMax50Length" use="required" />
+                                                        <xs:attribute name="IDREF" type="xs:IDREF"/>
+                                                      </xs:complexType>
+                                                    </xs:element>
+                                                  </xs:sequence>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="CostSharing">
+                                                <xs:complexType>
+                                                  <xs:sequence>
+                                                    <xs:element name="CostSharingRow" maxOccurs="11">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="EffectiveDate" type="xs:date" minOccurs="0"/>
+                                                        <xs:element name="FPL" type="StringOfMax1000Length"/>
+                                                        <xs:element name="EnrollmentFee" type="StringOfMax1000Length"/>
+                                                        <xs:element name="Copay" type="StringOfMax1000Length"/>
+                                                        <xs:element name="Deductibles" type="StringOfMax1000Length"/>
+                                                        <xs:element name="LimitAnnualCap" type="StringOfMax1000Length"/>
+                                                        <xs:element name="LimitTrackingMethod" minOccurs="0" type="StringOfMax1000Length"/>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                    </xs:element>
+                                                  </xs:sequence>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="DemoPrograms">
+                                                <xs:complexType>
+                                                  <xs:sequence>
+                                                    <xs:element name="DemoProgram" maxOccurs="unbounded">
+                                                      <xs:complexType>
+                                                        <xs:sequence>
+                                                          <xs:element name="BrandName" minOccurs="0" type="StringOfMax200Length"/>
+                                                          <xs:element name="DemonstrationPurpose" minOccurs="0" type="StringOfMax1500Length"/>
+                                                          <xs:element name="Exclusions" minOccurs="0" type="StringOfMax1000Length"/>
+                                                          <xs:element name="DemoRowId" type="xs:positiveInteger"/>
+                                                          <xs:element name="DemoBenefits">
+                                                            <xs:complexType>
+                                                              <xs:sequence>
+                                                                <xs:element maxOccurs="unbounded" name="DemoBenefit">
+                                                                  <xs:complexType>
+                                                                    <xs:sequence>
+                                                                      <xs:element name="BenefitName" type="xs:string"/>
+                                                                    </xs:sequence>
+                                                                    <xs:attribute name="IDREF" type="xs:IDREF" use="optional" />
+                                                                  </xs:complexType>
+                                                                </xs:element>
+                                                              </xs:sequence>
+                                                            </xs:complexType>
+                                                          </xs:element>
+                                                        </xs:sequence>
+                                                      </xs:complexType>
+                                                    </xs:element>
+                                                  </xs:sequence>
+                                                </xs:complexType>
+                                              </xs:element>
+                                            </xs:choice>
+                                          </xs:sequence>
+                                          <xs:attribute name="Name" type="CMSProgramType" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="Age" type="CMSAgeRangeType" use="required" />
+                              <xs:attribute name="Dependents" type="CMSValueType" use="required" />
+                              <xs:attribute name="Disability" type="CMSValueType" use="required" />
+                              <xs:attribute name="LongTermCare" type="CMSValueType" use="required" />
+                              <xs:attribute name="MedicalCondition" type="CMSValueType" use="required" />
+                              <xs:attribute name="NoAfford" type="CMSValueType" use="required" />
+                              <xs:attribute name="Pregnant" type="CMSValueType" use="required" />
+                              <xs:attribute name="SpecialNeed" type="CMSValueType" use="required" />
+                              <xs:attribute name="Cancer" type="CMSValueType" use="required" />
+                              <xs:attribute name="QuestionName" type="StringOfMax30Length" use="required" />
+                              <xs:attribute name="disclaimerIDREF" type="xs:IDREF" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="BenefitGroups">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="BenefitGroup">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Description" type="StringOfMax500Length" minOccurs="0"/>
+                                <xs:element name="Benefits">
+                                  <xs:complexType>
+                                    <xs:sequence >
+                                      <xs:element maxOccurs="unbounded" name="Benefit">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Name" type="StringOfMax200Length" />
+                                            <xs:element minOccurs="0" name="Description" type="StringOfMax1000Length" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="Name" type="StringOfMax50Length" use="required" />
+                              <xs:attribute name="ID" use="required" type="xs:ID"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="StateAbbreviation" type="StateAbbreviationType" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Disclaimers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Disclaimer">
+                <xs:complexType>
+                  <xs:sequence>
+                      <xs:element name="DisclaimerText" type="StringOfMax1000Length"/>
+                  </xs:sequence>
+                  <xs:attribute name="ID" use="required" type="xs:ID"/>
+                  <xs:attribute name="MedicaidOnly" use="required" type="BooleanType"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+        <!-- ******************************************** -->
+        <!-- zipcode validation data -->
+        <!-- ******************************************** -->
+
+        <xs:element name="ZipCodeValidation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="State">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="StateAbbreviation" type="StateAbbreviationType"/>
+                    <xs:element name="ZipCodes" type="ZipCodesType"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:schema>
+
